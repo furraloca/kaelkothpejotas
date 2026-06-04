@@ -1,11 +1,3 @@
-@font-face {font-family: "igorfont1"; src: url('https://dl.dropbox.com/scl/fi/q9jhce3u3a0hpri6c3n1r/deaths-hallows.regular.ttf?rlkey=ltjrounq8s3fdndwwenf4sx25&st=eyyj5kgc');}
-
-@font-face {font-family: "elricfont1"; src: url('https://dl.dropbox.com/scl/fi/dfbj6hw41ntt6xw2pivdx/kingston-williams.regular.ttf?rlkey=kotfs15xwjwpiny6n44n6ejwr&st=kxez5jm8');}
-
-@font-face {font-family: "elricrunas1"; src: url('https://dl.dropbox.com/scl/fi/qbzdly9oewnfxm7q9wejn/DARUNE.otf?rlkey=io2b8hwpz2fjrbk3j34uwcmiz&st=9khn1zza');}
-
-@font-face {font-family: "elricinicial1"; src: url('https://dl.dropbox.com/scl/fi/47uriyl8relv2xu5qs9iz/cs-lamia-drawn-demo.regular.otf?rlkey=s0hsprgb3ow03551xh89udf0g&st=v17apqww');}
-
 @font-face{
 font-family: 'igorfont1';
 src: url('./fancy-quisley.regular.woff2') format('woff2'),
