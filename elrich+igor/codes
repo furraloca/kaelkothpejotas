@@ -1,0 +1,586 @@
+@font-face {font-family: "igorfont1"; src: url('https://dl.dropbox.com/scl/fi/q9jhce3u3a0hpri6c3n1r/deaths-hallows.regular.ttf?rlkey=ltjrounq8s3fdndwwenf4sx25&st=eyyj5kgc');}
+
+@font-face {font-family: "elricfont1"; src: url('https://dl.dropbox.com/scl/fi/dfbj6hw41ntt6xw2pivdx/kingston-williams.regular.ttf?rlkey=kotfs15xwjwpiny6n44n6ejwr&st=kxez5jm8');}
+
+@font-face {font-family: "elricrunas1"; src: url('https://dl.dropbox.com/scl/fi/qbzdly9oewnfxm7q9wejn/DARUNE.otf?rlkey=io2b8hwpz2fjrbk3j34uwcmiz&st=9khn1zza');}
+
+@font-face {font-family: "elricinicial1"; src: url('https://dl.dropbox.com/scl/fi/47uriyl8relv2xu5qs9iz/cs-lamia-drawn-demo.regular.otf?rlkey=s0hsprgb3ow03551xh89udf0g&st=v17apqww');}
+
+@font-face{
+font-family: 'igorfont1';
+src: url('./scl/fi/q9jhce3u3a0hpri6c3n1r/deaths-hallows.regular.ttf?rlkey=ltjrounq8s3fdndwwenf4sx25&st=eyyj5kgc.woff2') format('woff2'),
+url('./scl/fi/q9jhce3u3a0hpri6c3n1r/deaths-hallows.regular.ttf?rlkey=ltjrounq8s3fdndwwenf4sx25&st=eyyj5kgc.woff2.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
+
+@font-face{
+font-family: 'elricfont1';
+src: url('./scl/fi/dfbj6hw41ntt6xw2pivdx/kingston-williams.regular.ttf?rlkey=kotfs15xwjwpiny6n44n6ejwr&st=kxez5jm8.woff2') format('woff2'),
+url('./scl/fi/dfbj6hw41ntt6xw2pivdx/kingston-williams.regular.ttf?rlkey=kotfs15xwjwpiny6n44n6ejwr&st=kxez5jm8.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
+
+.postigorb{
+  width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.postigorb b,.postigorb strong{
+  color: var(--groups);
+}
+
+.elric .postigorb{
+  font-family: "Ibarra Real Nova", serif;  
+}
+
+.elric.postigorb b,.elric.postigorb strong{
+  color: var(--groups);
+}
+
+
+.postigorb-head{
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+
+.postigorb-head t{
+  position: relative;
+  top: 20px;
+  z-index: 14;
+  padding: 2px 13px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "igorfont1";
+  line-height: 100%;
+  color: var(--groups);
+  font-weight: 800;
+  background: linear-gradient(342deg,rgba(51, 51, 51, 1) 0%, rgba(8, 8, 8, 1) 50%, rgba(51, 51, 51, 1) 100%);
+  corner-shape: scoop;
+  border-radius: 8px;
+  box-shadow: 0px 0px 7px var(--groups);
+  outline: 1px solid #222;
+  outline-offset: 0px;
+  border: 2px solid #181818;
+}
+
+.elric .postigorb-head t{
+  font-family: "elricfont1"; 
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.postigorb-head n{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.postigorb-head n:before{
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 10px;
+  background: var(--groups);
+  margin-right: 40px;
+  bottom: 8px;
+}
+
+
+.postigorb-head n:after{
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 10px;
+  background: var(--groups);
+  margin-left: 40px;
+  bottom: 8px;
+}
+
+
+.postigorb-head span{
+  display: block;
+  width: 100%;
+  font-family: "Fanwood Text", serif;
+  letter-spacing: 1.5px;
+  font-size: 9px;
+  color: #abaaaa;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 100%;
+  padding-top: 2px;
+  position: relative;
+}
+
+.elric .postigorb-head span{
+  font-family: "Ibarra Real Nova", serif;
+  letter-spacing: .5px;
+}
+
+
+
+.post-fotoytit{
+  width: 480px;
+  height: 330px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+
+
+.postigorb-foto{
+  position: relative;
+  z-index: 4;
+  top: 0px;
+  box-sizing: border-box;
+  width: 480px;
+  height: 330px;
+  background: linear-gradient(0deg, #000000, #000000), url(https://i1-c.pinimg.com/1200x/a4/ca/49/a4ca49fd1f1db0b0d89cda75369fe56e.jpg);
+  background-blend-mode: color;
+  background-size: cover;
+  background-position: 50% 50%;
+  corner-shape: scoop;
+  border-radius: 16px;
+  border: 2px solid #181818;
+  overflow: hidden;
+}
+
+
+.postigorb-foto:before{
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #000000, rgba(0,0,0, .7), transparent);
+  opacity: 1;
+  backdrop-filter: blur(.5px)brightness(40%)contrast(98%);
+  corner-shape: scoop;
+  border-radius: 16px;
+  border: 0px solid #181818;
+}
+
+
+.postigorb-foto:after{
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: .2;
+  background: url(https://i1-c.pinimg.com/736x/a1/2c/cc/a12cccd53eb1cb60daf8beb3b2cbb305.jpg);
+  mix-blend-mode: screen;
+  background-size: cover;
+  background-position: 50% 50%;
+  corner-shape: scoop;
+  border-radius: 16px;
+  border: 0px solid #181818;
+}
+
+.post-fotoytit:before,.post-fotoytit:after{
+  position: absolute;
+  z-index: 16;
+  color: var(--groups);
+  content: "✦";
+  font-size: 16px;
+  text-shadow: 2px 2px 0px #000;
+  font-weight: 800;
+}
+
+.post-fotoytit:before{
+  top: 12px;
+  left: 18px;
+  transform: rotate(25deg);
+}
+
+.post-fotoytit:after{
+  right: 18px;
+  top: 12px;
+  transform: rotate(-25deg);
+}
+
+
+.postigorb-tit{
+  width: 460px;
+  padding: 0px 10px;
+  position: absolute;
+  z-index: 15;
+  magin: 0 auto;
+  font-size: 46px;
+  font-family: "igorfont1";
+  line-height: 100%;
+  color: var(--groups);
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0;
+  text-shadow: 1px 1px 0px #000;
+  display: block;
+}
+
+.postigorb-tit::first-letter{
+  font-size: 60px;
+}
+
+.elric .postigorb-tit{
+  font-size: 39px;
+  font-family: "elricfont1";
+  letter-spacing: 1.5px;
+}
+
+.elric .postigorb-tit::first-letter{
+  font-size: 50px;
+}
+
+
+.iconpost i{
+  font-size: 24px;
+  display: block;
+  text-align: center;
+  line-height: 100%;
+  margin: 0 auto;
+  color: var(--groups);
+  transform: rotate(-45deg);
+  text-shadow: 1px 1px 0px #000;
+  position: relative;
+  top: 0px;
+  filter: drop-shadow(#000 0px 0px 5px);
+}
+
+
+.iconpost{
+  width: 32px;
+  height: 32px;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  border-right: 1px solid var(--groups);
+  border-bottom: 1px solid var(--groups);
+  border-radius: 4px;
+  position: absolute;
+  z-index: 15;
+  top: 65px;
+  margin: 0 auto;
+}
+
+
+.post-fotoytit sub{
+  display: block;
+  width: 460px;
+  padding: 0px 10px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Fanwood Text", serif;
+  letter-spacing: 2px;
+  font-size: 8px;
+  color: #abaaaa;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 100%;
+  position: relative;
+  z-index: 20;
+  top: 2px;
+  font-style: italic;
+}
+
+.elric .post-fotoytit sub{
+  font-family: "Ibarra Real Nova", serif;
+  letter-spacing: 1px;
+  top: 5px;
+}
+
+
+
+.post-etiq{
+  width: 440px;
+  padding: 0px 10px;
+  position: absolute;
+  bottom: 18px;
+  z-index: 15;
+  magin: 0 auto;
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
+
+
+.post-etiq lugar,.post-etiq pers,.post-etiq2 lugar,.post-etiq2 pers{
+  width: 218px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 9.5px;
+  text-align: center;
+  font-family: "Fanwood Text", serif;
+  letter-spacing: 1px;
+  color: #abaaaa;
+  line-height: 165%;
+  text-transform: uppercase;
+}
+
+.elric .post-etiq lugar,.elric .post-etiq pers,.elric .post-etiq2 lugar,.elric .post-etiq2 pers{
+  font-family: "Ibarra Real Nova", serif;
+  letter-spacing: .5px;
+}
+
+
+.post-etiq lin,.post-etiq2 lin{
+  height: 90px;
+  width: 1px; 
+  background: linear-gradient(0deg, transparent, var(--groups), transparent);
+}
+
+
+.post-etiq txt,.post-etiq2 txt{
+  display: block;
+  padding: 0px 15px;
+}
+
+
+.post-etiq a,.post-etiq2 a{
+  text-decoration: none;
+  color: var(--groups);
+  font-weight: 600;
+}
+
+
+
+
+.postigor-txt{
+  display: block;
+  padding: 50px 0px;
+  width: 460px;
+  margin: 0 auto;
+  font-size: 18.5px;
+  text-align: justify;
+  font-family: "Fanwood Text", serif;
+  letter-spacing: 0px;
+  color: #abaaaa;
+  line-height: 175%;
+}
+
+.elric .postigor-txt{
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 17.5px;
+  line-height: 170%;
+}
+
+
+.postigorletter{
+  font-family: "elricinicial1";
+  font-size: 68px;
+  float: left;
+  width: 70px;
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
+  background:-webkit-linear-gradient(var(--groups), #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 115%;
+  text-shadow: 2px 3px 0px #181818;
+}
+
+
+.postigor-txt b,.postigor-txt strong{
+  color: var(--groups);
+}
+
+
+
+.postigorfin{
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  background: url(https://images2.imgbox.com/ba/db/NltAXEaQ_o.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  filter: drop-shadow(1px 1px 2px var(--groups));
+  opacity: .4;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.postigorfin:before{
+  content: "";
+  position: absolute;
+  left: -182px;
+  width: 140%;
+  height: 1px;
+  background: linear-gradient(125deg, var(--groups), var(--groups), transparent);
+}
+
+
+.postigorfin:after{
+  content: "";
+  position: absolute;
+  right: -182px;
+  width: 140%;
+  height: 1px;
+  background: linear-gradient(125deg, transparent, var(--groups), var(--groups));
+}
+
+
+
+
+.postigor-txt blockquote{
+  width: 450px;
+  padding: 35px 20px;
+  margin: 15px 0 auto;
+  box-sizing: border-box;
+  outline: 2px solid #121212;
+  outline-offset: 0px;
+  corner-top-right-shape: bevel;
+  border-radius: 0px 22px 0px 0px;
+  font-family: "Fanwood Text", serif;
+  font-size: 14px;
+  letter-spacing: .5px;
+  line-height: 150%;
+  color: #ababab;
+  background: linear-gradient(350deg, #181818 0%, #080808 85%);
+}
+
+
+.elric .postigor-txt blockquote{
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 13.5px;
+}
+
+
+
+
+
+
+
+
+
+.postigorb-tit2{
+  width: 460px;
+  padding: 0px 10px;
+  position: relative;
+  magin: 0px auto;
+  font-size: 46px;
+  font-family: "igorfont1";
+  line-height: 100%;
+  color: var(--groups);
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0;
+  text-shadow: 1px 1px 0px #000;
+  display: block;
+}
+
+.postigorb-tit2::first-letter{
+  font-size: 60px;
+}
+
+
+.elric .postigorb-tit2{
+  font-size: 39px;
+  font-family: "elricfont1";
+  letter-spacing: 1.5px;
+}
+
+.elric .postigorb-tit2::first-letter{
+  font-size: 50px;
+}
+
+
+.iconpost2 i{
+  font-size: 24px;
+  display: block;
+  text-align: center;
+  line-height: 100%;
+  margin: 0 auto;
+  color: var(--groups);
+  transform: rotate(-45deg);
+  text-shadow: 1px 1px 0px #000;
+  position: relative;
+  top: 0px;
+  filter: drop-shadow(#000 0px 0px 5px);
+}
+
+
+.iconpost2{
+  width: 32px;
+  height: 32px;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  border-right: 1px solid var(--groups);
+  border-bottom: 1px solid var(--groups);
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+
+
+.postigorb-tit2 sub{
+  display: block;
+  width: 460px;
+  padding: 0px 10px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Fanwood Text", serif;
+  letter-spacing: 2px;
+  font-size: 8px;
+  color: #abaaaa;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 100%;
+  position: relative;
+  font-style: italic;
+  margin-bottom: 35px;
+}
+
+.elric .postigorb-tit2 sub{
+  font-family: "Ibarra Real Nova", serif;
+  letter-spacing: 1px;
+  top: 5px;
+}
+
+
+.post-etiq2{
+  width: 460px;
+  padding: 0px 10px;
+  position: relative;
+  z-index: 15;
+  magin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
