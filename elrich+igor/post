@@ -27,8 +27,8 @@ font-display: swap;
 
 @font-face{
 font-family: 'elricinicial1';
-src: url('./https://github.com/furraloca/kaelkothpejotas/raw/refs/heads/main/elrich+igor/cs-lamia-drawn-demo.regular.woff2') format('woff2'),
-url('./https://github.com/furraloca/kaelkothpejotas/raw/refs/heads/main/elrich+igor/cs-lamia-drawn-demo.regular.woff') format('woff');
+src: url('./cs-lamia-drawn-demo.regular.woff2') format('woff2'),
+url('./cs-lamia-drawn-demo.regular.woff') format('woff');
 font-weight: regular;
 font-style: normal;
 font-display: swap;
