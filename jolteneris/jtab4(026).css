@@ -87,8 +87,14 @@ font-display: swap;
     -webkit-text-fill-color: transparent;
 }
 
-@font-face {font-family: "initialjolten1"; src: url('https://dl.dropbox.com/scl/fi/7sbof1m6g9z8uw355185l/Black-Fire.otf?rlkey=o45cx2myxjdm1k5z69nr1j730&st=j48p7cji');}
-
+@font-face{
+font-family: 'initialjolten1';
+src: url('./Black Fire.woff2') format('woff2'),
+url('./Black Fire.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
 .tb4jolten-info-2 {
   width: 450px;
