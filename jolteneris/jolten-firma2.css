@@ -1,0 +1,126 @@
+@font-face {font-family: "joltenfont1"; src: url('https://dl.dropbox.com/scl/fi/ttcxcaf63hcxg1tr2ju3f/holyrose-bonbongothique.ttf?rlkey=3hv0mem04020ittr0jwh4eln5&st=70g8xz3q');}
+
+.jolten-firma{
+    width: 280px;
+    height: 190px;
+    position: relative;
+    overflow: hidden;
+    border-width: 8px;
+    border-style: solid;
+    border-color: rgb(16, 16, 16);
+    border-image: initial;
+    margin: 10px auto;
+}
+
+.jolten-firmaimg{
+  width: 280px;
+  height: 380px;
+  transform: translateY(-14px);
+  position: absolute;
+  z-index: 5;
+  transition: all 1.3s ease-in-out;
+  transition-delay: 0.8s;
+}
+
+.jolten-firma:hover .jolten-firmaimg{
+  transform: translateY(-150px);
+  transition: all 1.3s ease-in-out;
+  transition-delay: 0.8s;
+}
+
+
+.jolten-firmaquo1{
+  position: absolute;
+  z-index: 10;
+  font-family: "Bellefair", serif;
+  font-size: 7px;
+  letter-spacing: 1px;
+  text-align: justify;
+  line-height: 100%;
+  font-weight: 300;
+  color: #D1D0D0;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg)translateX(-0px);
+  margin: 15px 15px;
+  transition: all 1.3s ease-in-out;
+  transition-delay: 0.8s;
+}
+
+.jolten-firmaquo1 b{
+  color: var(--bruma);
+}
+
+.jolten-firma:hover .jolten-firmaquo1{
+  transform: rotate(180deg)translateX(60px); transition: all 1.3s ease-in-out;
+}
+
+.jolten-firmaoverlay1{
+  position: absolute;
+  z-index: 8;
+  top: 0px;
+  width: 280px;
+  height: 190px;
+  background-image: url(https://i.pinimg.com/originals/de/f3/f9/def3f91eb147aa6c4cc83a66d0a6c9a5.gif);
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: hard-light;
+  backdrop-filter: brightness(30%)contrast(104%)blur(2px);
+  opacity: 0;
+  transition: all 1.1s ease-in-out;
+}
+
+.jolten-firma:hover .jolten-firmaoverlay1{
+  opacity: .5;transition: all 1.3s ease-in-out;
+  transition-delay: 1.4s;backdrop-filter: brightness(30%)contrast(104%)blur(4px);
+}
+
+
+.jolten-firmaquo2{
+  position: absolute;
+  z-index: 20;
+  width: 180px;
+  height: 100%;
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+ justify-content: center;
+  font-family: "Bellefair", serif;
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-align: justify;
+  line-height: 190%;
+  font-weight: 300;
+  color: #D1D0D0;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all 1.1s ease-in-out;
+  filter: blur(5px);
+}
+
+.jolten-firma:hover .jolten-firmaquo2{
+  opacity: 1;filter: blur(0px);transition: all 1.3s ease-in-out;
+  transition-delay: 1.4s;
+}
+
+
+
+
+
+
+@keyframes fadej {
+    from { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    to { opacity: 1.0; }
+}                                                                                                                                                                                                                                  
+
+@-webkit-keyframes fadej {
+    from { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    to { opacity: 1.0; }
+}
+
+.blinkj {display: inline-block;
+  animation:fadej 1000ms infinite;
+  -webkit-animation:fadej 1000ms infinite;
+}
