@@ -1,0 +1,288 @@
+@font-face {font-family: "joltenfont1"; src: url('https://dl.dropbox.com/scl/fi/ttcxcaf63hcxg1tr2ju3f/holyrose-bonbongothique.ttf?rlkey=3hv0mem04020ittr0jwh4eln5&st=70g8xz3q');}
+
+
+.jolten-encab{
+  width: 790px;
+  margin: 5px 5px;
+  height: 30px;
+  background: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  font-weight: 300;
+  font-style: normal;
+  color: #D1D0D0;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 8px;
+  line-height: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+.jolten-encab t{
+  font-size: 15px;
+  padding: 10px;
+  color: var(--bruma);
+  background: #181818;
+  font-weight: 900;
+  display: flex;
+  align-items: center; 
+  text-shadow: #000 1px 1px 1px;
+  margin-right: 15px;
+}
+
+.jolten-encab n{
+  text-align: right;
+  padding: 10px;
+  color: var(--bruma);
+  background: #181818;
+  font-weight: 900;
+  display: flex;
+  align-items: center; 
+  text-shadow: #000 1px 1px 1px;
+  letter-spacing: 1px;
+}
+
+.joltencrono{
+ width: 800px;
+  margin: 0 auto;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+  border: 8px solid rgb(16, 16, 16);
+}
+.joltencrono input {
+    display: none;
+}
+
+.joltencrono-full{
+height: 610px;
+width: 790px;
+position: absolute;
+top: 40px;
+left: 5px;
+}
+
+.jolten-fondo-tabs{
+  width: 790px;
+  height: 100px;
+  background: url(https://www.pixelstalk.net/wp-content/uploads/images6/Medieval-Wallpaper-HD-Free-download.jpg);
+  background-size: 100%;
+  background-position: 50% 22%;
+  border: 2px solid #181818;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+}
+
+.joltencrono-tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  position: absolute;
+  left: 0px;
+  top: 35px;
+  width: 790px;
+  box-sizing: border-box;
+  z-index: 1;
+  color: #abaaaa;
+}
+.joltencrono-full .joltencrono-tabs label{
+    background: linear-gradient(260deg, #000000 20%, #181818 100%);
+    font-family: "Bellefair", serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 6px 18px;
+    border: 1px solid #181818;
+    transition: all .9s ease-in-out;
+    position: relative;
+    z-index:1;
+  cursor: pointer; 
+}
+
+.joltencrono input#etiq1:checked ~ .joltencrono-full .joltencrono-tabs label[for="etiq1"], .joltencrono input#etiq2:checked ~ .joltencrono-full .joltencrono-tabs label[for="etiq2"], .joltencrono input#etiq3:checked ~ .joltencrono-full .joltencrono-tabs label[for="etiq3"], .joltencrono input#etiq4:checked ~ .joltencrono-full .joltencrono-tabs label[for="etiq4"], .joltencrono input#etiq5:checked ~ .joltencrono-full .joltencrono-tabs label[for="etiq5"]{
+    background: linear-gradient(260deg, rgba(76, 114, 100, .7) 0%, #000000 100%);
+}
+
+.joltencrono-full .cr-list.etiq1, .joltencrono-full .cr-list.etiq2, .joltencrono-full .cr-list.etiq3, .joltencrono-full .cr-list.etiq4, .joltencrono-full .cr-list.etiq5{
+  top: 730px;
+  height: 610px;
+  width: 790px;
+  position: absolute;
+  transition: all .9s ease;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:'esta1 esta2';
+}
+.joltencrono input#etiq1:checked ~ .joltencrono-full .cr-list.etiq1, .joltencrono input#etiq2:checked ~ .joltencrono-full .cr-list.etiq2, .joltencrono input#etiq3:checked ~ .joltencrono-full .cr-list.etiq3, .joltencrono input#etiq4:checked ~ .joltencrono-full .cr-list.etiq4, .joltencrono input#etiq5:checked ~ .joltencrono-full .cr-list.etiq5{
+top: 105px;
+}
+
+.esta-caja {
+    box-sizing: border-box;
+    margin: 5px;
+    height: 495px;
+    background: url(https://images2.imgbox.com/4b/dd/PwB7TYgY_o.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+   position: relative;
+}
+
+.esta-caja:before{
+  content: "";
+  backdrop-filter: brightness(80%)blur(0px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all .9s ease;
+}
+
+.esta-caja:hover.esta-caja:before{backdrop-filter: brightness(50%)blur(2px);transition: all .9s ease;}
+
+#esta1.esta-caja {
+    grid-area: esta1;
+}
+#esta2.esta-caja {
+    grid-area: esta2;
+}
+
+.esta-tit {
+   font-family: "Bellefair", serif;
+   text-transform: uppercase;
+  -webkit-text-stroke: .1px #000;
+   filter: drop-shadow(var(--bruma) 2px 2px 0px);
+   background: #000;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-size: 23px;
+   margin-left: 20px;
+   position: absolute;
+   font-weight: 900;
+  line-height: 100%;
+  padding-top: 10px;
+}
+.esta-cajatemas{
+   height: 420px;
+   width: 100%;
+   box-sizing: border-box;
+   padding: 0px 15px;
+   overflow: auto;
+   scrollbar-color: #161616 transparent;
+   scrollbar-width: thin;
+   position: absolute;
+   top: 60px;
+}
+.esta-cajatemas .dentro {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin: 10px 0px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+.narrativo:before, .plumalibre:before, .evento:before, .guerra:before {
+  padding: 2px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "game-icons";
+  font-size: 22px;
+  cursor: help; 
+}
+.narrativo:before {content: "\EB2D";}
+.plumalibre:before {content: "\E6E4";}
+.evento:before {content: "\E374";}
+.guerra:before {content: "\E4EC";}
+
+.abierto .plumalibre:before, .abierto .evento:before, .abierto .guerra:before, .abierto .narrativo:before{
+    color: var(--bruma);
+}
+.cerrado .narrativo:before, .cerrado .guerra:before, .cerrado .evento:before, .cerrado .plumalibre:before{
+  color: #abaaaa;
+  opacity: .4;
+}
+.esta-cajatemas .infotema{
+ font-weight: 300;
+  font-style: normal;
+  color: #abaaaa;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  font-size: 10px;
+  line-height: 150%;
+  text-shadow: 1px 1px 1px #0000;
+}
+.esta-cajatemas .infotema n{
+  display: flex;
+  font-weight: 300;
+  font-style: normal;
+  color: #abaaaa;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-size: 14px;
+  line-height: 100%;
+  padding-bottom: 3px;
+}
+.esta-cajatemas .infotema a{
+ color: #abaaaa;
+  text-decoration: none;
+  transition: all .9s ease;
+}
+
+.esta-cajatemas .infotema a:hover{
+  color: var(--bruma);
+  transition: all .9s ease;
+}
+
+.esta-cajatemas .infotema span{
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: .5px;
+  background: linear-gradient(260deg, #000000 0%, #181818 100%);
+  padding: 3px 4px;
+  font-size: 8.5px;
+  color: #D1D0D0;
+  text-shadow: 1px 1px 0px #0000;
+}
+
+.esta-cajatemas .infotema #alianza {
+  background: linear-gradient(260deg, var(--alianza) 0%, #000000 100%);
+}
+.esta-cajatemas .infotema #imperio {
+  background: linear-gradient(260deg, var(--imperio) 0%, #000000 100%);
+}
+.esta-cajatemas .infotema #northel {
+  background: linear-gradient(260deg, var(--northel) 0%, #000000 100%);
+}
+.esta-cajatemas .infotema #bruma {
+  background: linear-gradient(260deg, var(--bruma) 0%, #000000 100%);
+}
+.esta-cajatemas .infotema #vardarien {
+  background: linear-gradient(260deg, var(--vardarien) 0%, #000000 100%);
+}
+.esta-cajatemas .infotema #daelarien {
+  background: linear-gradient(260deg, var(--daelarien) 0%, #000000 100%);
+}
+.esta-cajatemas .infotema #sakkrad {
+  background: linear-gradient(260deg, var(--sakkrad) 0%, #000000 100%);
+}
+.esta-cajatemas .infotema #sombrias {
+  background: linear-gradient(260deg, var(--sombrias) 0%, #000000 100%);
+}
+.esta-cajatemas .infotema #noctum {
+  background: linear-gradient(260deg, var(--noctum) 0%, #000000 100%);
+}
+.esta-cajatemas .infotema #shinzen {
+  background: linear-gradient(260deg, var(--shinzen) 0%, #000000 100%);
+}
+.esta-cajatemas .infotema #dragones {
+  background: linear-gradient(260deg, var(--dragones) 0%, #000000 100%);
+}
