@@ -1,0 +1,304 @@
+@font-face {font-family: "joltenfont1"; src: url('https://dl.dropbox.com/scl/fi/ttcxcaf63hcxg1tr2ju3f/holyrose-bonbongothique.ttf?rlkey=3hv0mem04020ittr0jwh4eln5&st=70g8xz3q');}
+
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+
+
+.f26jolv4{
+  width: 370px;
+  height: 210px;
+  display: flex; 
+  margin: 0 auto;
+  gap: 4px;
+  outline: 4px solid #121212;
+  outline-offset: 3px;
+  overflow: hidden;
+}
+
+
+
+.f26jolv4gif{
+  width: 226px;
+  height: 210px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-image: url(https://i.imgur.com/x4DsFCm.gif);
+  background-position: 64% 15%;
+  background-size: 128%;
+}
+
+.f26gifoverj{
+  width: 226px;
+  height: 210px;
+  position: absolute;
+  z-index:5;
+  backdrop-filter: grayscale(60%)brightness(95%)contrast(100%)hue-rotate(-20deg);
+  -webkit-backdrop-filter: grayscale(60%)brightness(95%)contrast(100%)hue-rotate(-20deg);
+  background: rgba(0,0,0, .3);
+  mix-blend-mode: multiply;
+  transition: all 1.3s ease-in-out;
+}
+
+.f26jolv4:hover .f26gifoverj{
+ backdrop-filter: grayscale(85%)brightness(95%)contrast(109%)hue-rotate(-20deg)blur(15px);
+  -webkit-backdrop-filter: grayscale(85%)brightness(95%)contrast(109%)hue-rotate(-20deg)blur(15px);
+  transition: all 1.3s ease-in-out; 
+}
+
+
+.f26jolv4gif2{
+  width: 226px;
+  height: 210px;
+  position: absolute;
+  z-index:6;
+  overflow: hidden;
+  background-image: url(https://i.ibb.co/sdXYLckk/darksoulsgif1.gif);
+  background-position: 50% 50%;
+  background-size: 104%;
+  opacity: 0;
+  transition: all .9s ease-in-out;
+}
+
+
+.f26jolv4:hover .f26jolv4gif2{
+  opacity: 1;
+  transition: all 1.3s ease-in-out; 
+  transition-delay: 1s;
+}
+
+
+.f26gifcolorj{
+  width: 226px;
+  height: 210px;
+  border-right: 1px solid #181818;
+  position: absolute;
+  z-index: 7;
+  transform: translateX(-227px);
+  background: var(--bruma);
+  backdrop-filter: grayscale(1);
+  -webkit-backdrop-filter: grayscale(1);
+  mix-blend-mode: multiply;
+  transition: all 1.3s ease-in-out;
+  transition-delay: .5s;
+  overflow: hidden;
+}
+
+.f26jolv4:hover .f26gifcolorj{
+  transform: translateX(0px);
+  transition: all 1.3s ease-in-out;
+}
+
+
+
+
+
+.f26jolv4pic{
+  width: 140px;
+  height: 210px;
+  box-sizing: border-box;  
+  background-image: url(https://i.pinimg.com/1200x/78/4a/e0/784ae04e94ff1292012267128c76916e.jpg);
+  background-position: 20% 50%;
+  background-size: 210%;
+  position: relative;
+  overflow: hidden;
+  border-right: 3px solid #181818;
+  z-index: 2;
+  transition: all 1.3s ease-in-out;
+  transition-delay: .5s;
+}
+
+
+.f26jolv4:hover .f26jolv4pic{
+  border-right: 3px solid var(--bruma);
+  background-position: 100% 0%;
+  background-size: 160%;
+  transition: all 1.3s ease-in-out;
+}
+
+
+.f26jolv4picover{
+  width: 137px;
+  height: 210px;
+  box-sizing: border-box;  
+  position: absolute;
+  z-index: 5;
+  backdrop-filter: blur(15px)grayscale(1);
+  -webkit-backdrop-filter: blur(15px)grayscale(1);
+  background: rgba(0,0,0, .8);
+  mix-blend-mode: multiply;
+  transition: all 1.3s ease-in-out;
+  transition-delay: .5s;
+}
+
+
+.f26jolv4:hover .f26jolv4picover{
+  backdrop-filter: blur(0px)grayscale(1);
+  -webkit-backdrop-filter: blur(0px)grayscale(1);
+  background: rgba(0,0,0, .5);
+  mix-blend-mode: multiply;
+  transition: all 1.3s ease-in-out;
+}
+
+
+
+
+.fpictxtj{
+  position: absolute;
+  bottom: 0px;
+  z-index: 8;
+  height: 210px; 
+  width: 117px;
+  padding: 0px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-size: 8px;
+  text-transform: uppercase;
+  font-family: Bellefair, serif;
+  color: #b3b3b3;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  text-align: justify;
+  line-height: 185%;
+}
+
+.fpictxtj t{
+  display: block;
+  filter: blur(0px);
+  transition: all 1.3s ease-in-out;
+  z-index: 8;
+}
+
+.fpictxtj i{
+  display: block;
+  width: 100%;
+  font-size: 30px;
+  padding-bottom: 20px;
+  position: relative;
+  text-align: center;
+  z-index: 6;
+  opacity: .6;
+  -webkit-text-stroke: 1px var(--bruma);
+  color: var(--bruma);
+  filter: drop-shadow(#000 0px 0px 4px);
+  transform: rotate(0deg)scale(1);
+  transition: all 1.3s ease-in-out;
+}
+
+.f26jolv4:hover .fpictxtj i{
+  transform: rotate(40deg)scale(2);
+  opacity: 0;
+  transition: all 1.3s ease-in-out;
+}
+
+
+
+.f26jolv4:hover .fpictxtj t{
+  filter: blur(15px);
+  opacity: 0;
+  transition: all 1.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+.fgiftxtj{
+  width: 226px;
+  height: 210px;
+  position: absolute;
+  z-index:10;
+  overflow: hidden;
+  opacity: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-family: "joltenfont1";
+  font-size: 44px;
+  letter-spacing: 0px;
+  color: var(--bruma);
+  filter: drop-shadow(#000 0px 0px 4px);
+  text-transform: none;
+  line-height: 100%;
+  font-weight: 300;
+}
+
+
+
+.fgiftxtj t{
+  filter: blur(15px);
+  opacity: 0;
+  transition: all .9s ease-in-out;
+}
+
+
+.f26jolv4:hover .fgiftxtj t{
+  display: block;
+  text-align: center;
+  width: 100%;
+  filter: blur(0px);
+  opacity: 1;
+  transition: all 1.3s ease-in-out;
+  transition-delay: 1.1s;
+}
+
+
+.fgiftxtj c{
+  display: block;
+  width: 190px;
+  height: 40px;
+  background-image: url(https://pngimg.com/d/sword_PNG5525.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  filter: drop-shadow(1px 1px 2px #000)blur(15px)grayscale(1)brightness(90%)contrast(111%);
+  transform: rotate(0deg);
+  position: absolute;
+  bottom: 25px;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+
+.f26jolv4:hover .fgiftxtj c{
+  transform: rotate(0deg);
+  filter: drop-shadow(1px 1px 2px #000)blur(0px)grayscale(1)brightness(90%)contrast(111%);
+  opacity: .5;
+  transition: all 0.7s ease-in-out;
+  transition-delay: 1.4s;
+}
+
+
+.fgiftxtj x{
+  width: 190px;
+  height: 0px;
+  background: linear-gradient(to right, #000, #181818);
+  padding: 0px;
+  margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 8px;
+  text-transform: uppercase;
+  font-family: Bellefair, serif;
+  color: #b3b3b3;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.f26jolv4:hover .fgiftxtj x{
+  height: 8px;
+  padding: 5px 0px;
+  transition: all 0.5s ease-in-out;
+  transition-delay: 1.4s;
+}
