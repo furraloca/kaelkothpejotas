@@ -1,0 +1,352 @@
+@font-face {font-family: "joltenfont1"; src: url('https://dl.dropbox.com/scl/fi/ttcxcaf63hcxg1tr2ju3f/holyrose-bonbongothique.ttf?rlkey=3hv0mem04020ittr0jwh4eln5&st=70g8xz3q');}
+
+.jolten-portada{
+  width: 800px;
+  margin: 0 auto;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+  border-width: 8px;
+  border-style: solid;
+  border-color: rgb(16, 16, 16);
+  border-image: initial;  
+  nackground: #000;
+}
+
+
+.jolten-header{
+  height: 200px;
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.jolten-header-img1{
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.jolten-header-dentro1{
+  width: 390px;
+  height: 92px;
+  background: url(https://images2.imgbox.com/ea/75/BV3jH1Ej_o.jpg);
+  background-size: 100%;
+  background-position: 50% 50%;
+  box-sizing: border-box;
+  margin: 3px;
+  border: 2px solid #181818;
+}
+
+.jolten-header-dentro2{
+  width: 395px;
+  height: 190px;
+  background: url(https://images2.imgbox.com/5a/c7/AoFoN6Sg_o.jpg);
+  background-size: 100%;
+  background-position: 50% 50%;
+  box-sizing: border-box;
+  margin: 3px 3px 3px 0px;
+  border: 2px solid #181818;
+}
+
+.jolten-tit-links-junto{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jolten-tit{
+  width: 46%;
+  padding: 25px 10px;
+  font-family: 'joltenfont1';
+  font-weight: 400;
+  font-size: 64px;
+  letter-spacing: 3px;
+  line-height: 100%;
+  text-align: left;
+ -webkit-text-stroke: .1px var(--bruma);
+  color: #abaaaa;
+  filter: drop-shadow(var(--bruma) 2px 1px 0px); 
+  opacity: .8;
+  position: relative;
+  font-style: italic;
+  z-index:10;
+}
+
+
+.jolten-tit2{
+  position: absolute;
+  padding-left: 10px;
+  z-index: 8;
+  top: 208px;
+  width: 45%;
+  font-weight: 400;
+  font-size: 105px;
+  letter-spacing: 0px;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  -webkit-text-stroke: .1px #abaaaa;
+  filter: drop-shadow(var(--bruma) 2px 2px 1px);
+  background: #000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 100%;
+  text-align: left;
+  opacity: .9;
+  font-style: normal;
+}
+
+.jolten-links{
+  position: relative;
+  width: 395px;
+  height: 120px;
+  left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.jolten-links a{
+  width: 130px; 
+  letter-spacing: 1px;
+  line-height: 100%;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 11px;
+  color: #D1D0D0;
+  font-family: "Bellefair", serif;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 20px 0px;
+  text-decoration: none;
+}
+
+.jolten-links n{
+  position: relative;
+}
+
+.jolten-links n:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: var(--bruma);
+  transform-origin: bottom right;
+  transition: transform 0.85s ease-out;
+}
+
+.jolten-links n:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.jolten-abajo{
+  width: 790px;
+  margin: 5px;
+  height: 310px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jolten-otrosdatos-cofre{
+  width: 260px;
+  height: 310px;
+  box-sizing: border-box;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #101010 #000;
+}
+
+.otrosdatosdentro{
+  box-sizing: border-box;
+  width: 80%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin: auto;
+  letter-spacing: 0px;
+  line-height: 150%;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  color: #abaaaa;
+  font-family: "Bellefair", serif;
+  text-align: justify;
+  text-transform: none;
+  border-bottom: 2px solid #161616;
+}
+
+.otrosdatosdentro span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 40px;
+  height: 30px;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5px;
+  padding-right: 10px;
+  background:-webkit-linear-gradient(var(--bruma), #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+
+@font-face {font-family: "initialjolten1"; src: url('https://dl.dropbox.com/scl/fi/7sbof1m6g9z8uw355185l/Black-Fire.otf?rlkey=o45cx2myxjdm1k5z69nr1j730&st=j48p7cji');}
+
+.jolten-otrosdatos-general{
+  height: 310px;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.jolten-otrosdatos-general info{
+  width: 190px;
+  background: linear-gradient(260deg, #101010 0%, #000000 100%);
+  padding: 14px 10px;
+  margin: 4px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  letter-spacing: 1px;
+  line-height: 110%;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 9px;
+  color: #D1D0D0;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
+
+
+.jolten-otrosdatos-general info n{
+  color: #abaaaa;
+  text-align: right;
+}
+
+.jolten-otrosdatos-general info span{
+  color: var(--bruma);
+  font-weight: 900;
+}
+
+
+.jolten-rombo-gifs{
+  height: 310px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.cenrombo1 {
+  width: 60px;
+  height: 60px;
+  outline: 2px solid #181818;
+  background: #080808;
+  box-shadow: 0px 0px 0px var(--bruma);
+  margin: 15px 0px 15px 25px;
+}
+
+.cenrombo2 {
+  width: 60px;
+  height: 60px;
+  transform: rotate(45deg);
+  outline: 2px solid #181818;
+  position: relative;
+  z-index: 4;
+}
+
+.cenrombo2img {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  transform: rotate(-45deg);
+  background: url(https://images2.imgbox.com/2f/28/O1sTqrzV_o.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.jolten-final{
+  height: 310px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.joltenespadon{
+  width: 140px;
+  height: 40px;
+  position: relative;
+  left: 25px;
+  background: url(https://images2.imgbox.com/41/c0/cUGkztGu_o.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-left: 20px;
+  filter: drop-shadow(2px 1px 1px var(--bruma));
+}
+
+.jolten-final-plist{
+  position: relative;
+  width: 195px;
+  height: 225px;
+  margin: 2px 5px 2px 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #101010 #000;
+}
+
+.jolten-final-plist fondo{
+  box-sizing: border-box;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px; 
+}
+
+.jolten-final-plist i{
+  color: var(--bruma);
+  font-size: 24px;
+  line-height: 150%;
+  padding-top: 6px;
+}
+
+.jolten-final-plist a{
+  text-decoration: none;
+  letter-spacing: 1px;
+  line-height: 100%;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 9px;
+  color: #D1D0D0;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
+
+.jolten-final-plist span{
+  color: var(--bruma);
+  font-size: 8px;
+  letter-spacing: 1px;
+  display: block;
+  line-height: 100%;
+  font-weight: 600;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
+
