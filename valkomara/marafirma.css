@@ -1,0 +1,212 @@
+.firmamar1{
+  width: 280px;
+  height: 235px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  border-left: 1px solid #161616;
+  border-right: 1px solid #161616;
+  border-bottom: 1px solid #161616;
+  transition: all ease-in-out 1s;
+  transition-delay: 0.8s;
+}
+
+
+.firmamar1:hover{
+  border-left: 1px solid var(--sombrias);
+  border-right: 1px solid var(--sombrias);
+  border-bottom: 1px solid var(--sombrias);
+  transition: all ease-in-out 1s;
+}
+
+.firmamar1:hover.firmamar1 quo2:before{
+  background: var(--sombrias);
+  transition: all ease-in-out 1s;
+}
+
+.firmamar1:hover.firmamar1 quo2:after{
+  background: var(--sombrias);
+  transition: all ease-in-out 1s;
+}
+
+.firmamar1 quo2{
+  position: absolute;
+  top: -5px;
+  left: 0;
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;  
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-size: 8.5px;
+  color: #abaaaa;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 95%;
+  text-transform: uppercase;
+  overflow:hidden;
+  filter: blur(0px);
+}
+
+.firmamar1 quo2:before{
+  content: "";
+  width: -webkit-fill-available;
+  height: 1px;
+  display: inline-block;
+  background: #161616;
+  vertical-align: middle; 
+  transition: all ease-in-out 1s;
+  transition-delay: 0.8s;
+}
+
+.firmamar1 quo2:after{
+  content: "";
+  width: -webkit-fill-available;
+  max-width: 10px;
+  height: 1px;
+  display: inline-block;
+  background: #161616;
+  vertical-align: middle; 
+  transition: all ease-in-out 1s;
+  transition-delay: 0.8s;
+}
+
+
+.firmamar1quotext1{
+  position: relative;
+  top: 0px;
+  transition: all ease-in-out 0.5s;
+  transition-delay: 0.8s;
+}
+
+
+.firmamar1:hover .firmamar1quotext1{
+  filter: blur(3px);
+  top: 20px;
+ transition: all ease-in-out 0.5s;
+}
+
+
+.firmamar1quotext2{
+  position: absolute;
+  right: 20px;
+  z-index: 20;
+  top: 20px;
+  transition: all ease-in-out 0.5s;
+  filter: blur(3px);
+  transition-delay: 0.6s;
+}
+
+.firmamar1:hover .firmamar1quotext2{
+  filter: blur(0px);
+  top: 0px;
+  transition: all ease-in-out 0.5s;
+}
+
+
+.firmamarimg{
+  width: 260px;
+  height: 215px;
+  margin: 10px;
+  background-image: url(https://64.media.tumblr.com/3180cbb80fc84c18d184a76109a2c565/fa966226b90b2e8e-38/s540x810/55b458b5eaec6963452560df55c22ae8d08fe7f6.gif);
+  background-position: 50% 50%;
+  background-size: cover;  
+  position: relative;
+  overflow: hidden;
+ filter: blur(0px)brightness(60%)grayscale(0%)contrast(135%)hue-rotate(-10deg)saturate(85%);
+}
+
+.firmamarimg:after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--sombrias);
+  background-blend-mode: hard-light;
+  opacity: .4;
+}
+
+.imgoverlaymar{
+  width: 260px;
+  height: 215px;
+  position: absolute;
+  z-index:20;
+  backdrop-filter: blur(1px)brightness(60%)grayscale(100%)contrast(107%);
+  opacity: 0;
+  transition: all ease-in-out 1s;
+  transition-delay: 0.8s;
+}
+
+.firmamar1:hover .imgoverlaymar{
+  opacity: 1;
+  transition: all ease-in-out 1s;
+}
+
+
+.imgoverlaymar2{
+  width: 260px;
+  height: 215px;
+  position: absolute;
+  z-index:22;
+  opacity: 0;
+ background-image: url(https://images2.imgbox.com/73/a3/4ggOZ7cc_o.gif);
+  filter:grayscale(1)contrast(115%)brightness(70%);
+  background-position: 50% 0%;
+  background-size: cover;
+  mix-blend-mode: lighten;
+  transition: all ease-in-out 1s;
+}
+
+
+.firmamar1:hover .imgoverlaymar2{
+  opacity: .7;
+  transition: all ease-in-out 1s;
+  transition-delay: 0.5s;
+}
+
+
+.marquotf2{
+  position: absolute;
+  z-index:30;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 260px;
+  height: 215px;
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-size: 8.5px;
+  color: #abaaaa;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 205%;
+  text-transform: uppercase;
+  opacity: 0;
+ transition: all ease-in-out 1s;
+  filter:blur(10px);
+}
+
+
+.marquotf2 x{
+  text-shadow: 1px 1px 2px #000;
+  padding: 0px 30px 0px 30px;
+  text-align:center;
+}
+
+.firmamar1:hover .marquotf2{
+  opacity: .9;
+  filter:blur(0px);
+  transition: all ease-in-out 1s;
+  transition-delay: 0.5s;
+}
+
+
+.marquotf2 b{
+  color: var(--sombrias);
+}
