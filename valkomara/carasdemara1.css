@@ -1,10 +1,30 @@
-@font-face {font-family: "marafont1"; src: url('https://dl.dropbox.com/scl/fi/623fi9zhq21r6potcmwiy/The-Solitude.ttf?rlkey=nd06h64y6ejws5dvy9a8ewxi4&st=afllufm0');}
+@font-face{
+font-family: 'marafont1';
+src: url('./The Solitude.woff2') format('woff2'),
+url('./The Solitude.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
-@font-face {font-family: "marasimb1"; src: url('https://dl.dropbox.com/scl/fi/xw7zkeabhx7fn13ccnpy5/Remain3kSymbolic-Regular.ttf?rlkey=m8x3cnq71qtfw3adm1vb143w2&st=u21uc3sk');}
+@font-face{
+font-family: 'marasimb1';
+src: url('./Remain3kSymbolic-Regular.woff2') format('woff2'),
+url('./Remain3kSymbolic-Regular.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
-@font-face {font-family: "marasimb2"; src: url('https://dl.dropbox.com/scl/fi/6ulvq0ddwlbtoskvnw0a3/CreatureBuilderEyes.ttf?rlkey=gxf1f255gssrwdh661dscslzl&st=mbpfum5h');}
+@font-face{
+font-family: 'marasimb2';
+src: url('./CreatureBuilderEyes.woff2') format('woff2'),
+url('./CreatureBuilderEyes.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
-@font-face {font-family: "marastars"; src: url('https://dl.dropbox.com/scl/fi/joabw027u3t9e7eewx3fx/Flaming_Stars__26_Splatters.ttf?rlkey=r31d3wvihph5ivnmeigyfkpek&st=fpokrtka');}
 
 
 .carasmara{
