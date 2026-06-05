@@ -1,0 +1,149 @@
+
+.dicer{
+  width: 360px;
+  height: auto;
+  padding: 40px;
+  position: relative;
+  margin: 0 auto;
+  background: linear-gradient(350deg, #181818 0%, #080808 85%);
+  box-shadow: 2px 3px 20px #00000085, 0 0 10px #181818 inset;
+  border-radius: 8px 120px / 30px;
+}
+
+
+.dicer-arr{
+  position: absolute;
+  top: 32px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center; 
+  width: 95%;
+  height: 20px;
+  font-family: "Bellefair", serif;
+  font-weight: 300;
+  font-size: 7px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: justify;
+  line-height: 130%;
+  color: #abaaaa;
+}
+
+.dicer-arr n{
+  padding: 0px 10px;
+}
+
+
+.dice-icon{
+  margin: 0 auto;
+  width: 45px;
+  height: 45px;
+  transform: rotate(45deg);
+  background: #181818;
+  filter:drop-shadow(2px 2px 2px #080808);
+  border-radius: 4px;
+}
+
+.dice-icon i{
+  display:flex;
+  transform: rotate(-45deg);
+  color: var(--groups);
+  font-size: 30px;
+  padding: 8px 2px 0px 6px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+
+.dicetit{
+  display: block;
+  padding-top: 25px;
+  font-family: "Bellefair", serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--groups);
+  text-shadow: 1px 1px 3px #000;
+  -webkit-text-stroke: .1px var(--groups);
+}
+
+
+.dicer txt{
+  display: block;
+  padding: 10px 10px 20px 10px;
+  height: auto;
+  font-family: "Rosarivo", cursive;
+  font-weight: 300;
+  font-size: 13px;
+  letter-spacing: 0px;
+  text-align: justify;
+  line-height: 165%;
+  color: #abaaaa;
+  text-shadow: 0px 1px 1px #000;
+  filter: drop-shadow(1px 0px 0px rgba(0,0,0, .4));
+}
+
+.dicer sub{
+  display: block;
+  font-family: "Bellefair", serif;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 100%;
+  font-size: 19px;
+  letter-spacing: .5px;
+  filter:drop-shadow(0px 0px 0px #080808);  
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+
+.dicer txt c{
+  font-weight: 300;
+  letter-spacing: .5px;
+  font-size: 14px;
+  position: relative;
+}
+
+.dicer acierto{
+  letter-spacing: .5px;
+  font-size: 14px;
+  position: relative;
+  font-weight: 800;
+}
+
+.dicer acierto:before{
+  position: relative;
+  padding-right: 5px;
+  content: "\E09D";
+  font-size: 13px;
+  font-family: "game-icons";
+  color: var(--groups);
+}
+
+.dicer txt c:before{
+  position: relative;
+  padding-right: 5px;
+	content: "\EE99";
+  font-size: 13px;
+  font-family: "game-icons";
+  opacity: .9;
+  color: #646464;
+}
+
+
+
+.dice-icon-debajo{
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  transform: rotate(0deg);
+  color: #181818;
+  font-size: 55px;
+  text-shadow: 2px 2px 1px var(--groups);
+  filter:drop-shadow(1px 1px 3px var(--groups));
+  opacity: .4;
+}
