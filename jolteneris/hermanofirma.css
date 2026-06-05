@@ -1,0 +1,265 @@
+.jenna-f-firma{
+  width: 320px;
+  height: 220px;
+  margin: 0 auto;
+  outline: 1px solid #181818;
+  outline-offset: 0px;
+  position: relative;
+  transition: all 1.1s ease-in-out;
+  transition-delay: 1.2s;
+  border: 6px solid #020202;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.hermano.jenna-f-firma{
+  border: 4px solid;
+  border-image-slice: 1;
+  border-width: 4px;
+  border-image-source: linear-gradient(to bottom, #181818, #020202);
+  outline: 1px solid #181818;
+  outline-offset: 3px;
+}
+
+
+.jenna-f-firma:hover{
+  outline: 1px solid var(--hybrid);
+  transition: all 1.1s ease-in-out;
+  transition-delay: 1.0s; 
+}
+
+.hermano.jenna-f-firma:hover{
+  outline: 1px solid var(--groups);
+  border-image-source: linear-gradient(to bottom, #181818, var(--groups));
+  transition: all 1.1s ease-in-out;
+  transition-delay: 1.0s; 
+}
+
+
+.jenna-f-img {
+  width: 320px;
+  height: 220px;
+  background: url(https://images2.imgbox.com/2c/22/wXuX52QC_o.jpg);
+  background-size: 100%; 
+  background-position: 50% 50%; 
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all 1.1s ease-in-out;
+  transition-delay: 1.0s;
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+}
+
+.hermano.jenna-f-img{
+  background: url(https://i.pinimg.com/1200x/19/24/80/192480997f70b29e5a20d51867fe88c5.jpg);
+  background-size: 100%; 
+  background-position: 50% 50%; 
+  filter: grayscale(1)brightness(40%)contrast(92%);
+  -webkit-filter: grayscale(1)brightness(40%)contrast(92%);
+}
+
+
+.jenna-f-firma:hover .jenna-f-img{
+  transition: all 1.1s ease-in-out;
+  opacity: 0;
+}
+
+
+.hermano.jenna-f-firma:hover .hermano.jenna-f-img{
+  transform: scale(1.5);
+  transition: all 1.1s ease-in-out;
+  opacity: 0;
+}
+
+
+.jenna-f-img-2 {
+  width: 320px;
+  height: 220px;
+  background: url(https://images2.imgbox.com/5a/5a/6M1cRL6h_o.jpg);
+  background-size: 100%; 
+  background-position: 50% 50%; 
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all 1.1s ease-in-out;
+  transition-delay: 1.0s;
+  position: absolute;
+  top: 0px;
+  z-index: 12;
+  opacity: 0;
+}
+
+
+.hermano.jenna-f-img-2{
+  background: url(https://64.media.tumblr.com/926c51cae5d428371b005d3331103ad7/deefd8b49fc57255-09/s540x810/7e22bada318b2660203d5c84f5bf2c38cd0a0a4f.gif);
+  background-size: 110%; 
+  background-position: 50% 50%; 
+  filter: grayscale(1)brightness(99%)contrast(104%);
+  -webkit-filter: grayscale(1)brightness(99%)contrast(104%);
+  transform: scale(1.5);
+}
+
+
+.jenna-f-firma:hover .jenna-f-img-2{
+  transition: all 1.1s ease-in-out;
+  opacity: 1;
+}
+
+
+.hermano.jenna-f-firma:hover .hermano.jenna-f-img-2{
+  transform: scale(1);
+  transition: all 1.1s ease-in-out;
+  opacity: 1;
+}
+
+
+.jenna-f-lyric1{
+  width: 145px;
+  position: relative;
+  bottom: 100px;
+  left: 10px;
+  z-index: 14;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  text-align: justify;
+  letter-spacing: .5px;
+  font-size: 10px;
+  line-height: 135%;
+  color: #ababab;
+  text-transform: uppercase;
+  opacity: 1;
+  transition: all 1.1s ease-in-out; 
+  transition-delay: 1.0s;
+}
+
+
+.hermano.jenna-f-lyric1{
+  bottom: 80px;
+  text-shadow: 1px 1px 1px #000;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 900;
+  color: #d1d1d1;
+}
+
+
+.jenna-f-lyric1 span{
+  font-family: "jennafont2", sans-serif;
+  font-size: 20px;
+  line-height: 135%;
+  letter-spacing: -1px;
+  color: #ababab;
+  text-shadow: 0px 0px 6px var(--hybrid);
+  -webkit-text-stroke: 0px #ababab;
+}
+
+.hermano.jenna-f-lyric1 span{
+  font-family: "Manufacturing Consent", system-ui;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 0px var(--groups);
+  color: transparent;
+  -webkit-text-stroke: .1px #000;
+  text-transform: none;
+  font-size: 36px;
+  line-height: 100%;
+  position: relative;
+  top: -5px;
+}
+
+.jenna-f-firma:hover .jenna-f-lyric1{
+  filter: blur(6px); 
+  opacity: 0;
+  transition: all 1.1s ease-in-out;
+}
+
+
+.hermano.jenna-f-firma:hover .hermano.jenna-f-lyric1{
+  filter: blur(6px); 
+  opacity: 0;
+  transition: all 1.1s ease-in-out;
+}
+
+
+.jenna-f-img-filtro{
+  position: absolute;
+  z-index: 18;
+  width: 400px;
+  height: 420px;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+  background: var(--hybrid);
+  backdrop-filter: grayscale(1);
+  mix-blend-mode: multiply;
+  transform: translateY(-690px);
+  transition: all 1.1s ease-in-out;   
+}
+
+.hermano.jenna-f-img-filtro{
+  background: var(--groups);
+  transform: translateY(-720px);
+}
+
+
+.jenna-f-firma:hover .jenna-f-img-filtro{
+  transform: translateY(-300px);
+  transition: all 1.1s ease-in-out;
+  transition-delay: 1s;
+}
+
+.jenna-f-lyric-dentro{
+  position: absolute;
+  top: 0px;
+  z-index: 19;
+  width: 100%;
+  height:  100%;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  align-content: center;
+  margin: 0 auto;
+  opacity: 0;
+  transition: all .7s ease-in-out; 
+  transform: scale(0.90);
+}
+
+.jenna-f-lyric-dentro t{
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  text-align: justify;
+  letter-spacing: 2px;
+  font-size: 11px;
+  line-height: 125%;
+  color: #ababab;
+  text-transform: uppercase;
+}
+
+
+.hermano.jenna-f-lyric-dentro t{
+  width: 65%;
+  margin: 0 auto;
+  font-size: 9px;
+  text-align: justify;
+  font-weight: 800;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 185%;
+  letter-spacing: 1px;
+}
+
+
+.jenna-f-lyric-dentro b{
+    text-decoration: underline 2px solid var(--hybrid);
+}
+
+.jenna-f-lyric-dentro span{
+  text-decoration: line-through 2px solid var(--hybrid);
+  font-style: italic;
+}
+
+
+.jenna-f-firma:hover .jenna-f-lyric-dentro{
+  opacity: 1;
+  transform: scale(1);
+  transition: all 1.1s ease-in-out; 
+  transition-delay: 1.5s;
+}
+
+
+
