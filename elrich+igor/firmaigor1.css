@@ -1,0 +1,283 @@
+@font-face{
+font-family: 'igorfont1';
+src: url('./fancy-quisley.regular.woff2') format('woff2'),
+url('./fancy-quisley.regular.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
+
+.f1igorb{
+  width: 332px;
+  height: 192px;
+  border: 3px solid #181818;
+  outline: 3px solid #181818;
+  outline-offset: 2px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(195deg, #000, #000, #000, var(--groups));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1.7s ease-in-out; 
+}
+
+
+.f1igorb:before{
+  position: absolute;
+  z-index: 1;
+  content: "";
+  opacity: 0;
+  background: linear-gradient(185deg, var(--groups), var(--groups), var(--groups), var(--groups));
+  inset: 0;
+  transition: all 1.7s ease; 
+}
+
+.f1igorb:hover:before{
+  opacity: 1;
+  transition: all 1.7s ease; 
+}
+
+
+.f1igorimg{
+  width: 330px;
+  height: 190px;
+  background: url(https://64.media.tumblr.com/c9df30046b97f0eced13ce852c812f24/df6232b4ac62df93-2e/s540x810/cfe6ef6b2c5d5dc44747048d2b467fa0567b1f13.gif);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  z-index: 10;
+  filter: grayscale(10%)brightness(72%)contrast(97%)hue-rotate(24deg);
+  transition: all 1.7s ease-in-out; 
+  transition-delay: .8s;
+}
+
+.f1igorb:hover .f1igorimg{
+  filter: grayscale(100%)brightness(50%)contrast(102%)hue-rotate(0deg);
+  transition: all 1.7s ease-in-out; 
+}
+
+
+
+.f1igortxt1{
+  width: 120px;
+  height: 180px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 12;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-end;
+  justify-content: center;
+  opacity: 1;
+  transition: all 1.7s ease-in-out; 
+  transition-delay: .8s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.f1igorb:hover .f1igortxt1{
+  width: 0px;
+  transition: all 1.7s ease-in-out; 
+}
+
+
+.f1igortxt1 c{
+  position: relative;
+  width: 100%;
+  text-align: left;
+  font-size: 37px;
+  font-family: "igorfont1";
+  line-height: 100%;
+  color: #abaaaa;
+  font-weight: 400; 
+  letter-spacing: 1.5px;
+  filter: drop-shadow(var(--bruma) 1px 1px 1px);
+  text-shadow: #000 1px 1px 0px;
+}
+
+.f1igortxt1 t{
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-family: "Fanwood Text", serif;
+  letter-spacing: 2px;
+  color: #abaaaa;
+  line-height: 145%;
+  text-transform: uppercase;
+  font-size: 8.5px;
+  font-weight: 800;
+  text-shadow: #000 1px 1px 0px; 
+  font-style: normal;
+}
+
+.f1igortxt1 i{
+  position: absolute;
+  bottom: 53px;
+  left: 30px;
+  font-size: 32px;
+  line-height: 100%;
+  opacity: 1;
+  color: #abaaaa;
+  text-shadow: #000 1px 1px 0px;
+  filter: drop-shadow(var(--bruma) 1px 1px 1px);
+  animation: tilt-n-move-shaking 0.95s infinite; 
+}
+
+@keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+
+
+
+
+.f1igoroverlay{
+  width: 634px;
+  height: 494px;
+  border-radius: 100%;
+  background: var(--bruma);
+  mix-blend-mode: overlay;
+  backdrop-filter: brightness(90%);
+  position: absolute;
+  z-index: 18;
+  right: -600px;
+  top: -434px;
+  transition: all 1.7s ease;
+}
+
+.f1igorb:hover .f1igoroverlay{
+  right: -50px;
+  top: -150px;
+  transition: all 1.7s ease; 
+  transition-delay: 1.3s;
+}
+
+
+
+.f1igorimgbarco{
+   width: 330px;
+  height: 190px;
+  background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8115HKEqvuOsbMoDLnmCJYxWTBoOaVlx9hqulvtyWdh389tDU52_NBhqEzKxyjGkW6GakM5p-lzuYhScGskO6FPqayLf32Ba0R2qunN3wxUGhexsBVGfgVgJB4gR6f7E7YOpck9U4IbXV/s1600/FamiliarHairyHamster-size_restricted.gif);
+  background-size: 114%;
+  background-position: 50% 80%;
+  position: absolute;
+  top: 1px;
+  z-index: 17;
+  filter: grayscale(100%)brightness(78%)contrast(101%);
+  opacity: 0;
+  transition: all 1.7s ease-in-out; 
+}
+
+
+.f1igorb:hover .f1igorimgbarco{
+  opacity: 1;
+  transition: all 1.7s ease-in-out; 
+  transition-delay: 1.6s;
+}
+
+
+
+.f1igortxt2{
+  width: 100px;
+  height: 190px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  z-index: 20;
+  position: absolute;
+  top: 0px;
+  right: 16px;
+  opacity: 0;
+  transition: all 1.7s ease-in-out; 
+}
+
+
+.f1igorb:hover .f1igortxt2{
+  opacity: 1;
+  transition: all 1.7s ease-in-out; 
+  transition-delay: 2s;
+}
+
+.f1igortxt2 c{
+  padding: 4px 3px 3px 5px;
+  background: linear-gradient(to left, var(--bruma), transparent);
+  font-family: "Fanwood Text", serif;
+  letter-spacing: 2.5px;
+  color: #abaaaa;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-size: 7px;
+  font-weight: 800;
+  text-shadow: #000 1px 1px 0px;
+  filter: blur(3px);
+  opacity: 0;
+  transition: all 1.7s ease-in-out; 
+}
+
+.f1igorb:hover .f1igortxt2 c{
+  filter: blur(0px);
+  opacity: 1;
+  transition: all 1.7s ease-in-out; 
+  transition-delay: 2s;
+}
+
+
+.f1igortxt2 t{
+  display: block;
+  padding: 0px 10px;
+  font-size: 36px;
+  font-family: "igorfont1";
+  line-height: 100%;
+  font-weight: 400; 
+  letter-spacing: 1px;
+  text-shadow: rgba(171, 170, 170, .4) 1px 1px 5px;
+  background: linear-gradient(to right, var(--bruma), #abaaaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 0%;
+  opacity: 0;
+  white-space: nowrap;
+  transition: all 1.7s ease-in-out; 
+}
+
+.f1igorb:hover .f1igortxt2 t{
+  opacity: 1;
+  width: 85%;
+  transition: all 1.7s ease-in-out; 
+  transition-delay: 2s;
+}
+
+
+.f1igortxt2 lin{
+  display: block;
+  position: absolute;
+  left: -50px;
+  bottom: 64px;
+  width: 20%;
+  white-space: nowrap;
+  height: 3px;
+  background: linear-gradient(to right, var(--bruma), transparent);
+  opacity: 0;
+  transition: all 1.7s ease-in-out; 
+}
+
+
+.f1igorb:hover .f1igortxt2 lin{
+  opacity: 1;
+  width: 88%;
+  left: 8px;
+  transition: all 1.7s ease-in-out; 
+  transition-delay: 2.8s;
+}
