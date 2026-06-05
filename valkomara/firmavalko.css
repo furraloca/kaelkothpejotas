@@ -1,0 +1,194 @@
+.firmavlk1{
+  width: 280px;
+  height: 235px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  border-left: 1px solid #161616;
+  border-right: 1px solid #161616;
+  border-bottom: 1px solid #161616;
+  transition: all ease-in-out 1s;
+  transition-delay: 0.8s;
+}
+
+.firmavlk1:hover{
+  border-left: 1px solid var(--sombrias);
+  border-right: 1px solid var(--sombrias);
+  border-bottom: 1px solid var(--sombrias);
+  transition: all ease-in-out 1s;
+}
+
+.firmavlk1:hover.firmavlk1 quo:before{
+  background: var(--sombrias);
+  transition: all ease-in-out 1s;
+}
+
+.firmavlk1:hover.firmavlk1 quo:after{
+  background: var(--sombrias);
+  transition: all ease-in-out 1s;
+}
+
+.firmavlk1 quo{
+  position: absolute;
+  top: -5px;
+  left: 0;
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;  
+  font-family: "Grenze", serif;
+  font-style: normal;
+  font-size: 10.5px;
+  color: #abaaaa;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  line-height: 95%;
+  text-transform: uppercase;
+  overflow:hidden;
+  filter: blur(0px);
+}
+
+.firmavlk1 quo:before{
+  content: "";
+  width: -webkit-fill-available;
+  height: 1px;
+  display: inline-block;
+  background: #161616;
+  vertical-align: middle; 
+  transition: all ease-in-out 1s;
+  transition-delay: 0.8s;
+}
+
+.firmavlk1 quo:after{
+  content: "";
+  width: -webkit-fill-available;
+  height: 1px;
+  display: inline-block;
+  background: #161616;
+  vertical-align: middle; 
+  transition: all ease-in-out 1s;
+  transition-delay: 0.8s;
+}
+
+
+.quotext1{
+  position: relative;
+  top: 0px;
+  transition: all ease-in-out 0.5s;
+  transition-delay: 0.8s;
+}
+
+
+.firmavlk1:hover .quotext1{
+  filter: blur(3px);
+  top: 20px;
+ transition: all ease-in-out 0.5s;
+}
+
+
+.quotext2{
+  position: absolute;
+  z-index: 20;
+  top: 20px;
+  transition: all ease-in-out 0.5s;
+  filter: blur(3px);
+  transition-delay: 0.6s;
+}
+
+.firmavlk1:hover .quotext2{
+  filter: blur(0px);
+  top: 0px;
+  transition: all ease-in-out 0.5s;
+}
+
+
+.firmavlkimg{
+  width: 260px;
+  height: 215px;
+  margin: 10px;
+  background-image: url(https://64.media.tumblr.com/4a675309d67b29b0cb2f0691b9b2b785/b14d36a6ef72f8b3-f3/s540x810/560af46c4d3c7c06d1650f2e5b4657d464601063.gif);
+  background-position: 50% 50%;
+  background-size: cover;  
+  position: relative;
+  overflow: hidden;
+  background-blend-mode: darken;
+  background-color: var(--sombrias);
+}
+
+.imgoverlay{
+  width: 260px;
+  height: 215px;
+  position: absolute;
+  z-index:20;
+  backdrop-filter: blur(0px)brightness(85%)grayscale(100%)contrast(107%);
+  opacity: 0;
+  transition: all ease-in-out 1s;
+  transition-delay: 0.8s;
+}
+
+.firmavlk1:hover .imgoverlay{
+  opacity: 1;
+  transition: all ease-in-out 1s;
+}
+
+
+.imgoverlay2{
+  width: 260px;
+  height: 215px;
+  position: absolute;
+  z-index:22;
+  opacity: 0;
+ background-image: url(https://images2.imgbox.com/ea/1f/PQRIzmFR_o.gif);
+  filter:grayscale(1)contrast(115%)brightness(45%);
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: lighten;
+  transition: all ease-in-out 1s;
+}
+
+
+.firmavlk1:hover .imgoverlay2{
+  opacity: .9;
+  transition: all ease-in-out 1s;
+  transition-delay: 0.5s;
+}
+
+
+.fvlkquoted{
+  position: absolute;
+  top: 210px;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 25;
+  width: 260px;
+  height: auto;
+  font-family: "Grenze", serif;
+  font-style: normal;
+  font-size: 9.5px;
+  color: #abaaaa;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  line-height: 100%;
+  text-transform: uppercase;
+  transition: all ease-in-out 1s;
+  opacity: 0;
+  text-shadow: 1px 1px 2px #000;
+  filter:blur(3px);
+}
+
+.firmavlk1:hover .fvlkquoted{
+  opacity: 1;
+  filter:blur(0px);
+  transition: all ease-in-out 1s;
+  transition-delay: 0.5s;
+}
+
+.fvlkquoted b{
+  font-weight: 500;
+  color: var(--sombrias);
+}

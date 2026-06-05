@@ -1,0 +1,632 @@
+@font-face {font-family: "marafont1"; src: url('https://dl.dropbox.com/scl/fi/623fi9zhq21r6potcmwiy/The-Solitude.ttf?rlkey=nd06h64y6ejws5dvy9a8ewxi4&st=afllufm0');}
+
+@font-face {font-family: "marasimb1"; src: url('https://dl.dropbox.com/scl/fi/xw7zkeabhx7fn13ccnpy5/Remain3kSymbolic-Regular.ttf?rlkey=m8x3cnq71qtfw3adm1vb143w2&st=u21uc3sk');}
+
+@font-face {font-family: "marasimb2"; src: url('https://dl.dropbox.com/scl/fi/6ulvq0ddwlbtoskvnw0a3/CreatureBuilderEyes.ttf?rlkey=gxf1f255gssrwdh661dscslzl&st=mbpfum5h');}
+
+@font-face {font-family: "marastars"; src: url('https://dl.dropbox.com/scl/fi/joabw027u3t9e7eewx3fx/Flaming_Stars__26_Splatters.ttf?rlkey=r31d3wvihph5ivnmeigyfkpek&st=fpokrtka');}
+
+
+.carasmara{
+  margin: 0 auto;
+  width: 870px;  
+  height: 450px;
+  position: relative;
+  overflow: hidden; 
+  background: url(https://images2.imgbox.com/1d/40/ItzbER0m_o.jpg);
+  background-size: 100%;
+  background-position: 50% 50%;
+margin-left: 13px;
+}
+
+
+.carasmarafil{
+  width: 850px;  
+  height: 430px;
+  margin: 10px;
+  box-sizing: border-box;
+  display: flex;
+  background: rgba(0,0,0, 0);
+}
+
+
+
+.carasmara-arq{
+  width: 290px;
+  height:100%;
+  background: #040404;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid #121212;
+  outline-offset: -4px;
+  border-radius: 0px;
+  transition: all ease-in-out 0.5s;
+  opacity: .8;
+}
+
+.carasmara:hover .carasmara-arq{
+  opacity: 1;
+  transition: all ease-in-out 0.5s;
+}
+
+.arq-tipo{
+  display: flex;
+  margin: 10px 50px;
+  width: fit-content;
+  height: auto;
+  line-height: 100%;
+  font-size: 10px;
+  text-align: justify;
+  font-family: "PT Serif", serif;
+  color: #abaaaa;
+  letter-spacing: 1px; 
+  background: var(--sombrias);
+  padding: 3px 9px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.arq-nombre{
+  width: 100%;
+  text-align: center;
+  font-family: 'marafont1';
+  text-shadow: 2px 2px 0px #000;
+  font-weight: 300;
+  font-size: 44px;
+  letter-spacing: 2px;
+  line-height: 100%;
+  margin: 0px 0px 25px 0px;
+  opacity: 1;
+  color: var(--groups); 
+}
+
+
+.arq-foto{
+  width: 164px;
+  height: 150px;
+  background: url(https://images2.imgbox.com/ac/d2/qicwrk8k_o.png);
+  background-size: 100%;
+  background-position: 50% 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 20;
+  transition: all ease-in-out 0.5s;
+  filter:brightness(100%)contrast(100%)drop-shadow(0px 0px 0px var(--sombrias));
+}
+
+.carasmara:hover .arq-foto{filter:brightness(80%)contrast(107%)drop-shadow(0px 0px 0px var(--sombrias));transition: all ease-in-out 0.5s;
+}
+
+
+.arq-datos{
+  width: 80%;
+  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  font-size: 9px;
+  font-family: "PT Serif", serif;
+  color: #abaaaa;
+  letter-spacing: 1px; 
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.arq-datos i{
+  color: var(--sombrias);
+}
+
+.arq-datos n{
+  text-transform: lowercase;
+  font-family: "marasimb1";
+  color: var(--sombrias);
+  font-size: 25px;
+}
+
+
+
+
+
+
+.caras-bg{
+  margin: 0 auto;
+  width: 550px;
+  height: 430px;
+  overflow: auto;
+  scrollbar-color: #161616 transparent;
+  scrollbar-width: thin;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.caras1{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  width: 260px;
+  height: 385px;
+  border-radius: 0px;
+  background: url(https://images2.imgbox.com/39/71/tK5tFFGM_o.jpg);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+  background-color: var(--sombrias); 
+  background-blend-mode: multiply;
+  outline: 1px solid #121212;
+  transition: all ease-in-out 0.5s;
+}
+
+.caras1:hover{
+  outline: 1px solid var(--sombrias);
+  transition: all ease-in-out 0.5s;
+}
+
+.caras1:before{
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  content: "";
+  position: absolute;
+  z-index: 20;
+  backdrop-filter: grayscale(100%);
+  transition: all ease-in-out 0.5s;
+}
+
+
+.caras1:hover.caras1:before{
+  border-radius: 0px;
+  backdrop-filter: grayscale(20%)blur(3px);
+  transition: all ease-in-out 0.5s;
+}
+
+
+.carasfiltro{
+  width: 260px;
+  height: 385px;
+  border-radius: 0px;
+  overflow: hidden;
+  position: relative;
+  z-index: 25;
+}
+
+
+.caras-nombre{
+  width: 280px;
+  height: 190px;
+  border-radius: 0%;
+  background: #040404;
+  position: absolute;
+  z-index:25;
+  bottom: -30px;
+  right: -15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center; 
+  align-content: flex-start;
+  flex-wrap: wrap;
+  transform: rotate(-10deg);
+}
+
+
+.caras-nombre nomb{
+  transform: rotate(10deg);
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "marafont1";
+  color: var(--sombrias);
+  padding-top: 20px;
+  transition: all ease-in-out 0.5s;
+}
+
+.caras1:hover .caras-nombre nomb{
+  transform: rotate(6deg);
+  transition: all ease-in-out 0.5s;
+}
+
+.caras-nombre codemara1{
+  display: block;
+  width: 260px;
+  transform: rotate(10deg);
+  margin-top: 8px;
+  color: #abaaaa;
+}
+
+.carasfiltroden{
+  width: 260px;
+  height: 195px;
+  border-radius: 0px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 12;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 9.5px;
+  font-family: "PT Serif", serif;
+  color: #abaaaa;
+  letter-spacing: .5px; 
+  font-weight: 500;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 1px #000;
+  line-height: 100%;
+  text-align: justify;
+  transition: all ease-in-out 0.5s;
+}
+
+.caras1:hover .carasfiltroden{
+  opacity: 1;
+  transition: all ease-in-out 0.5s;
+}
+
+.carasfiltroden n{
+  display: block;
+  padding: 0px 20px;
+  margin-top: 60px;
+}
+
+.carasfiltroden t{
+  border-bottom: 1px solid var(--sombrias);
+  padding-bottom: 2px;
+}
+
+
+.carasfiltroden qu{
+  display: block;
+  margin-top: 28px;
+  padding: 0px 35px;
+  position: relative;
+  font-size: 8px;
+  letter-spacing: 1px; 
+  font-weight: 500;
+  line-height: 155%;
+}
+
+.carasfiltroden qu:before{
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "\f10d";
+  color: var(--sombrias);
+  padding-right: 5px;
+  font-size:10px;
+  position: absolute;
+  left: 20px;
+  top: 1px;
+}
+
+.mision{
+  width: 100%;
+  height: 55px;
+  background: rgba(0,0,0, .0);
+  margin-top: 20px;
+  margin-left: 15px;
+  padding-left: 5px;
+  margin-right: 15px;
+  padding-right: 5px;
+  overflow: auto;
+  scrollbar-color: var(--sombrias) transparent;
+  scrollbar-width: thin;
+  line-height: 150%;
+  text-transform: none;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+.carasicontop{
+  position: absolute;
+  z-index: 30;
+  width: 40px;
+  height: 40px;
+  border-radius: 0px;
+  outline: 1px solid #121212;
+  background: rgba(0,0,0, 1);
+  top: -21px;
+  left: 110px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "marafont1";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  transition: all ease-in-out 0.5s;
+}
+
+.caras1:hover .carasicontop{
+  outline: 1px solid var(--sombrias);
+  transition: all ease-in-out 0.5s;
+}
+
+
+.carasicontop n{
+  color: var(--sombrias);
+  font-weight: 300;
+  transform: rotate(-45deg);
+}
+
+.carasicontop c{
+  font-family: 'marasimb2';
+  position: relative;
+  top: 2px;
+  left: 2px;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: var(--sombrias);
+  font-weight: 300;
+  transform: rotate(-45deg);
+  transition: all ease-in-out 0.5s;
+}
+
+
+.caras1:hover .carasicontop c{
+  font-size: 35px;
+  transition: all ease-in-out 0.5s;
+
+}
+
+
+
+
+
+.cabeceramasc1{
+  height: 160px;
+  margin: 0 auto;
+  width: 870px; 
+  position: relative;
+  overflow: hidden; 
+  background: #040404;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+margin-left: 13px;
+}
+
+.cabtit{
+  margin-left: 20px;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "marafont1";
+  color: #000;
+  padding-top: 0px;
+  filter: drop-shadow(0px 0px 4px var(--sombrias));
+  line-height: 100%;
+}
+
+.cabtit i{
+  color: var(--sombrias);
+  padding-bottom: 0px;
+  font-size: 45px;
+  padding: 0px 6px;
+  position: relative;
+  top: 5px;
+  font-style: normal;
+  animation: blurr1 3.3s infinite;
+}
+
+.cabtit span{
+  color: var(--sombrias);
+  font-family: "marastars";
+  font-size: 8px;
+  position: relative;
+  top: 0px;
+  padding-right: 6px;
+  filter: blur(0px);
+  animation: blurr1 2.6s infinite;
+  opacity: .9;
+}
+
+@keyframes blurr1 {
+  0% {filter: blur(0px);}
+  50% {filter: blur(0px);}
+  54% {filter: blur(2px);}
+  55% {filter: blur(0px);}
+  56% {filter: blur(0px);}
+  59% {filter: blur(2px);}
+  60% {filter: blur(0px);}
+  96% {filter: blur(0px);}
+  98% {filter: blur(2px);}
+  100% {filter: blur(0px);}
+}
+
+
+.derretidasmas{
+  margin-right: 20px;
+  z-index: 10;
+  width: 140px;
+  height: 140px;
+  background: url(https://images2.imgbox.com/68/28/dtAix3ZE_o.png);
+  background-size: 100%;
+  background-position: 50% 50%;
+  filter: drop-shadow(0px 0px 4px var(--sombrias));
+  position: relative;
+  top: 5px;
+  opacity: .6;
+}
+
+
+.derretidasmascont{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  z-index: 10;
+  width: 140px;
+  height: 140px;
+  z-index: 15;
+  font-size: 29px;
+  text-transform: uppercase;
+  font-family: "marafont1";
+  color: var(--sombrias);
+  padding-top: 0px;
+  filter: drop-shadow(0px 0px 0px var(--sombrias));
+  line-height: 100%;
+  position: absolute;
+  right: 18px;
+  opacity: 1;
+}
+
+
+.rombo1{
+  width: 280px;
+  height: 280px;
+  transform: rotate(45deg);
+  position: absolute;
+  border: 1px solid #121212;
+  right: -110px;
+  opacity: 1;
+}
+
+.lyricsmar1{
+  height: 120px;
+  margin: 0 auto;
+  width: 870px; 
+  position: relative;
+  overflow: hidden; 
+  background: #040404;
+  background: url(https://cdn.dribbble.com/userupload/22394314/file/original-0799c371595d65e70c8f977444eb9f86.gif);
+  background-size: 53%;
+  background-position: 50% 50%;
+  border-top: 1px solid #121212;
+  border-bottom: 1px solid #121212;
+margin-left: 13px;
+}
+
+.lyricsover{
+  width: 100%;
+  height: 100%;
+  backdrop-filter:grayscale(100%)brightness(50%)contrast(105%)blur(1px);
+  background: rgba(0,0,0, .7);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+
+.lyricsover n{
+  padding: 0px 130px;
+  display: block;
+  font-size: 8px;
+  font-family: "PT Serif", serif;
+  color: #abaaaa;
+  letter-spacing: 2px; 
+  font-weight: 500;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #000;
+  line-height: 190%;
+  text-align: justify;
+  position: relative;
+  z-index:10;
+  opacity: .8;
+}
+
+
+.lyricsover b{
+  background: var(--sombrias);
+  padding: 1px 1px 1px 2px;
+  font-weight: 500;
+}
+
+.lyricsover n:before{
+  position: absolute;
+  z-index:8;
+  left: 95px;
+  top: 5px;
+  font-size: 20px;
+  font-family:"Font Awesome 5 Pro";
+  font-weight:900;
+  content: "\f10d";
+  color: var(--sombrias);
+  color: #000;
+  filter: drop-shadow(1px 1px 2px var(--sombrias));
+  line-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.codemara1{
+  width: 245px;
+  margin-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+  transform: rotate(10deg);
+  position: relative;
+  top: 10px;
+}
+
+
+
+.codemara1 tit{
+  width: 100%;
+  padding-top: 5px;
+  border-bottom: none;
+  position: relative;
+ font: 12px Cinzel;
+  font-weight:500;
+  text-transform: uppercase;
+  line-height: 100%;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+  color: var(--groups);
+  border-bottom: 1px solid var(--sombrias);
+}
+
+.codemara1 x{
+  height: 60px;
+  scrollbar-color: #181818 transparent;
+  scrollbar-width: thin;
+  overflow: auto;
+  color: #4d4d4d;
+  letter-spacing: 1px;
+  font: 10px Cinzel;
+  padding-top: 5px;
+}
+
+.codemara1 a{
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+
+
+
