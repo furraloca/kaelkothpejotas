@@ -26,6 +26,16 @@ font-display: swap;
 }
 
 
+@font-face{
+font-family: 'marastars';
+src: url('./Flaming_Stars__26_Splatters.woff2') format('woff2'),
+url('./Flaming_Stars__26_Splatters.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
+
+
 
 .carasmara{
   margin: 0 auto;
