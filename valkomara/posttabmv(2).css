@@ -1,0 +1,316 @@
+@font-face {font-family: "valkofont1"; src: url('https://dl.dropbox.com/scl/fi/9vyw2y42w7lds2d2k7gpz/BreatheFireIi-2z9W.ttf?rlkey=c3akbdcmrnon7ks1aumgye3dv&st=ul0g0qgo');}
+
+@font-face {font-family: "valkoinicial1"; src: url('https://dl.dropbox.com/scl/fi/f7i4l85opqgovoax5qs8h/Frost-Scream.otf?rlkey=t5jkvhfzhxkiiqcp0ti2qsv8p&st=fulycla1');}
+
+@font-face {font-family: "marafont1"; src: url('https://dl.dropbox.com/scl/fi/623fi9zhq21r6potcmwiy/The-Solitude.ttf?rlkey=nd06h64y6ejws5dvy9a8ewxi4&st=afllufm0');}
+
+@font-face {font-family: "marainicial1"; src: url('https://dl.dropbox.com/scl/fi/p55mhmf5ivmsk8p5fp5va/MozaRegular-lgrBy.ttf?rlkey=fcr4l7v8cc4hip6kdpgimo3ym&st=r1sj76ht');}
+
+
+
+.postt-valko{
+    width: 450px;
+    margin: 0 auto;
+    line-height: 150%;
+    font-size: 15.5px;
+    text-align: justify;
+    font-family: "Gideon Roman", serif;
+    color: #abaaaa;
+    letter-spacing: .5px;
+}
+
+
+.pvlk-icon{
+  width: 45px;
+  height: 45px;
+  filter: drop-shadow(0px 0px 0px var(--groups));
+  margin: 0 auto;
+  opacity: 1;
+  position: relative;
+}
+
+.pvlk-icon img{
+  width: 45px;
+  height: 45px;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  z-index: 20;
+}
+
+
+.pvlk-icon2{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 36px;
+  color: var(--groups);
+}
+
+
+.pvlk-tit{
+  text-align: center;
+  font-family: 'valkofont1';
+  text-shadow: 2px 2px 0px var(--groups);
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 2px;
+  line-height: 100%;
+  margin: 5px 0px 10px 0px;
+  opacity: .8;
+}
+
+.pvlk-subt{
+  font-family: "Grenze", serif;
+  font-style: normal;
+  font-size: 11px;
+  color: #6f6f6f;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 135%;
+  text-align: center; 
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.lettervalk {
+  float: left;
+  font: 60px 'valkoinicial1';
+  width: 80px;
+  text-align: center;
+  margin-top: 2px;
+  padding-right: 5px;
+  background: -webkit-linear-gradient(var(--groups), #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px var(--groups);
+}
+
+
+
+.pvlk-sep{
+  margin-top: 30px;
+  width: 100%;
+  height: 80px;
+  background-image: url(https://images2.imgbox.com/63/a2/q8QD3WWR_o.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+  z-index:20;
+  overflow: hidden;
+}
+
+
+.pvlk-overlaydatos{
+  position: relative;
+  top: 0;
+  z-index: 22;
+  width: 100%;
+  height: 80px;
+  backdrop-filter: contrast(108%)brightness(45%)grayscale(100%);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  font-family: "Grenze", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 100%;
+  color: #abaaaa; 
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.pvlk-overlaydatos span{
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--groups);
+}
+
+.pvlk-overlaydatos i{
+  color: var(--groups);
+   font-size: 15px;
+}
+
+
+.postt-valko blockquote{
+  width: 450px;
+  padding: 15px;
+  margin: 15px 0 auto;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, .4);
+  font-family: "Grenze", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 140%;
+  color: #abaaaa; 
+  letter-spacing: 1px;
+}
+
+.postt-valko blockquote strong{
+  color: var(--groups);
+}
+
+
+
+
+
+
+
+.postt-mara{
+  width: 450px;
+  margin: 0 auto;
+  line-height: 175%;
+  font-size: 14.5px;
+  text-align: justify;
+  font-family: "PT Serif", serif;
+  color: #abaaaa;
+  letter-spacing: 1px;
+  opacity: .9;
+}
+
+
+.pmar-icon{
+  width: 45px;
+  height: 45px;
+  filter: drop-shadow(0px 0px 6px var(--groups));
+  margin: 0 auto;
+  opacity: 1;
+  position: relative;
+}
+
+.pmar-icon img{
+  width: 45px;
+  height: 45px;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  z-index: 20;
+}
+
+
+.pmar-icon2{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 36px;
+  color: var(--groups);
+}
+
+
+.pmar-tit{
+  text-align: center;
+  font-family: 'marafont1';
+  text-shadow: 2px 2px 0px #000;
+  font-weight: 300;
+  font-size: 54px;
+  letter-spacing: 2px;
+  line-height: 100%;
+  margin: 15px 0px 18px 0px;
+  opacity: 1;
+  color: var(--groups);
+}
+
+
+.pmar-subt{
+  font-family: "Lusitana", serif;
+  font-style: normal;
+  font-size: 9.5px;
+  color: #6f6f6f;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 145%;
+  text-align: center; 
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+
+.lettermar {
+  float: left;
+  font: 60px 'marainicial1';
+  width: 80px;
+  text-align: center;
+  margin-top: 2px;
+  padding-right: 5px;
+  background: -webkit-linear-gradient(var(--groups), #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: lowercase;
+  text-shadow: 1px 1px 0px var(--groups);
+}
+
+
+
+.pmar-sep{
+  margin-top: 30px;
+  width: 100%;
+  height: 80px;
+  background-image: url(https://i.pinimg.com/736x/c1/54/d5/c154d5ac3ecb3d4484c9d6d60acef887.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+  z-index:20;
+  overflow: hidden;
+}
+
+
+.pmar-overlaydatos{
+  position: relative;
+  top: 0;
+  z-index: 22;
+  width: 100%;
+  height: 80px;
+  backdrop-filter: contrast(108%)brightness(20%)grayscale(100%)blur(1px);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  font-family: "PT Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 100%;
+  color: #abaaaa; 
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.pmar-overlaydatos span{
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--groups);
+}
+
+.pmar-overlaydatos i{
+  color: var(--groups);
+   font-size: 20px;
+}
+
+
+.postt-mara blockquote{
+  width: 450px;
+  padding: 15px;
+  margin: 15px 0 auto;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, .4);
+  font-family: "PT Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 140%;
+  color: #abaaaa; 
+  letter-spacing: 1px;
+}
+
+.postt-valko blockquote strong{
+  color: var(--groups);
+}
+
