@@ -1,11 +1,38 @@
-@font-face {font-family: "valkofont1"; src: url('https://dl.dropbox.com/scl/fi/9vyw2y42w7lds2d2k7gpz/BreatheFireIi-2z9W.ttf?rlkey=c3akbdcmrnon7ks1aumgye3dv&st=ul0g0qgo');}
+@font-face{
+font-family: 'valkofont1';
+src: url('./BreatheFireIi-2z9W.woff2') format('woff2'),
+url('./BreatheFireIi-2z9W.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
-@font-face {font-family: "valkoinicial1"; src: url('https://dl.dropbox.com/scl/fi/f7i4l85opqgovoax5qs8h/Frost-Scream.otf?rlkey=t5jkvhfzhxkiiqcp0ti2qsv8p&st=fulycla1');}
+@font-face{
+font-family: 'valkoinicial1';
+src: url('./Frost Scream.woff2') format('woff2'),
+url('./Frost Scream.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
-@font-face {font-family: "marafont1"; src: url('https://dl.dropbox.com/scl/fi/623fi9zhq21r6potcmwiy/The-Solitude.ttf?rlkey=nd06h64y6ejws5dvy9a8ewxi4&st=afllufm0');}
+@font-face{
+font-family: 'marafont1';
+src: url('./The Solitude.woff2') format('woff2'),
+url('./The Solitude.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
-@font-face {font-family: "marainicial1"; src: url('https://dl.dropbox.com/scl/fi/p55mhmf5ivmsk8p5fp5va/MozaRegular-lgrBy.ttf?rlkey=fcr4l7v8cc4hip6kdpgimo3ym&st=r1sj76ht');}
-
+@font-face{
+font-family: 'marainicial1';
+src: url('./MozaRegular-lgrBy.woff2') format('woff2'),
+url('./MozaRegular-lgrBy.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
 
 .postt-valko{
