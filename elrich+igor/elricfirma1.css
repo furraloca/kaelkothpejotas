@@ -1,0 +1,398 @@
+@font-face {font-family: "elricfont1"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/elrich%2Bigor/kingston-williams.regular.woff2');}
+
+@font-face {font-family: "elricinicial1"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/elrich%2Bigor/cs-lamia-drawn-demo.regular.woff2');}
+
+
+.f1elricb{
+  width: 332px;
+  height: 192px;
+  border: 3px solid #181818;
+  outline: 3px solid #181818;
+  outline-offset: 2px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #000, #000, #000, var(--alianza));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1.7s ease-in-out; 
+}
+
+.f1elricb:before{
+  position: absolute;
+  z-index: 1;
+  content: "";
+  opacity: 0;
+  background: linear-gradient(135deg, #000, var(--alianza), var(--alianza), var(--alianza));
+  inset: 0;
+  transition: all 1.7s ease; 
+}
+
+.f1elricb:hover:before{
+  opacity: 1;
+  transition: all 1.7s ease; 
+  transition-delay: 1.8s;
+}
+
+
+.f1elricimg{
+  width: 330px;
+  height: 190px;
+  background: url(https://64.media.tumblr.com/dc1b82f715e6fb8243bc01d7950c0729/12ec620b670d906d-14/s640x960/54be00b87c99a63fa292e09c3aff4d7c2a0f9865.gif);
+  background-size: 100%;
+  background-position: 50% 0%;
+  position: relative;
+  z-index: 10;
+  filter: grayscale(10%)brightness(85%)contrast(94%)sepia(50%);
+  transition: all 1.7s ease-in-out; 
+  transition-delay: .2s;
+  overflow: hidden;
+}
+
+.f1elricb:hover .f1elricimg{
+  filter: grayscale(100%)brightness(115%)contrast(106%)sepia(0%)blur(1px);
+  transition: all 1.7s ease-in-out; 
+  transition-delay: .2s;
+}
+
+
+.teeth{
+  width: 331px;
+  height: 191px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index:20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: multiply;
+  opacity: 1;
+  overflow: hidden;
+}
+
+
+.teeth t1{
+  background: var(--alianza);
+  height: 191px;
+  width:112px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(180deg);
+  position: absolute;
+  z-index: 20;
+  top: -170px;
+  left: 0px;
+  transition: all .7s ease-in-out;
+}
+
+.f1elricb:hover .teeth t1,.f1elricb:hover .teeth t2,.f1elricb:hover .teeth t3{
+  top: 0px;
+  transition: all .7s ease-in-out;
+  transition-delay: .6s;
+}
+
+
+.teeth t2{
+  background: var(--alianza);
+  height: 190px;
+  width:112px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(180deg);
+  position: absolute;
+  z-index: 20;
+  top: -170px;
+  left: 110px;
+  transition: all .7s ease-in-out;
+}
+
+
+.teeth t3{
+  background: var(--alianza);
+  height: 190px;
+  width:112px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(180deg);
+  position: absolute;
+  z-index: 20;
+  top: -170px;
+  left: 220px;
+  transition: all .7s ease-in-out;
+}
+
+
+
+.teeth t4{
+  background: var(--alianza);
+  height: 191px;
+  width:113px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: absolute;
+  z-index: 20;
+  bottom: -170px;
+  left: -56px;
+  transition: all .7s ease-in-out;
+}
+
+.f1elricb:hover .teeth t4,.f1elricb:hover .teeth t5,.f1elricb:hover .teeth t6,.f1elricb:hover .teeth t7{
+  bottom: 0px;
+  transition: all .7s ease-in-out;
+  transition-delay: .6s;
+}
+
+.teeth t5{
+  background: var(--alianza);
+  height: 191px;
+  width:112px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: absolute;
+  z-index: 20;
+  bottom: -170px;
+  left: 55px;
+  transition: all .7s ease-in-out;
+}
+
+.teeth t6{
+  background: var(--alianza);
+  height: 191px;
+  width: 112px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: absolute;
+  z-index: 20;
+  bottom: -170px;
+  left: 165px;
+  transition: all .7s ease-in-out;
+}
+
+
+.teeth t7{
+  background: var(--alianza);
+  height: 191px;
+  width:111px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: absolute;
+  z-index: 20;
+  bottom: -170px;
+  left: 275px;
+  transition: all .7s ease-in-out;
+}
+
+
+
+.felrictxt{
+  position: absolute;
+  z-index: 25;
+  top: 140px;
+  font-family: "elricfont1";
+  font-size: 23px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 100%;
+  letter-spacing: 1.5px;
+  transition: all .9s ease-in-out;
+  font-weight: 400;
+  background: linear-gradient(to right, #000, #333, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 1px 0px var(--alianza);
+  filter: drop-shadow(0px 0px 4px #000)blur(0px);
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+
+.f1elricb:hover .felrictxt{
+  filter: drop-shadow(0px 0px 4px #000)blur(4px);  transform: scale(.8);
+  opacity: 0;
+  transition: all .9s ease-in-out;
+  transition-delay: .2s;
+}
+
+
+.felrictxt2{
+  position: absolute;
+  z-index: 25;
+  top: 164px;
+  background: linear-gradient(to right, rgba(0, 0, 0,.0), var(--alianza), rgba(0, 0, 0,.0));
+  padding: 5px 2px 2px 3px;
+  margin: 0 auto;
+  line-height: 100%;
+  font-size: 8.5px;
+  text-align: center;
+  font-family: "Ibarra Real Nova", serif;
+  color: #000;
+  text-shadow: #333 0px 0px 1px;
+  letter-spacing: .5px;
+  font-weight: 900;
+  text-transform: uppercase;
+  opacity: 1;
+  filter: blur(0px);
+  transform: scale(1);
+  transition: all .9s ease-in-out;
+  transition-delay: .5s;
+}
+
+
+.f1elricb:hover .felrictxt2{
+  filter: blur(4px);
+  transform: scale(.8);
+  opacity: 0;
+  transition: all .9s ease-in-out;
+  transition-delay: .2s;
+}
+
+
+
+
+.elricvampface{
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transform:rotate(-20deg);
+  z-index: 26;
+  opacity: 0;
+  top: 17px;
+  left: 97px;
+  background: url(https://images2.imgbox.com/ff/f9/6ZXvZAji_o.gif);
+  background-size: 102%;
+  background-position: 50% 50%;
+  mix-blend-mode: exclusion;
+  transition: all .9s ease-in-out;
+  animation: infinite alternate;
+  animation-name: headtilt;
+  animation-duration: 1.036s;
+}
+
+
+.f1elricb:hover .elricvampface{
+  opacity: 1;
+  transition: all .9s ease-in-out;
+  transition-delay: 1.8s;
+}
+
+
+@keyframes headtilt {
+  0% {
+    left: 95px;
+    transform:rotate(-25deg);
+  }
+  100% {
+    left: 100px;
+    transform:rotate(-20deg);
+  }
+}
+
+
+
+
+.f1elricb txt3{
+  position: absolute;
+  z-index: 27;
+  top: 0px;
+  left: 15px;
+  width: 80px;
+  height: 175px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  line-height: 90%;
+  font-size: 8.5px;
+  text-align: center;
+  font-family: "Ibarra Real Nova", serif;
+  color: #abaaaa;
+  text-shadow: #333 0px 0px 1px;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0;
+  filter: blur(6px);
+  transform: scale(.7);
+  transition: all .9s ease-in-out;
+  transition-delay: 0s;
+}
+
+.f1elricb:hover.f1elricb txt3{
+  opacity: 1;
+  filter: blur(0px);
+  transform: scale(1);
+  transition: all .9s ease-in-out;
+  transition-delay: .9s;
+}
+
+
+.f1elricb n{
+  display: block;
+  position: relative;
+  top: -3px;
+  padding-left:10px;
+  width: 95%;
+  padding-bottom: 0px;
+  text-transform: lowercase;
+  font-family: "elricfont1";
+  font-size: 50px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 100%;
+  letter-spacing: 8.5px;
+  transition: all .9s ease-in-out;
+  font-weight: 400;
+  color: var(--alianza);
+  filter: drop-shadow(0px 0px 4px #000)blur(0px);
+  animation: letterflickerel 2.8s linear infinite; 
+}
+
+
+.f1elricb x{
+  font-size: 8px;
+  letter-spacing: .5px;
+  font-style: italic;
+}
+
+.f1elricb lin{
+  width: 0px;
+  height: 2px;
+  position: absolute;
+  bottom:64px;
+  left: 25px;
+  z-index: 30;
+  background: var(--alianza);
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  transition-delay: 0s;
+}
+
+.f1elricb:hover.f1elricb lin{
+  opacity: 1;
+  width: 60px;
+  transition: all .9s ease-in-out;
+  transition-delay: 1.8s;
+}
+
+
+
+
+
+@keyframes letterflickerel {
+  0% {opacity:0.1;text-shadow: 0px 0px 10px var(--alianza);
+  }
+  2% {opacity:0.1;text-shadow: 0px 0px 20px var(--alianza);
+  }
+  4% {opacity:1;text-shadow: 0px 0px 20px var(--alianza);
+  }   
+  5% {opacity:0.1;text-shadow: 0px 0px 20px var(--alianza);
+  } 
+  19% {opacity:1;text-shadow: 0px 0px 20px var(--alianza);
+  }
+  21% {opacity:0.1;text-shadow: 0px 0px 20px var(--alianza);
+  }
+  23% {opacity:1;text-shadow: 0px 0px 10px var(--alianza);
+  } 
+  80% {opacity:1;text-shadow: 0px 0px 20px var(--alianza);
+  }
+  83% {opacity:0.4;text-shadow: 0px 0px 10px var(--alianza);
+  }
+  87% {opacity:1;text-shadow: 0px 0px 20px var(--alianza);
+  }
+}
