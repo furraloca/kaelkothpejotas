@@ -1,7 +1,20 @@
-@font-face {font-family: "compendiofont1"; src: url('https://dl.dropbox.com/scl/fi/og655ptsudfcxpyajx5sh/Rockakura-Regular.ttf?rlkey=4fnd428cqfxydu5s8lq8uybkw&st=6tey9wf7');}
+@font-face{
+font-family: 'compendiofont1';
+src: url('./Rockakura-Regular.woff2') format('woff2'),
+url('./Rockakura-Regular.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
-@font-face {font-family: "compendiofont2"; src: url('https://dl.dropbox.com/scl/fi/1xcmvt0grs1ylhdc9zuud/OldNewspaperTypes.ttf?rlkey=ejo2b7vsspnfpl9zwpsa3cmmh&st=d9bdl0y6');}
-
+@font-face{
+font-family: 'compendiofont2';
+src: url('./OldNewspaperTypes.woff2') format('woff2'),
+url('./OldNewspaperTypes.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
 
 .compendio{
