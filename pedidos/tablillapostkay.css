@@ -49,5 +49,12 @@
   line-height: 100%;
 }
 
+@font-face{
+font-family: 'initialkay';
+src: url('./The White Knight demo.woff2') format('woff2'),
+url('./The White Knight demo.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
-@font-face {font-family: "initialkay"; src: url('https://dl.dropbox.com/scl/fi/tyhxfxy7oo44zus4hze79/The-White-Knight-demo.ttf?rlkey=r7fpka5jl3vbydhywqc65n66b&st=wyqm3h7y');}
