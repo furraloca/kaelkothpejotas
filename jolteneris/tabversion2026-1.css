@@ -1,0 +1,161 @@
+@font-face {font-family: "erisfont1"; src: url('https://dl.dropbox.com/scl/fi/6w68wwkvg1dcndxresfr1/Offenbacher-Reform-CAT.ttf?rlkey=a293dduxr2fr6bjo1okkcueds&st=kw9m7kdy');}
+
+@font-face {font-family: "initialeris1"; src: url('https://dl.dropbox.com/scl/fi/zir5fvgyonvcbvyvv29hk/Signtelly-Regular.ttf?rlkey=yqu90kft46lxj9kvtaxns2kn7&st=f86m6qvz');}
+
+
+.postt-eris{
+  width: 450px;
+  margin: 0 auto;
+  line-height: 25px;
+  font-size: 16px;
+  text-align: justify;
+  font-family: "Gideon Roman", serif;
+  color: #abaaaa;
+  letter-spacing: .5px;
+}
+
+.postt-eris b{
+  color: var(--groups);
+}
+
+.postt-eris strong{
+  color: var(--groups);
+}
+
+.postt-tit-eris{
+  font-family: 'erisfont1';
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 100%;
+  -webkit-text-stroke: .1px var(--groups);
+  color: rgba(4 4 4 / 100%);
+  filter: drop-shadow(var(--groups) 2px 1px 0px);
+  border: 0px;
+  text-align: center;
+}
+
+
+.eris-tabsubt2{
+  text-align: center;
+  padding: 5px 0px;
+  width: 450px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-family: "Gideon Roman", serif;
+  color: #b3b3b3;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 1px;
+  line-height: 160%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.eris-tabsubt2 b,.eris-tabsubt2 strong{
+  color: var(--groups);
+  filter: drop-shadow(0px 0px 6px var(--groups));
+}
+
+.letter-eris1 {float: left; font: 60px 'initialeris1'; width: 80px; text-align: center; margin-top: 2px; padding-right: 20px; background: -webkit-linear-gradient(var(--groups), #000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+
+
+.iconosirena-eris{
+  width: 45px;
+  height: 60px;
+  background: url(https://images2.imgbox.com/fb/07/KRYowFsE_o.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  filter: drop-shadow(2px 2px 0px var(--groups));
+  opacity: .7;
+  margin: 0 auto;
+}
+
+.etiqueta1-eris{
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-family: "Gideon Roman", serif;
+   color: #b3b3b3;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  line-height: 100%;
+  margin-top: 15px;
+}
+
+.eris-tab-leyendafondo{
+  height: 110px;
+  width: 450px;
+  background-image: url(https://i.pinimg.com/1200x/df/09/64/df09643b63973f915651f69e04389f41.jpg);
+  background-position: 50% 47%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+  margin-top: 50px;
+}
+
+.leyendafondo-overflow{
+  width: 100%;
+  height: 110px;
+  backdrop-filter: grayscale(100%)brightness(55%)contrast(105%);
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.tab-dat{
+  position: relative;
+  width: 144px;
+  padding: 0px 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 2px;
+  font-size: 9.5px;
+  text-transform: uppercase;
+  font-family: "Gideon Roman", serif;
+  color: #b3b3b3;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0px;
+  line-height: 150%;
+}
+
+.tab-dat i{
+  color: var(--groups);
+  font-size: 12px;
+}
+
+
+.postt-eris blockquote{
+    width: 450px;
+    padding: 25px;
+    margin: 15px 0 auto;
+    box-sizing: border-box;
+    background: rgba(0,0,0, .6);
+    border: 0px solid var(--groups);
+    font-family: "Gideon Roman", serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 110%;
+    font-weight: 300;
+    color: #848484;
+}
+
+
+.erisicono1{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 38px;
+  color: var(--groups);
+  filter: drop-shadow(0px 0px 6px var(--groups));
+  padding-bottom: 5px;
+}
