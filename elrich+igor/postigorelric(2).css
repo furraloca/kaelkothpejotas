@@ -1,8 +1,7 @@
-
 @font-face{
 font-family: 'igorfont1';
-src: url('./fancy-quisley.regular.woff2') format('woff2'),
-url('./fancy-quisley.regular.woff') format('woff');
+src: url('./deaths-hallows.regular.woff2') format('woff2'),
+url('./deaths-hallows.regular.woff') format('woff');
 font-weight: regular;
 font-style: normal;
 font-display: swap;
