@@ -310,10 +310,12 @@ top: 85px;
   font-size: 22px;
   cursor: help; 
 }
-.narrativo:before {content: "\EC70";}
-.plumalibre:before {content: "\EB2A";}
-.evento:before {content: "\E374";}
-.guerra:before {content: "\E2F0";}
+
+.narrativo:before {content: "\ec3e";}
+.plumalibre:before {content: "\eb5e";}
+.evento:before {content: "\e604";}
+.guerra:before {content: "\e132";}
+
 
 .abierto .plumalibre:before, .abierto .evento:before, .abierto .guerra:before, .abierto .narrativo:before{
     color: var(--bruma);
