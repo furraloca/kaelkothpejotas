@@ -1,8 +1,20 @@
+@font-face{
+font-family: 'erisfont1';
+src: url('./Offenbacher Reform CAT.woff2') format('woff2'),
+url('./Offenbacher Reform CAT.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
-@font-face {font-family: "erisfont1"; src: url('https://dl.dropbox.com/scl/fi/6w68wwkvg1dcndxresfr1/Offenbacher-Reform-CAT.ttf?rlkey=a293dduxr2fr6bjo1okkcueds&st=kw9m7kdy');}
-
-@font-face {font-family: "initialeris1"; src: url('https://dl.dropbox.com/scl/fi/zir5fvgyonvcbvyvv29hk/Signtelly-Regular.ttf?rlkey=yqu90kft46lxj9kvtaxns2kn7&st=f86m6qvz');}
-
+@font-face{
+font-family: 'initialeris1';
+src: url('./Signtelly-Regular.woff2') format('woff2'),
+url('./Signtelly-Regular.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
 .postt-eris{
   width: 450px;
