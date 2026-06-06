@@ -1,0 +1,226 @@
+@font-face {font-family: "joltenfont1"; src: url('https://dl.dropbox.com/scl/fi/ttcxcaf63hcxg1tr2ju3f/holyrose-bonbongothique.ttf?rlkey=3hv0mem04020ittr0jwh4eln5&st=70g8xz3q');}
+
+@font-face {font-family: "cartajfont1"; src: url('https://dl.dropbox.com/scl/fi/03ffzhzswd5fuqoy0c3ht/caligraf-1435.italic.ttf?rlkey=7i2wxlwjrsvwwwk2gbesywafz&st=poe70tlh');}
+
+.cuervoj{
+  width: 500px;
+  height: 350px;
+  position: relative;
+  background: url(https://images2.imgbox.com/ce/1c/6GCc5hWU_o.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: flex-end;
+  outline: 2px solid #222;
+}
+
+
+
+.cuervorombo{
+  width: 80px;
+  height: 80px;
+  outline: 2px solid #222;
+  background: #080808;
+  box-shadow: 0px 0px 12px var(--bruma);
+  margin: 0 auto;
+  position: absolute;
+  bottom: -40px;
+}
+
+.rombodentro{
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  outline: 2px solid #222;
+  position: relative;
+  z-index: 4;
+  background: #080808;
+}
+
+.romboimg{
+  width: 80px;
+  height: 80px;
+  position: relative;
+  transform: rotate(-45deg);
+  background: url(https://media.tenor.com/d2CR4Nv60PEAAAAM/black-birds-flying.gif);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+
+.cuervotit{
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+  font-family: "joltenfont1";
+  color: #abaaaa;
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-transform: none;
+  line-height: 100%;
+  text-shadow: 1px 1px 2px #000;
+  padding-bottom: 80px;
+}
+
+.cuervosubt{
+  display: block;
+  position: relative;
+  top: 0px;
+  width: fit-content;
+  height: auto;
+  margin-top: 2px;
+  background: linear-gradient(260deg, #181818 0%, #000000 100%);
+  padding: 8px 8px 6px 8px;
+  letter-spacing: 1px;
+  line-height: 110%;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 9px;
+  color: #D1D0D0;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;  
+}
+
+
+
+.aprendiendo{
+  width: 175px;
+  height: 80px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;  
+}
+
+.aprendiendo i{
+  color: var(--bruma);
+  font-size: 12px;
+  text-shadow: 0px 0px 5px var(--bruma);
+}
+
+.aprendiendo t{
+  display: block;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 100%;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 8px;
+  color: #D1D0D0;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase; 
+  padding: 3px 5px;
+  text-shadow: 0px 0px 2px var(--bruma);
+}
+
+
+.aprendiendo span{
+  display: block;
+  padding-top: 5px;
+  opacity: .7;
+  letter-spacing: 3px;
+}
+
+
+.aprendiendobarra{
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 7px;
+  margin: 5px;
+  outline: 2px solid #222;
+  border-radius: 0px;
+  box-shadow: 0px 0px 8px var(--bruma);
+}
+
+.aprendiendobarra n{
+  background: #222;
+  height: 3px;
+  margin: 2px 1px;
+  width: 22%;
+  clip-path: polygon(10% 0%,100% 0%,85% 100%,0% 100%);
+}
+
+.aprendiendobarra x{
+  background: var(--bruma);
+  height: 3px;
+  margin: 2px 1px;
+  width: 22%;
+  clip-path: polygon(10% 0%,100% 0%,85% 100%,0% 100%);
+}
+
+
+
+
+
+.cartajolten{
+  width: 350px;
+  height: auto;
+  min-height: 50px;
+  padding: 40px 50px;
+  position: relative;
+  top: 4px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: url(https://images2.imgbox.com/b8/c7/3KebHCwb_o.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  box-shadow: 0 0 8px #4d4d4d, inset 0 0 10px #000000;
+  border-radius: 18px 94px 18px 94px;
+}
+
+
+.cartajoltenden{
+  position: relative;
+  z-index: 20;
+  display: block;
+  padding: 0px;
+  font-family: "cartajfont1";
+  color: #000;
+  font-size: 26px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.cartajoltenden t{
+  width: 100%;
+  display: block;
+  padding-bottom: 25px;
+  font-size: 30px;
+}
+
+.cartajoltenden n{
+  width: 100%;
+  display: block;
+  padding-top: 30px;
+  font-size: 30px;
+  text-align: right;
+  opacity: .8;
+}
+
+
+.cartajoltendendibu{
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 60px;
+  width: 80px;
+  height: 80px;
+  background: url(https://i.pinimg.com/736x/48/08/a3/4808a319568213fc8a00fab62b846361.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  filter: grayscale(1);
+  mix-blend-mode: luminosity;
+  opacity: .6;
+}
