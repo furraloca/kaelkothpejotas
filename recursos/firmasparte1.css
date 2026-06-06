@@ -180,7 +180,7 @@ font-display: swap;
   color: var(--groups);
   font-size: 44px;
   position: absolute;
-  top: 0px;
+  top: 20px;
   left: 10px;
   content: "A";
 }
@@ -191,7 +191,7 @@ font-display: swap;
   color: #abaaaa;
   font-size: 44px;
   position: absolute;
-  bottom: -10px;
+  bottom: 10px;
   right: 10px;
   content: "B";
 }
