@@ -503,7 +503,7 @@ line-height: 100%;
 .dicer acierto:before{
   position: relative;
   padding-right: 5px;
-  content: "\E09D";
+  content: "\e344";
   font-size: 12px;
   font-family: "game-icons";
   color: var(--groups);
@@ -512,7 +512,7 @@ line-height: 100%;
 .dicer txt c:before{
   position: relative;
   padding-right: 5px;
-	content: "\EE99";
+	content: "\e40f";
   font-size: 12px;
   font-family: "game-icons";
   opacity: .9;
