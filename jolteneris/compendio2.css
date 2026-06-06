@@ -1,0 +1,347 @@
+@font-face {font-family: "compendiofont1"; src: url('https://dl.dropbox.com/scl/fi/og655ptsudfcxpyajx5sh/Rockakura-Regular.ttf?rlkey=4fnd428cqfxydu5s8lq8uybkw&st=6tey9wf7');}
+
+@font-face {font-family: "compendiofont2"; src: url('https://dl.dropbox.com/scl/fi/1xcmvt0grs1ylhdc9zuud/OldNewspaperTypes.ttf?rlkey=ejo2b7vsspnfpl9zwpsa3cmmh&st=d9bdl0y6');}
+
+
+
+.compendio{
+  width: 879px;
+  height: 650px; 
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.comportada{
+  width: 580px;
+  height: 650px;
+  background: url(https://images2.imgbox.com/3e/2f/nTlWwSUj_o.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  box-shadow: inset 0 0 12px #000000;
+  border-radius: 5px 5px 5px 5px;
+  position: relative;
+  z-index: 30;
+}
+
+.comportada:before{
+  position: absolute;
+  content: "";
+  backdrop-filter: brightness(65%)grayscale(10%)contrast(104%);
+  width: 100%;
+  height: 100%;
+}
+
+.comindice{
+  width: 294px;
+  height: 650px;
+  background: transparent;
+  background: url(https://images2.imgbox.com/68/e5/AFoQzVgx_o.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  box-shadow: inset 0 0 12px #000000;
+  border-radius: 5px 5px 5px 5px;
+  position: relative;
+  z-index: 5;
+  left: 5px;
+}
+
+.comindicefiltro{
+  position: absolute;
+  backdrop-filter: brightness(45%)grayscale(0%)contrast(118%);
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+.notatit{
+  position: relative;
+  font-family: "Bilbo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 23px;
+  color: #000;
+  width: 100%;
+  text-align: center;
+  line-height: 110%;
+  opacity: .9;
+}
+
+.notatit n{
+  display: block;
+  padding: 50px;
+}
+
+.notatit t{
+  font-size: 30px;
+}
+
+.notatit span{
+  opacity: .6;
+  display: block;
+  transform: rotate(-35deg);
+  position: relative;
+  right: 70px;
+  top: 40px;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+
+
+
+
+
+.indice{
+  width: 879px;
+  height: auto; 
+  position: relative;
+  top: 4px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: url(https://images2.imgbox.com/63/97/IXPYXZd0_o.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  box-shadow: 0 0 8px #4d4d4d, inset 0 0 12px #000000;
+  border-radius: 4px 4px 4px 4px;
+}
+
+
+.tituloindice{
+  font-family: "compendiofont2"; 
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 26px;
+  text-transform: uppercase;
+  line-height: 100%;
+  margin-top: 40px;
+  opacity: .8;
+  letter-spacing: -1px;
+  font-weight: 300;
+}
+
+.contenidos{
+  height: auto;
+  width: 805px;
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-start;
+  padding-bottom: 50px;
+}
+
+
+.contenidos-caj{
+  height: 25px;
+  width: 370px;
+  margin: 5px 10px;
+ position: relative;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: center;
+}
+
+
+.contenidos-caj span{
+  width: 5px;
+  text-align: right;
+  font-family: "compendiofont2"; 
+  color: #000;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 100%;
+  font-weight: 300;
+  position: absolute;
+  z-index:50;
+  right: 0px;
+}
+
+
+.contenidos-caj quo{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  display: flex;
+  white-space: nowrap;
+  width: 95%;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: "compendiofont2"; 
+  color: #000;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+
+.indicetext1{
+  position: relative;
+  left: 0px;
+}
+
+.contenidos-caj quo:after {
+   content: "";
+   width: -webkit-fill-available;
+   height: 1px;
+   display: inline-block;
+   border-bottom: 1px dotted #000;
+   vertical-align: middle;
+   position: relative;
+   top: 5px;
+}
+
+.indicetext1 a{
+  text-decoration: none;
+  font-weight: 300;
+  color: #000;
+  transition: ease-in-out .6s;
+}
+
+.indicetext1 a:hover{
+  opacity: .6;
+  transition: ease-in-out .6s;
+}
+
+
+
+
+
+
+.historia1{
+  width: 450px;
+  height: auto;
+  min-height: 200px;
+  margin: 0 auto;
+  background: url(https://images2.imgbox.com/63/97/IXPYXZd0_o.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  box-shadow: 0 0 8px #4d4d4d, inset 0 0 10px #000000;
+  border-radius: 4px 4px 4px 4px;
+  position: relative;
+  top: 0px;
+}
+
+
+.historianomb{
+  width: 50%;
+  font-family: "compendiofont2"; 
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 17px;
+  text-transform: uppercase;
+  line-height: 140%;
+  opacity: .8;
+  letter-spacing: 0px;
+  font-weight: 300;
+  position: relative;
+  top: 30px;
+  padding: 20px 0px;
+}
+
+
+.historiadentro{
+  width: auto;
+  height: auto;
+  padding: 40px 40px 20px 40px;
+  font-family: "Della Respira", serif;
+  color: #000;
+  font-size: 16px;
+  text-align: justify;
+  position: relative;
+  top: 5px;
+  line-height: 155%;
+  font-weight: 300;
+  opacity: .9;
+}
+
+.historiafoto{
+  float: right;
+  border: 0px solid #020202;
+  width: 160px;
+  height: 200px;
+  margin: 10px;
+  display: inline;
+  background: url(https://i.pinimg.com/736x/b1/c6/6a/b1c66a7f02d81a43c3dc35091ee54db5.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  filter: grayscale(10%)brightness(55%)contrast(105%);
+  box-shadow: 0 0 8px #000, inset 0 0 8px #000000;
+  border-radius: 19px 2px 19px 2px;
+}
+
+.historiapag{
+  font-family: "compendiofont2"; 
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 140%;
+  padding-bottom: 25px;
+  opacity: .8;
+}
+
+
+
+
+
+.marcolunas{
+  width: 425px;
+  height: 20px;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+  opacity: .6;
+}
+
+.marcolunas:before{
+  content: "";
+  background: url(https://images2.imgbox.com/4e/97/92ZMm7KD_o.png);
+  background-size: repeat;
+  background-position: 50% 50%;
+  height: 20px;
+  width: 425px;
+  position: absolute;
+  top: 5px;
+}
+
+
+
+
+.anotaciones{
+  width: auto;
+  height: auto;
+  padding: 10px 40px;
+  font-family: "Bilbo", cursive;
+  color: #000;
+  font-size: 23px;
+  text-align: justify;
+  position: relative;
+  line-height: 125%;
+  font-weight: 300;
+  opacity: .9;
+  font-style: italic;
+}
+
+
+.anotaciones n{
+  display: block;
+  padding: 30px 0px 20px 0px;
+}
