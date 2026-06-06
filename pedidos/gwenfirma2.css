@@ -1,5 +1,11 @@
-@font-face {font-family: "rfontgwen"; src: url('https://dl.dropbox.com/scl/fi/8eifu23camk0ku82zs4u6/old-master.regular.ttf?rlkey=5dv0dirc18pk126sz0b0sx494&st=eoo18epf');}
-
+@font-face{
+font-family: 'rfontgwen';
+src: url('./old-master.regular.woff2') format('woff2'),
+url('./old-master.regular.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
 
 .gwenfirma2{
