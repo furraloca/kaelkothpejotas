@@ -79,7 +79,14 @@ font-display: swap;
   line-height: 185%;
 }
 
-@font-face {font-family: "cartaefont1"; src: url('https://dl.dropbox.com/scl/fi/70twp30gxbo0xps3xbqv8/zai_USDeclaration.ttf?rlkey=nc8upwq5ctlprocvad6egmito&st=hdymxmed');}
+@font-face{
+font-family: 'cartaefont1';
+src: url('./zai_USDeclaration.woff2') format('woff2'),
+url('./zai_USDeclaration.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
 
 .cerisdentro t{
