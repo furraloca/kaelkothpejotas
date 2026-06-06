@@ -1,5 +1,11 @@
-@font-face {font-family: "erisfont1"; src: url('https://dl.dropbox.com/scl/fi/6w68wwkvg1dcndxresfr1/Offenbacher-Reform-CAT.ttf?rlkey=a293dduxr2fr6bjo1okkcueds&st=kw9m7kdy');}
-
+@font-face{
+font-family: 'erisfont1';
+src: url('./Offenbacher Reform CAT.woff2') format('woff2'),
+url('./Offenbacher Reform CAT.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
 .creris-ca{
   height: 120px;
