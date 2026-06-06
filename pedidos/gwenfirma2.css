@@ -1,0 +1,322 @@
+@font-face {font-family: "rfontgwen"; src: url('https://dl.dropbox.com/scl/fi/8eifu23camk0ku82zs4u6/old-master.regular.ttf?rlkey=5dv0dirc18pk126sz0b0sx494&st=eoo18epf');}
+
+
+
+.gwenfirma2{
+  width: 330px;
+  height: 200px;
+  position: relative;
+  z-index: 5;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  background-image: url(https://64.media.tumblr.com/a8303c208576183efc03cc6fef27a205/acb9e04dd6e691a0-5c/s400x600/369cf7fa74a8be90fbf36910f9f64ef5c38280cf.gif);
+  background-position: 50% 50%;
+  background-size: cover;
+  outline: 2px solid #181818;
+  outline-offset: 4px;
+  transition: all 1.4s ease-out;
+}
+
+.gwenfirma2:hover{
+  outline: 2px solid var(--daelarien);
+  transition: all 1.4s ease-in-out;
+  transition-delay: 2.5s;
+}
+
+.gwenfirma2filtro1{
+  width: 330px;
+  height: 200px;
+  position: relative;
+  z-index: 5;
+  margin: 0 auto;
+  backdrop-filter: grayscale(10%)brightness(90%)contrast(118%)blur(0px);
+  transition: all 1.4s ease-out;
+}
+
+.gwenfirma2:hover .gwenfirma2filtro1{
+  backdrop-filter:grayscale(100%)brightness(25%)contrast(118%)blur(3px);
+  transition: all 1.4s ease-out;
+  transition-delay: 0.8s;
+}
+
+.gwenf2overc{
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  z-index: 15;
+  top: 0px;
+  left: 0px;
+  background-color: var(--daelarien);
+  clip-path: polygon(0% 0%,60% 0%,100% 100%,0% 100%);
+  mix-blend-mode: multiply;
+  transition: all 1.4s ease-out;
+}
+
+
+.gwenfirma2:hover .gwenf2overc{
+  left: -155px;
+  transition: all 1.4s ease-out;
+  transition-delay: .6s;
+}
+
+
+.gwenf2overcq1{
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  z-index: 15;
+  display: flex;
+  align-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "cinzel", serif;
+  line-height: 140%;
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ababab;
+  text-shadow: 1px 1px 0px #000;
+  font-weight: 800;
+  filter: blur(0px);
+  opacity: 1;
+  transition: all 1.4s ease-out;
+  transition-delay: .8s;
+}
+
+.gwenf2overcq1 n{
+  display: block;
+  text-align: right;
+  padding: 10px 12px 15px 3px;
+}
+
+.gwenf2overcq1 b,.gwenf2overcq1 strong{
+  color: var(--daelarien);
+}
+
+.gwenf2overcq1 i{
+  display: block;
+  width: 100%;
+  font-size: 29px;
+  color: var(--daelarien);
+  text-align: center;
+  padding-bottom: 20px;
+  filter: drop-shadow(0px 0px 4px var(--daelarien));
+  text-shadow: 1px 1px 1px #000;
+  animation: botag 4s ease-in-out infinite;
+}
+
+.gwenfirma2:hover .gwenf2overcq1{
+  filter: blur(5px);
+  opacity: 0;
+  transition: all 1.4s ease-out;
+}
+
+
+
+
+
+.gwenfirmagif2{
+  width: 330px;
+  height: 200px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 20;
+  background-image: url(https://i.pinimg.com/originals/8f/c9/32/8fc93271bea7532c870f0b6e25429255.gif);
+  background-position: 0% 6%;
+  background-size: 115%;
+  opacity: 0;
+  filter: blur(0px)grayscale(100%)brightness(50%)contrast(105%);
+  transition: all 1.4s ease-out;
+}
+
+.gwenfirma2:hover .gwenfirmagif2{
+  transition: all 1.4s ease-out;
+  opacity: 1;
+  transition-delay: 1.3s;
+}
+
+
+@keyframes botag{
+0% {
+transform: translatey(12px);
+}
+50% {
+transform: translatey(0px);
+}
+100% {
+  transform: translatey(12px);
+}
+}
+
+
+.gwenfirmagif2d{
+  width: 330px;
+  height: 200px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 30;
+  background: linear-gradient(to bottom, rgba(2, 2, 2, .6), rgba(150, 150, 106, .3));
+  background-blend-mode: multiply;
+  overflow: hidden;
+  transition: all 1.4s ease-out;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gwenfirma2:hover .gwenfirmagif2d{
+  opacity: 1;
+  transition: all 1.4s ease-out;
+  transition-delay: 1.3s;
+}
+
+
+.gwenfirmagif2d n{
+  width: 160px;
+  height: auto;
+  padding: 0px;
+  filter: blur(5px);
+  opacity: 1;
+  text-align: center;
+  position: relative;
+  transition: all 1.4s ease-out;
+}
+
+.gwenfirma2:hover .gwenfirmagif2d n{
+  filter: blur(0px);
+  transition: all 1.4s ease-out;
+  transition-delay: 1.5s;
+}
+
+.gwenfirmagif2d c{
+  position: relative;
+  height: 12px;
+  font-family: "cinzel", serif;
+  line-height: 120%;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ababab;
+  text-shadow: 1px 1px 0px #000;
+  font-weight: 400;
+}
+
+.gwenfirmagif2d t{
+  display: block;
+  font-family: "rfontgwen";
+  color: #000;
+  filter: drop-shadow(1px 1px 0px var(--daelarien));
+  text-shadow: 0px 0px 0px #000;
+  font-size: 33px;
+  line-height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.gwenf2raya{
+  position: absolute;
+  z-index: 32;
+  left: 164px;
+  top: 75px;
+  width: 1px;
+  height: 0px;
+  background: linear-gradient(to bottom, rgb(2, 2, 2), var(--daelarien));
+  transition: all .5s ease-in-out;
+  opacity: .7;
+}
+
+.gwenfirma2:hover .gwenf2raya{
+  height: 70px;
+  transition: all 1.4s ease-in-out;
+  transition-delay: 2.5s;
+}
+
+.gwenf2i{
+  position: absolute;
+  z-index: 32;
+  left: 152px;
+  top: 35px;
+  font-size: 25px;
+  color: var(--daelarien);
+  filter: blur(5px);
+  transform:scale(1.5);
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.gwenfirma2:hover .gwenf2i{
+  filter: blur(0px);
+  transform:scale(1);
+  opacity: .7;
+  transition: all 1.4s ease-in-out;
+  transition-delay: 2.5s;
+}
+
+.gwenf2q2{
+  position: absolute;
+  z-index: 32;
+  bottom: 25px;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  padding: 5px 0px;
+  text-align: center;
+  font-family: "cinzel", serif;
+  line-height: 100%;
+  font-size: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ababab;
+  text-shadow: 1px 1px 0px #000;
+  font-weight: 400;
+  transition: all 1.4s ease-in-out;
+}
+
+.gwenfirma2:hover .gwenf2q2 n{
+  bottom: 0px;
+  filter: blur(0px);
+  opacity: 1;
+  transition: all 1.4s ease-in-out;
+  transition-delay: 2.5s;
+}
+
+.gwenf2q2 n{
+  position: relative;
+  opacity: 0;
+  bottom: -60px;
+  filter: blur(5px);
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+}
+
+
+.gwenf2q2 b,.gwenf2q2 strong{
+  color: var(--daelarien);
+  border-bottom: 1px solid var(--daelarien);
+  font-weight: 800;
+}
+
+
+.gwenfootfirma{
+  position: absolute;
+  z-index: 50;
+  bottom: 0px;
+  right: -5px;
+  width: 60px;
+  height: 60px;
+  background-image: url(https://imgur.com/YqTdTNs.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  filter: drop-shadow(0px 0px 6px var(--daelarien));
+}
+
