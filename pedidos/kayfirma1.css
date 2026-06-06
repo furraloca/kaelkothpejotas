@@ -1,0 +1,143 @@
+.firmakay-1{
+  width: 345px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  margin: 0px auto;
+  outline: 1px solid #121212;
+  outline-offset: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.firmakay-foto1{
+  height: 200px;
+  width: 220px;
+  background-image: url(https://64.media.tumblr.com/a5af501920286789aeea39f045fac07e/55db6b37b5802682-13/s400x600/cc92453d9b0a8a723d3d3151ef6c1f6beab5801f.gif);
+  background-size: cover;
+  background-position: 65% 50%;
+  position: relative;
+   overflow: hidden;
+}
+
+.firmakay-foto2{
+  height: 200px;
+  width: 120px;
+  background-image: url(https://i.pinimg.com/originals/dd/13/0c/dd130c142a5537ea48c633e46009e9f4.gif);
+  background-size: cover;
+  background-position: 55% 50%;
+  margin-left: 5px;
+  position: relative;
+   overflow: hidden;
+}
+
+.filtrofotos{
+  backdrop-filter: blur(3px)brightness(35%)grayscale(100%)contrast(103%);
+  background: rgba(0,0,0, .3);
+  mix-blend-mode: multiply;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 1.1s ease-in-out;
+}
+
+.firmakay-1:hover .filtrofotos{
+  backdrop-filter: blur(0px)brightness(95%)grayscale(100%)contrast(103%);
+  background-color: var(--bruma);
+  mix-blend-mode: multiply;
+  transition: all 1.1s ease-in-out;
+}
+
+.foto2-quote{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.foto2-quote-n{
+  position: relative;
+  padding: 20px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  text-align: justify;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 150%;
+  transition: all 1.1s ease-in-out;
+  filter: blur(0px);
+  opacity: 1;
+}
+
+
+.foto2-quote-n i{
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  padding-bottom: 25px;
+  color: #000;
+  filter: blur(0px);
+  opacity: 1;
+}
+
+
+.firmakay-1:hover .foto2-quote-n{
+  filter: blur(6px);
+  opacity: 0;
+  transition: all 1.1s ease-in-out;
+}
+
+.filtrofotos-2{
+  backdrop-filter: blur(0px)brightness(70%)grayscale(10%)contrast(104%);
+  background: rgba(0,0,0, .2);
+  mix-blend-mode: overlay;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transition: all 1.1s ease-in-out;
+}
+
+.firmakay-1:hover .filtrofotos-2{
+  backdrop-filter: blur(3px)brightness(35%)grayscale(100%)contrast(103%);
+  background: rgba(0,0,0, .2);
+  mix-blend-mode: overlay;
+  transition: all 1.1s ease-in-out;
+}
+
+
+.quote-larga{
+  height: 180px;
+  width: 180px;
+  position: relative;
+  padding: 10px 20px;
+  background: rgba(0,0,0, .3);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  text-align: justify;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  line-height: 220%;
+  transition: all 1.1s ease-in-out;
+  filter: blur(6px);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+}
+
+.firmakay-1:hover .quote-larga{
+  filter: blur(0px);
+  opacity: 1;
+  transition: all 1.1s ease-in-out;
+}
+
+

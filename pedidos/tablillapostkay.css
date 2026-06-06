@@ -1,0 +1,53 @@
+.post-kay {
+  width: 450px;
+  font-size: 18.5px;
+  letter-spacing: .5px;
+  font-weight: 300;
+  margin: 0 auto;
+  font-family: 'Cormorant Garamond'; 
+  color: #abaaaa; 
+  line-height: 25px;
+  text-align: justify;
+}
+
+.titulo-kay {
+  width: 450px;
+  font-family: "Instrument Serif", serif;
+  text-align: center;
+  margin-top: 5px; 
+  text-transform: uppercase;
+  line-height: 105%;
+  padding-botom: 10px;
+  letter-spacing: 2px;
+  font-size: 35px;
+}
+
+.subtit-kay {
+  font-family: 'Cormorant Garamond'; 
+  color: #858585;
+  font-style: normal;
+  text-align: center;
+  margin: 5px auto;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+}
+
+.kay-in {
+  float: left; 
+  font-family: "initialkay";
+  font-weight: 300;
+  font-size: 84px;
+  width: 60px;
+  text-align: center;
+  margin-top: 5px;
+  padding-right: 10px;
+  background: -webkit-linear-gradient(var(--groups), #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 100%;
+}
+
+
+@font-face {font-family: "initialkay"; src: url('https://dl.dropbox.com/scl/fi/tyhxfxy7oo44zus4hze79/The-White-Knight-demo.ttf?rlkey=r7fpka5jl3vbydhywqc65n66b&st=wyqm3h7y');}
