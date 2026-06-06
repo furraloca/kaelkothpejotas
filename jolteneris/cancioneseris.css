@@ -1,7 +1,20 @@
-@font-face {font-family: "erisfont1"; src: url('https://dl.dropbox.com/scl/fi/6w68wwkvg1dcndxresfr1/Offenbacher-Reform-CAT.ttf?rlkey=a293dduxr2fr6bjo1okkcueds&st=kw9m7kdy');}
+@font-face{
+font-family: 'erisfont1';
+src: url('./Offenbacher Reform CAT.woff2') format('woff2'),
+url('./Offenbacher Reform CAT.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
-@font-face {font-family: "cancionfont"; src: url('https://dl.dropbox.com/scl/fi/a252lifi9cujgz2r6ecbw/Zaslia.otf?rlkey=8dx04ipvsgca5b628p1pbzonp&st=uuoujyw6');}
-
+@font-face{
+font-family: 'cancionfont';
+src: url('./Zaslia.woff2') format('woff2'),
+url('./Zaslia.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
 
 .cancionbg{
