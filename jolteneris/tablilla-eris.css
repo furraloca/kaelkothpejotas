@@ -1,0 +1,183 @@
+.eris-tab-1{
+  width: 500px;
+  position: relative;
+  height: auto;
+  margin: 0 auto;
+}
+
+.eris-tab-header{
+  height: 220px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.eris-tab-headerfil{
+  height: 260px;
+  width: 500px;
+  backdrop-filter: grayscale(100%)brightness(18%)contrast(108%);
+  position: absolute;
+}
+
+@font-face {font-family: "erisfont1"; src: url('https://dl.dropbox.com/scl/fi/6w68wwkvg1dcndxresfr1/Offenbacher-Reform-CAT.ttf?rlkey=a293dduxr2fr6bjo1okkcueds&st=kw9m7kdy');}
+
+.eris-tab-tit{
+  width: 100%;
+  height: auto;
+  padding: 10px 30px; 
+  font-family: "erisfont1";
+  font-weight: 600;
+  font-size: 33px;
+  letter-spacing: 1px;
+  text-transform: none;
+  line-height: 100%;
+  position: relative; 
+  -webkit-text-stroke: .1px var(--bruma);
+   color: rgba(4 4 4 / 100%);
+  filter: drop-shadow(var(--bruma) 2px 1px 0px);
+}
+
+.eris-tab-subt{
+  position: relative;
+  padding: 0px 30px; 
+  letter-spacing: 3px;
+  line-height: 190%;
+  padding-top: 10px;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 8px;
+  color: #D1D0D0;
+  width: 500px;
+  height: auto;
+  font-family: "Merriweather", serif;
+  text-align: justify;
+  text-transform: uppercase;
+}
+
+.eris-tab-subt b{
+  color: var(--bruma);
+  font-weigh: 300;
+}
+
+
+.eris-tab-tipotema{
+  position: relative;
+  left: 30px;
+  top: 0px;
+  letter-spacing: 1px;
+  line-height: 100%;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 9px;
+  color: #D1D0D0;
+  width: 300px;
+  height: auto;
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
+  opacity: 1;
+  padding-bottom: 10px;
+}
+
+.eris-tab-tipotema i{
+  color: #848484;
+  font-size: 10px;
+  position: relative;
+  top: 1px;
+}
+
+.eris-tab-post-body{
+  padding: 40px 30px;
+  text-align: justify;
+  font-family: "Merriweather", serif;
+  font-size: 14px;
+  line-height: 25px;
+  color: #abaaaa;
+  font-weight: 300;
+  position: relative;
+}
+
+.eris-tab-post-body b{
+  color: var(--bruma);
+}
+
+.eris-tab-post-body strong{
+  color: var(--bruma);
+}
+
+.header-sep{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  font-size: 20px;
+  color: var(--bruma);
+  position: absolute;
+  bottom: 0px;
+}
+
+.header-sep i{
+  font-size: 18px;
+  color: #848484;
+  opacity: .6;
+}
+
+.header-sep-barra{
+  width: 200px;
+  height: 1px;
+  background: #848484;
+  margin: 0px 10px;
+  opacity: .6;
+}
+
+.eris-tab-leyendafondo{
+  height: 110px;
+  background-image: url(https://i.pinimg.com/1200x/df/09/64/df09643b63973f915651f69e04389f41.jpg);
+  background-position: 50% 47%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.leyendafondo-overflow{
+  width: 100%;
+  height: 110px;
+  backdrop-filter: grayscale(100%)brightness(60%)contrast(105%);
+  position: absolute;
+  background: rgba(10,10,10, .4);
+}
+
+.eris-tab-leyendafondo n{
+  letter-spacing: 1px;
+  line-height: 100%;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 9px;
+  color: #D1D0D0;
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
+  margin: 0px 30px 0px 0px;
+  position: relative;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.eris-tab-leyendafondo i{
+  color: #848484;
+  position: relative;
+  top: 3px;
+  font-size: 14px;
+}
+
+
