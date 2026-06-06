@@ -1,3 +1,21 @@
+@font-face{
+font-family: 'BetterFields';
+src: url('./Better-Fields-Demo-BF68511d7f724f2.woff2') format('woff2'),
+url('./Better-Fields-Demo-BF68511d7f724f2.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
+
+@font-face{
+font-family: 'Ornaments1';
+src: url('./Victorian Free Ornaments Two.woff2') format('woff2'),
+url('./Victorian Free Ornaments Two.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
+
 
 /** FIRMA 1 **/
 .KA-sig1{
