@@ -1,0 +1,487 @@
+@font-face {font-family: "erisfont1"; src: url('https://dl.dropbox.com/scl/fi/6w68wwkvg1dcndxresfr1/Offenbacher-Reform-CAT.ttf?rlkey=a293dduxr2fr6bjo1okkcueds&st=kw9m7kdy');}
+
+@font-face {font-family: "initialeris1"; src: url('https://dl.dropbox.com/scl/fi/zir5fvgyonvcbvyvv29hk/Signtelly-Regular.ttf?rlkey=yqu90kft46lxj9kvtaxns2kn7&st=f86m6qvz');}
+
+
+
+
+
+.portadaeris-ficha{
+  padding: 50px 100px;
+  width: 779px; 
+  height: 720px;
+  margin: 0 auto;  
+  background: linear-gradient(350deg, #bdbdbd00 30%, var(--groups) 300%);
+}
+
+.p-frase1{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: .8;
+}
+
+.p-frase1 t{
+  width: 259px;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-family: "Gideon Roman", serif;
+  color: #b3b3b3;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.p-frase1 i{
+}
+
+
+
+
+.p-fotico-fondo{
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-foticotriang{
+  width: 249px; 
+  height: 180px;
+  filter: drop-shadow(0px 0px 9px var(--bruma));
+}
+
+.p-forma{
+  width: 249px; 
+  height: 180px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-size: 100%;
+  background-position: 50% 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.p-forma img{
+  width: 249px; 
+  height: 180px;
+  background-size: 100%;
+  background-position: 50% 50%;
+  position: relative;
+  z-index:10;
+}
+
+
+.p-formareves{
+  transform: rotateX(180deg);
+  width: 249px; 
+  height: 180px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-size: 100%;
+  background-position: 50% 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.p-formareves img{
+  width: 249px; 
+  height: 180px;
+  background-size: 100%;
+  background-position: 50% 50%;
+  transform: rotateX(-180deg);
+  position: relative;
+  z-index:10;
+}
+
+.p-fotosfiltro{
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  content: "";
+  backdrop-filter: blur(0px)brightness(60%)grayscale(100%)contrast(90%);
+  background-color: var(--bruma);
+  mix-blend-mode: multiply;
+  transition: all 1.1s ease-in-out;
+}
+
+.portadaeris-ficha:hover .p-fotosfiltro{
+    backdrop-filter: blur(0px)brightness(100%)grayscale(100%)contrast(110%);
+  background-color: var(--bruma);
+  mix-blend-mode: multiply;
+  transition: all 1.1s ease-in-out;
+}
+
+
+
+.p-nombreeris{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-family: 'erisfont1';
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 100%;
+  -webkit-text-stroke: .1px #555;
+  color: transparent;
+  text-transform: uppercase;
+  margin-top: 30px;
+  opacity: .5;
+  transition: all 1.1s ease-in-out;
+}
+
+
+.p-nombreeris n{
+  -webkit-text-stroke: .1px var(--groups);
+  color: transparent;
+  filter: drop-shadow(var(--groups) 0px 0px 4px);
+  opacity: 1;
+}
+
+
+.portadaeris-ficha:hover .p-nombreeris{
+   letter-spacing: 10px;
+   opacity: 1;
+   transition: all 1.1s ease-in-out;
+}
+
+
+.p-fondolinks{
+  width: 100%;
+  height: 70px;
+  background: url(https://i.pinimg.com/originals/d4/e0/b3/d4e0b38a268bf8297522eaffe296c0c4.gif);
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  position: relative;
+}
+
+.p-fondolinks:after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  backdrop-filter: blur(0px)brightness(60%)grayscale(100%)contrast(100%);
+  background-color: var(--bruma);
+  mix-blend-mode: multiply;
+  transition: all 1.1s ease-in-out;
+}
+
+.portadaeris-ficha:hover .p-fondolinks:after{
+    backdrop-filter: blur(1px)brightness(50%)grayscale(100%)contrast(100%);
+  background-color: #3e3e3e;
+  mix-blend-mode: multiply;
+  transition: all 1.1s ease-in-out;
+}
+
+
+.p-fondolinks a{
+  position: relative;
+  z-index: 20;
+  width: 128px;
+  font-size: 9px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "Gideon Roman", serif;
+  color: #b3b3b3;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 0px 0px 1px #abaaaa;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.p-fondolinks a:hover{
+  letter-spacing: 1.5px;
+  transition: all 0.4s ease-in-out;
+  color: var(--bruma);
+}
+
+
+.p-cuerpodatos{
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+}
+
+
+.p-cuerpodatos-hist{
+  width: 239px;
+  height: 180px;
+  margin: 10px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #101010 #000;
+}
+
+.p-history{
+  margin: 0px 10px 5px 0px;
+  font-size: 12px;
+  line-height: 165%;
+  font-family: "Gideon Roman", serif;
+  color: #b3b3b3;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.p-history span{
+  color: var(--bruma);
+  text-shadow: 1px 1px 1px #000;
+  font-size: 15px;
+  letter-spacing: 0px;
+}
+
+.p-history b,.p-history strong{
+  border-bottom: 1px solid var(--bruma);
+  text-transform: uppercase;
+  padding-bottom: 1px;
+  font-size: 9.5px;
+}
+
+
+
+.p-infodataf{
+  position: relative;
+  width: 279px; 
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.p-infodataf n{
+  width: 189px;
+  padding: 0px 0px 5px 0px;
+  margin: 0px 10px;
+  border-bottom: 1px solid var(--bruma);
+  font-size: 10px;
+  line-height: 100%;
+  font-family: "Gideon Roman", serif;
+  color: var(--bruma);
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+
+.p-infodataf span{
+  color: #b3b3b3;
+}
+
+.p-fotodata{
+  width: 120px;
+  height: 190px;
+  background: url(https://images2.imgbox.com/f5/ff/2xhPerRw_o.png);
+  filter: grayscale(100%)brightness(25%)contrast(96%);
+  background-size: cover;
+  background-position: 50% 0%;
+  position: absolute;
+  z-index: 18;
+  right: -5px;
+  top: 3px;
+}
+
+
+.p-citasderoleris{
+  width: 254px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.p-citasderol-caj{
+  height: 30px;
+  width: 215px;
+  position: relative;
+  border-left: 1px solid #181818;
+  border-right: 1px solid #181818;
+  border-top: 1px solid #181818;
+  text-align: center;
+  padding: 10px 15px;
+  margin: 8px 0px;
+  color: #abaaaa;
+  font-size: 8px;
+  letter-spacing: .5px;
+  line-height: 130%;
+  font-family: "Gideon Roman", serif;
+  font-style: italic;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-citasderol-caj ley{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: -5px;
+  right: 0px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  color: var(--bruma);
+  font-size: 9px;
+  letter-spacing: .5px;
+  line-height: 100%;
+  font-family: "Gideon Roman", serif;
+  font-style: normal;
+  text-transform: uppercase;
+  white-space: nowrap;
+  gap: 10px;
+}
+
+.p-citasderol-caj ley:before,.p-citasderol-caj ley:after{
+  content: "";
+  width: -webkit-fill-available;
+  height: 1px;
+  display: inline-block;
+  background: #181818;
+}
+
+.p-citasderol-caj a{
+  text-decoration: none;
+  color: var(--bruma);
+  transition: all 0.4s ease-in-out;
+}
+
+.p-citasderol-caj a:hover{
+  color: #b3b3b3;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.p-soundsoferis{
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.p-soundsoferis-tit{
+  width: 110px;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'erisfont1';
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 90%;
+  -webkit-text-stroke: .1px #555;
+  color: #000000;
+  overflow: hidden;
+}
+
+.p-soundsoferis-tit img{
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  z-index: 10;
+  opacity: .3;
+  filter: grayscale(100%)brightness(48%)contrast(105%);
+}
+
+.p-soundsoferis-tit n{
+  position: relative;
+  z-index: 30;
+  -webkit-text-stroke: .1px var(--groups);
+  color: transparent;
+  filter: drop-shadow(var(--groups) 0px 0px 4px);
+  opacity: .7;
+  transition: all 1.1s ease-in-out;
+}
+
+.portadaeris-ficha:hover .p-soundsoferis-tit n{
+   opacity: 1;
+   transition: all 1.1s ease-in-out;
+}
+
+.p-songf{
+  width: 166px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: .7;
+  transition: all 1.1s ease-in-out;
+}
+
+.portadaeris-ficha:hover .p-songf{
+   opacity: 1;
+   transition: all 1.1s ease-in-out;
+}
+
+.p-songf i{
+  color: var(--bruma);
+  font-size: 26px;
+  display: flex;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+
+.p-songf a{
+  width: 100%;
+  font-family: 'erisfont1';
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 110%;
+  -webkit-text-stroke: .1px var(--groups);
+  color: transparent;
+  filter: drop-shadow(var(--groups) 0px 0px 4px);
+  text-decoration: none;
+}
+
+
+.p-songf span{
+  display: flex;
+  font-size: 11px;
+  line-height: 100%;
+  font-family: "Gideon Roman", serif;
+  color: #b3b3b3;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: .5px;
+}
+

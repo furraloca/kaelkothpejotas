@@ -1,0 +1,146 @@
+
+@font-face {font-family: "erisfont1"; src: url('https://dl.dropbox.com/scl/fi/6w68wwkvg1dcndxresfr1/Offenbacher-Reform-CAT.ttf?rlkey=a293dduxr2fr6bjo1okkcueds&st=kw9m7kdy');}
+
+
+
+
+.cartaerisbg{
+  width: 410px;
+  height: auto;
+  min-height: 60px;
+  padding: 50px 20px 50px 20px;
+  position: relative;
+  top: 4px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: url(https://i.pinimg.com/736x/92/36/9f/92369fb01ffc56a2fd5ec39d170269e8.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+}
+
+.cartaerisbgfiltros{
+  width: 100%;
+  height: 110%;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  backdrop-filter: grayscale(100%)brightness(35%);
+}
+
+.cartaeris{
+  width: 340px;
+  height: auto;
+  min-height: 50px;
+  padding: 40px 30px;
+  position: relative;
+  z-index: 2;
+  top: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: url(https://i.pinimg.com/736x/5d/59/31/5d59310c0b782e6c93cc25d6f14ad2b4.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  box-shadow: 2px 3px 20px #00000085, 0 0 20px #000 inset;
+  border-radius: 10px 150px / 20px;
+}
+
+.inkpotpng{
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  z-index: 10;
+  top: -10px;
+  right: -10px;
+  background: url(https://png.pngtree.com/png-vector/20240508/ourmid/pngtree-a-collector-s-guide-to-antique-feather-and-ink-pot-sets-png-image_12381842.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  filter:grayscale(0%)contrast(111%)brightness(80%)drop-shadow(2px 2px 2px #000)hue-rotate(-15deg);
+}
+
+
+.cerisdentro{
+  position: relative;
+  z-index: 20;
+  display: block;
+  padding: 0px;
+  font-family: "cartaefont1";
+  color: #000;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-align: justify;
+  line-height: 185%;
+}
+
+@font-face {font-family: "cartaefont1"; src: url('https://dl.dropbox.com/scl/fi/70twp30gxbo0xps3xbqv8/zai_USDeclaration.ttf?rlkey=nc8upwq5ctlprocvad6egmito&st=hdymxmed');}
+
+
+.cerisdentro t{
+  width: 100%;
+  display: block;
+  padding-bottom: 25px;
+  font-size: 20px;
+}
+
+.cerisdentro n{
+  width: 100%;
+  display: block;
+  padding-top: 30px;
+  font-size: 20px;
+  text-align: right;
+  opacity: .8;
+}
+
+
+
+
+
+.portadaceris{
+  width: 500px;
+  height: 350px;
+  position: relative;
+  background: url(https://images2.imgbox.com/ee/6d/UG7BMjHD_o.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  outline: 2px solid #222;
+  overflow: hidden;
+}
+
+.titportadac{
+  position: relative;
+  z-index: 10;
+  width: 55%;
+  padding-bottom: 40px;
+  font-family: "erisfont1";
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-text-stroke: .1px var(--bruma);
+  color: transparent;
+  font-size: 40px;
+  text-transform: none;
+  line-height: 100%;
+  padding-left: 20px; 
+  text-shadow: 1px 1px 2px #000;
+  filter:drop-shadow(1px 1px 2px #000);
+}
+
+.titportadac span{
+  position: relative;
+  z-index: 10;
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-family: "Gideon Roman", serif;
+  color: #ababab;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 1px;
+  line-height: 160%;
+  text-align: justify;
+  padding-top: 5px;
+}

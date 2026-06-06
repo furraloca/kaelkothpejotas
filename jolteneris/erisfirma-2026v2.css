@@ -1,0 +1,351 @@
+@font-face {font-family: "erisfont1"; src: url('https://dl.dropbox.com/scl/fi/6w68wwkvg1dcndxresfr1/Offenbacher-Reform-CAT.ttf?rlkey=a293dduxr2fr6bjo1okkcueds&st=kw9m7kdy');}
+
+
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+
+
+
+
+.f26erisv4{
+  width: 370px;
+  height: 210px;
+  display: flex; 
+  margin: 0 auto;
+  gap: 4px;
+  outline: 4px solid #121212;
+  outline-offset: 3px;
+  overflow: hidden;
+}
+
+
+
+.f26erisv4gif{
+  width: 226px;
+  height: 210px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-image: url(https://i.pinimg.com/originals/12/f5/fd/12f5fd0e3677e58e0b02aa81a16ad0bd.gif);
+  background-position: 50% 50%;
+  background-size: 108%;
+}
+
+.f26gifover{
+  width: 226px;
+  height: 210px;
+  position: absolute;
+  z-index:5;
+  backdrop-filter: grayscale(70%)brightness(95%)contrast(106%)hue-rotate(50deg);
+  -webkit-backdrop-filter: grayscale(70%)brightness(95%)contrast(106%)hue-rotate(50deg);
+  background: rgba(0,0,0, .3);
+  mix-blend-mode: multiply;
+  transition: all 1.3s ease-in-out;
+}
+
+.f26erisv4:hover .f26gifover{
+ backdrop-filter: grayscale(85%)brightness(95%)contrast(106%)hue-rotate(50deg)blur(15px);
+  -webkit-backdrop-filter: grayscale(85%)brightness(95%)contrast(106%)hue-rotate(50deg)blur(15px);
+  transition: all 1.3s ease-in-out; 
+}
+
+
+.f26erisv4gif2{
+  width: 226px;
+  height: 210px;
+  position: absolute;
+  z-index:6;
+  overflow: hidden;
+  background-image: url(https://images2.imgbox.com/69/fb/nGHCwSr9_o.gif);
+  background-position: 50% 50%;
+  background-size: 104%;
+  opacity: 0;
+  transition: all .9s ease-in-out;
+}
+
+
+.f26erisv4:hover .f26erisv4gif2{
+  opacity: 1;
+  transition: all 1.3s ease-in-out; 
+  transition-delay: 1s;
+}
+
+
+.f26gifcolor{
+  width: 226px;
+  height: 210px;
+  position: absolute;
+  z-index: 7;
+  transform: translateX(226px);
+  background: var(--bruma);
+  backdrop-filter: grayscale(1);
+  -webkit-backdrop-filter: grayscale(1);
+  mix-blend-mode: multiply;
+  transition: all 1.3s ease-in-out;
+  transition-delay: .5s;
+}
+
+.f26erisv4:hover .f26gifcolor{
+  transform: translateX(0px);
+  transition: all 1.3s ease-in-out;
+}
+
+
+
+
+
+.f26erisv4pic{
+  width: 140px;
+  height: 210px;
+  box-sizing: border-box;  
+  background-image: url(https://images2.imgbox.com/d6/65/3SoNU7Fw_o.jpg);
+  background-position: 0% 50%;
+  background-size: 210%;
+  position: relative;
+  overflow: hidden;
+  border-left: 3px solid #181818;
+  z-index: 2;
+  transition: all 1.3s ease-in-out;
+  transition-delay: .5s;
+}
+
+
+.f26erisv4:hover .f26erisv4pic{
+  border-left: 3px solid var(--bruma);
+  background-position: 40% 50%;
+  background-size: 150%;
+  transition: all 1.3s ease-in-out;
+}
+
+
+.f26erisv4picover{
+  width: 137px;
+  height: 210px;
+  box-sizing: border-box;  
+  position: absolute;
+  z-index: 5;
+  backdrop-filter: blur(15px)grayscale(1);
+  -webkit-backdrop-filter: blur(15px)grayscale(1);
+  background: rgba(0,0,0, .8);
+  mix-blend-mode: multiply;
+  transition: all 1.3s ease-in-out;
+  transition-delay: .5s;
+}
+
+
+.f26erisv4:hover .f26erisv4picover{
+  backdrop-filter: blur(0px)grayscale(1);
+  -webkit-backdrop-filter: blur(0px)grayscale(1);
+  background: rgba(0,0,0, .5);
+  mix-blend-mode: multiply;
+  transition: all 1.3s ease-in-out;
+}
+
+
+
+
+.fpictxt{
+  position: absolute;
+  bottom: 0px;
+  z-index: 8;
+  height: 120px;
+  width: 117px;
+  padding: 0px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-family: "Gideon Roman", serif;
+  color: #b3b3b3;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 160%;
+  transition: all 1.3s ease-in-out;
+}
+
+.fpictxt t{
+  display: block;
+  filter: blur(0px);
+  transition: all 1.3s ease-in-out;
+  z-index: 8;
+}
+
+.fpictxt i{
+  font-size: 45px;
+  position: absolute;
+  z-index: 6;
+  bottom: -8px;
+  right: -25px;
+  opacity: .8;
+  -webkit-text-stroke: .5px var(--bruma);
+  color: transparent;
+  filter: drop-shadow(var(--bruma) 0px 0px 4px);
+  transform: rotate(15deg);
+  transition: all 1.3s ease-in-out;
+}
+
+.f26erisv4:hover .fpictxt i{
+  transform: rotate(90deg);
+  right: -78px;
+  opacity: 0;
+  transition: all 1.3s ease-in-out;
+}
+
+.fpictxt c{
+  position: absolute;
+  z-index: 10;
+  bottom: 5px;
+  display: block;
+  filter: blur(15px);
+  opacity: 0;
+  transition: all 1.3s ease-in-out;
+}
+
+.f26erisv4:hover .fpictxt c{
+  filter: blur(0px);
+  opacity: 1;
+  transition: all 1.3s ease-in-out;
+  transition-delay: 1.1s;
+}
+
+
+.fpictxt span{
+  display: block;
+  padding-bottom: 5px;
+  line-height: 80%;
+  font-family: "erisfont1";
+  font-size: 32px;
+  letter-spacing: 0px;
+  -webkit-text-stroke: .5px var(--bruma);
+  color: transparent;
+  filter: drop-shadow(var(--bruma) 0px 0px 4px);
+  text-transform: none;
+}
+
+
+.fpictxt x{
+  display: block;
+  padding-bottom: 5px;
+  line-height: 80%;
+  font-family: "erisfont1";
+  font-size: 32px;
+  letter-spacing: 0px;
+  -webkit-text-stroke: 0px #000;
+  color: var(--bruma);
+  filter: drop-shadow(#000 0px 0px 0px);
+  text-transform: none;
+  opacity: .8;
+}
+
+
+
+
+.f26erisv4:hover .fpictxt{
+  height: 50px;
+  transition: all 1.3s ease-in-out;
+}
+
+
+.f26erisv4:hover .fpictxt t{
+  filter: blur(15px);
+  opacity: 0;
+  transition: all 1.3s ease-in-out;
+  transition-delay: 1.1s;
+}
+
+
+
+.fgiftxt{
+  width: 226px;
+  height: 210px;
+  position: absolute;
+  z-index:10;
+  overflow: hidden;
+  opacity: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-family: "erisfont1";
+  font-size: 32px;
+  letter-spacing: 0px;
+  color: var(--bruma);
+  filter: drop-shadow(#000 0px 0px 4px);
+  text-transform: none;
+}
+
+
+
+.fgiftxt t{
+  filter: blur(15px);
+  opacity: 0;
+  transition: all .9s ease-in-out;
+}
+
+
+.f26erisv4:hover .fgiftxt t{
+  display: block;
+  text-align: center;
+  width: 100%;
+  filter: blur(0px);
+  opacity: 1;
+  transition: all 1.3s ease-in-out;
+  transition-delay: 1.1s;
+}
+
+
+.fgiftxt c{
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-image: url(https://images2.imgbox.com/ed/6a/Lb2vK68V_o.gif);
+  background-position: 50% 50%;
+  background-size: cover;
+  filter: drop-shadow(0px 0px 2px var(--bruma))blur(6px);
+  transform: rotate(0deg);
+  position: absolute;
+  bottom: -50px;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+
+.f26erisv4:hover .fgiftxt c{
+  transform: rotate(50deg);
+  filter: drop-shadow(0px 0px 2px var(--bruma))blur(0px);
+  bottom: 20px;
+  opacity: .4;
+  transition: all 0.7s ease-in-out;
+  transition-delay: 1.3s;
+}
+
+
+.fgiftxt x{
+  width: 140px;
+  height: 0px;
+  background: linear-gradient(to right, #000, #181818);
+  padding: 0px;
+  margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-family: "Gideon Roman", serif;
+  color: #b3b3b3;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 100%;
+  transition: all 0.7s ease-in-out;
+}
+
+
+.f26erisv4:hover .fgiftxt x{
+  height: 8px;
+  padding: 5px 0px;
+  transition: all 0.7s ease-in-out;
+  transition-delay: 1.3s;
+}
