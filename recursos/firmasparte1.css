@@ -1253,4 +1253,267 @@ font-display: swap;
 
 
 
+/** FIRMA DELIRAN **/
+.KA-sig7{
+  width: 300px;
+  height: 240px;
+  margin:auto;
+  overflow:hidden;
+  position: relative;
+}
+
+.KA-sig7full{
+  position:relative;
+  margin: auto;
+  overflow:hidden;
+  height: 205px;
+  width: 275px;
+}
+
+.KA-sig7-1{
+  height: 205px;
+  width: 275px;  
+}
+
+.KA-sig7-1 img{
+  height: 205px;
+  width: 275px; 
+  object-fit: cover; 
+  object-position: center; 
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+
+.KA-sig7-2{
+  height: 205px;
+  width: 275px;
+  transition: all ease-in-out 1s;
+  opacity: 0;
+  position: absolute;
+  z-index: 5;
+}
+
+.KA-sig7:hover .KA-sig7-2{
+  opacity: 1;
+  transition: all ease-in-out 1s;
+  transition-delay:.5s;
+}
+
+
+.KA-sig7-2 img{
+  height: 205px;
+  width: 275px;
+  object-fit: cover; 
+  object-position: center; 
+  
+}
+
+
+.KA-sig7overl1{
+  height: 205px;
+  width: 138px;
+  background: var(--groups);
+  backdrop-filter: grayscale(1);
+  mix-blend-mode: multiply;  
+  position: absolute;
+  z-index: 10;
+  left: -205px;
+  transition: all ease-in-out 1s;
+  transition-delay:.5s;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.KA-sig7:hover .KA-sig7overl1{
+  left: 0px;
+  transition: all ease-in-out 1s;
+}
+
+.quote3{
+   font-family: "Gideon Roman", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 8px;
+  color: #abaaaa;
+  line-height: 190%;
+  letter-spacing: 1px; 
+  text-shadow: 1px 1px 1px #000;
+  text-transform:uppercase;
+  height: 205px;
+  width: 138px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:justify;
+  box-sizing:border-box;
+  position: absolute;
+  left: 137px;
+  z-index: 30;
+  padding: 0px 20px;
+  opacity: 0;
+  filter: blur(5px);
+  transition: all ease-in-out 1s;
+}
+
+.KA-sig7:hover .quote3{
+  opacity: 1;
+  filter: blur(0px);
+  transition: all ease-in-out 1s;
+  transition-delay:.5s;
+}
+
+.quote3 n{
+  display:block;
+  box-sizing:border-box;
+}
+
+.quote3 b{
+   animation: parpadeo1 1.9s infinite;
+}
+
+
+@keyframes parpadeo1 {
+  0% {color: #abaaaa;}
+  50% {color: var(--groups);}
+  100% {color: #abaaaa;}
+}
+
+
+.quote4{
+ font-family: "UnifrakturMaguntia", cursive;
+ color: transparent;
+ -webkit-text-stroke: .5px #ababab;
+  text-shadow: 1px 1px 0px var(--groups);
+  font-weight: 300;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0px; 
+  height: 205px;
+  width: 138px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:right;
+  box-sizing:border-box;
+  position: absolute;
+  left: 0px;
+  z-index: 30;
+  padding: 0px 20px;
+  opacity: 0;
+  filter: blur(5px);
+  transition: all ease-in-out 1s;
+}
+
+.KA-sig7:hover .quote4{
+  opacity: 1;
+  filter: blur(0px);
+  transition: all ease-in-out 1s;
+  transition-delay:.5s;
+}
+
+
+.KA-sig7overl2{
+  height: 205px;
+  width: 140px;
+  background: rgba(0,0,0, .7);
+  backdrop-filter: grayscale(1);
+  mix-blend-mode: multiply;  
+  position: absolute;
+  z-index: 10;
+  left: 355px;
+  transition: all ease-in-out 1s;
+  transition-delay:.5s;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.KA-sig7:hover .KA-sig7overl2{
+  left: 138px;
+  transition: all ease-in-out 1s;
+}
+
+.KA-sig7quo1{
+  width: 300px;
+  height: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  
+  padding: 0px 0px 8px 0px;
+}
+
+.KA-sig7quo1 c{
+  width: 290px;
+  font-family: "Gideon Roman", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 8px;
+  color: #abaaaa;
+  line-height: 100%;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 20;
+  left: 0px;
+  text-transform: uppercase;
+  transition: all ease-in-out 1s;
+  transition-delay:.3s;
+}
+
+
+.KA-sig7quo1 x{
+  width: 300px;
+  height: 1px;
+  background: var(--groups);
+  position: relative;
+  z-index: 20;
+  left: -20px;
+  transition: all ease-in-out 1s;
+  transition-delay:.3s;
+}
+
+.KA-sig7:hover .KA-sig7quo1 x{
+  left: -160px;
+  transition: all ease-in-out .7s;
+}
+
+.KA-sig7:hover .KA-sig7quo1 c{
+  opacity: 0;
+  left: 150px;
+  transition: all ease-in-out .7s;
+}
+
+.KA-sig7borders{
+  width: 298px;
+  height: 228px;
+  margin: auto;
+  border-left: 1px solid #181818;
+  border-bottom: 1px solid #181818;
+  border-right: 1px solid #181818;
+  border-top: 0px solid #181818;
+  position: absolute; 
+  top: 5px;
+  z-index: 8;
+  transition: all ease-in-out .5s;
+}
+
+
+.KA-sig7:hover .KA-sig7borders{
+  border-bottom: 1px solid var(--groups);
+  border-left: 1px solid var(--groups);
+  border-right: 1px solid var(--groups);
+  border-top: 1px solid var(--groups);
+  transition: all ease-in-out 1s;
+  transition-delay:.5s;
+}
+
+
+
+
 
