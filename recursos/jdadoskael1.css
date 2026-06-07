@@ -186,18 +186,18 @@
 
 
 .KA-juegod1-cardcarab span:after{
-  content: "\f48f";
+  content: "\f485";
   position: relative;
-  left: 10px;
+  left: 14px;
   font-size: 22px;
   color: #3e3e3e;
   font-family: game-icons !important;
 }
 
 .KA-juegod1-cardcarab span:before{
-  content: "\f48f";
+  content: "\f485";
   position: relative;
-  right: 10px;
+  right: 14px;
   font-size: 22px;
   color: #3e3e3e;
   font-family: game-icons !important;
