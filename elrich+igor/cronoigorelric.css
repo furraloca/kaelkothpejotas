@@ -124,8 +124,8 @@ font-display: swap;
 
 .cr3pj-caj t:before{
   font-size: 20px;
-  content: "\EEB7";
-  font-family: "game-icons";
+  content: "\fa34";
+  font-family: game-icons;
   padding-right: 5px;
 }
 
@@ -136,8 +136,8 @@ font-display: swap;
 
 .cerrado.cr3pj-caj t:before{
   font-size: 20px;
-  content: "\EEB9";
-  font-family: "game-icons";
+  content: "\fa35";
+  font-family: game-icons;
   padding-right: 5px;
 }
 
