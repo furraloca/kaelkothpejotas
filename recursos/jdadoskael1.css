@@ -1,0 +1,280 @@
+/** JUEGO DE DADOS 1 **/
+
+.KA-juegod1{
+  position: relative;
+  width: 460px;
+  margin: 0 auto;
+  height: auto;
+  min-height: 300px;
+  padding: 20px 0px;
+  outline: 1px solid #181818;
+  background: url(https://i.pinimg.com/736x/89/bd/2e/89bd2e134855ebfca4ba681071907721.jpg) no-repeat fixed center top / cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+
+.KA-juegod1-bg{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: grayscale(100%)brightness(35%)contrast(94%);
+  -webkit-backdrop-filter: grayscale(100%)brightness(65%)contrast(94%);
+  background-color: #333;
+  mix-blend-mode: multiply;
+}
+
+.KA-juegod1-cardcontainer{
+  perspective: 1500px; /* Increased perspective for better depth effect */
+  position: relative;
+  height: 260px;
+  width: 200px;
+  margin: 10px 0px;
+}
+
+
+.KA-juegod1-cardcaraa,.KA-juegod1-cardcarab{
+  position: absolute;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+
+.KA-juegod1-cardcaraa{
+  height: 260px;
+  width: 200px;
+  overflow:hidden;
+  position: relative;
+  transition: transform 0.8s ease-in-out;
+  border: 1px solid #181818;
+  border-radius: 22px;
+  filter: drop-shadow(0px 3px 3px #181818);
+}
+
+.KA-juegod1-cardcaraa img{
+  object-fit: cover;
+  object-position: center; 
+  height: 260px;
+  width: 200px;
+}
+
+.KA-juegod1-cardcaraa:before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  mix-blend-mode: color;
+}
+
+.acierto.KA-juegod1-cardcaraa:before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--groups);
+  mix-blend-mode: color;
+}
+
+.KA-juegod1-cardcaraa nombre{
+  display: block;
+  bottom: 0px;
+  height: 50px;
+  width: 200px;
+  background: #111;
+  color: #abaaaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  line-height: 100%;
+  font-family: "Germanica";
+  position: absolute;
+  border-top: 2px solid #181818;
+}
+
+
+
+.KA-juegod1-cardcarab{
+  height: 260px;
+  width: 200px;
+  border: 1px solid #181818;
+  border-radius: 22px;
+  overflow:hidden;
+  box-sizing:border-box;
+  transform: rotateY(180deg);
+  transition: transform 0.8s ease-in-out;
+  filter: drop-shadow(0px 3px 3px #181818);
+}
+
+.KA-juegod1-cardcarab img{
+  object-fit: cover;
+  object-position: top; 
+  height: 260px;
+  width: 200px;
+  filter: blur(2px)grayscale(1)brightness(35%);
+  transform: scale(1.5);
+  position: absolute;
+  z-index:2;
+}
+
+
+
+.KA-juegod1-cardcontainer:hover .KA-juegod1-cardcaraa{
+  transform: rotateY(180deg);
+}
+
+.KA-juegod1-cardcontainer:hover .KA-juegod1-cardcarab{
+  transform: rotateY(0deg);
+}
+
+
+
+.acierto.KA-juegod1-cardcarab,.acierto.KA-juegod1-cardcaraa{
+  filter: drop-shadow(0px 3px 3px var(--groups));
+  border: 1px solid var(--groups);
+}
+
+.acierto.KA-juegod1-cardcaraa nombre,.acierto.KA-juegod1-cardcarab nombre{
+  border-top: 1px solid var(--groups);
+}
+
+
+
+.KA-juegod1-cardcarab tit{
+  height: 35px;
+  padding: 20px 20px;
+  width: 160px;
+  position: relative;
+  z-index: 4;
+  top: 0px;
+  text-align: center;
+  font-family: 'Gideon Roman';
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #abaaaa;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-shadow: 1px 1px 0px #000;
+  letter-spacing: 2px;
+}
+
+
+.KA-juegod1-cardcarab span{
+  font-family: "Germanica";
+  line-height: 100%;
+  font-size: 34px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-transform: none;
+  padding-top: 8px;
+  position: relative;
+  text-shadow: 1px 1px 0px #000;
+  letter-spacing: 0px;
+}
+
+
+.KA-juegod1-cardcarab span:after{
+  content: "\EF17";
+  position: relative;
+  left: 10px;
+  font-size: 22px;
+  color: #3e3e3e;
+  font-family: "game-icons";
+}
+
+.KA-juegod1-cardcarab span:before{
+  content: "\EF17";
+  position: relative;
+  right: 10px;
+  font-size: 22px;
+  color: #3e3e3e;
+  font-family: "game-icons";
+}
+
+.acierto.KA-juegod1-cardcarab span:before,.acierto.KA-juegod1-cardcarab span:after{
+  color: var(--groups);
+}
+
+
+.acierto.KA-juegod1-cardcarab span{
+  color: var(--groups);
+}
+
+
+.KA-juegod1-cardcarab efecto{
+  display: block;
+  padding: 10px 10px 20px 10px;
+  margin-top: 10px;
+  width: 180px;
+  position: relative;
+  z-index: 4;
+  height: 144px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #181818 transparent;
+  font-family: 'Gideon Roman';
+  font-size: 13.5px;
+  line-height: 147%;
+  color: #abaaaa;
+  text-align: justify;
+  background: linear-gradient(342deg, rgba(51, 51, 51, .9) 0%, transparent 50%, transparent 100%);
+}
+
+.acierto.KA-juegod1-cardcarab efecto{
+  background: linear-gradient(342deg, var(--groups) 0%, transparent 50%, transparent 100%); 
+}
+
+
+.KA-juegod1-cardcarab efecto b,.KA-juegod1-cardcarab efecto strong{
+  border-bottom: 2px solid #333;
+  padding-bottom: 1px;
+}
+
+
+.acierto.KA-juegod1-cardcarab efecto b,.acierto.KA-juegod1-cardcarab efecto strong{
+  border-bottom: 2px solid var(--groups);
+}
+
+
+
+.KA-juegod1-reglas{
+  width: 380px;
+  margin: 10px 0px 20px 0px;
+  padding: 25px;
+  background: linear-gradient(342deg, rgba(51, 51, 51, .6) 0%, transparent 50%, transparent 100%);
+  border-radius: 10px 60px / 20px;
+  position: relative;
+  height: auto;
+  box-shadow: 2px 3px 20px #00000085, 0 0 50px #222 inset;
+}
+
+.KA-juegod1-reglas txt{
+  display: block;
+  width: 380px;
+  font-family: 'Gideon Roman';
+  line-height: 150%;
+  font-size: 14px;
+  text-align: justify;
+  color: #abaaaa;
+}
+
+
+.KA-juegod1-reglas span{
+  font-family: "Germanica";
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 100%;
+}
+
