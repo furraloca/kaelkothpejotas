@@ -191,7 +191,7 @@
   left: 10px;
   font-size: 22px;
   color: #3e3e3e;
-  font-family: "game-icons";
+  font-family: game-icons !important;
 }
 
 .KA-juegod1-cardcarab span:before{
@@ -200,7 +200,7 @@
   right: 10px;
   font-size: 22px;
   color: #3e3e3e;
-  font-family: "game-icons";
+  font-family: game-icons !important;
 }
 
 .acierto.KA-juegod1-cardcarab span:before,.acierto.KA-juegod1-cardcarab span:after{
@@ -279,7 +279,7 @@
 }
 
 .KA-juegod1-reglas span i{
-  font-size: 20px;
-  padding-right: 4px;
+  font-size: 22px;
+  margin-right: 5px;
 }
 
