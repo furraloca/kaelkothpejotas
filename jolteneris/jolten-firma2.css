@@ -24,6 +24,7 @@
   object-position: center; 
   position: absolute;
   z-index: 5;
+  filter: grayscale(0)brightness(100%)contrast(100%)blur(0px);
   transition: all 1.3s ease-in-out;
   transition-delay: 0.6s;
 }
