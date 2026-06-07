@@ -215,9 +215,9 @@
 
 .KA-juegod1-cardcarab efecto{
   display: block;
-  padding: 10px 10px 20px 10px;
+  padding: 10px 15px 20px 15px;
   margin-top: 10px;
-  width: 180px;
+  width: 170px;
   position: relative;
   z-index: 4;
   height: 144px;
@@ -225,8 +225,8 @@
   scrollbar-width: thin;
   scrollbar-color: #181818 transparent;
   font-family: 'Gideon Roman';
-  font-size: 13.5px;
-  line-height: 147%;
+  font-size: 12.5px;
+  line-height: 165%;
   color: #abaaaa;
   text-align: justify;
   background: linear-gradient(342deg, rgba(51, 51, 51, .9) 0%, transparent 50%, transparent 100%);
