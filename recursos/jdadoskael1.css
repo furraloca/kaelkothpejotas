@@ -186,7 +186,7 @@
 
 
 .KA-juegod1-cardcarab span:after{
-  content: "\EF17";
+  content: "\f48f";
   position: relative;
   left: 10px;
   font-size: 22px;
@@ -195,7 +195,7 @@
 }
 
 .KA-juegod1-cardcarab span:before{
-  content: "\EF17";
+  content: "\f48f";
   position: relative;
   right: 10px;
   font-size: 22px;
