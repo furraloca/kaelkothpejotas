@@ -93,7 +93,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 28px;
+  font-size: 34px;
   line-height: 100%;
   font-family: "Romanesco";
   position: absolute;
@@ -173,7 +173,7 @@
 .KA-juegod1-cardcarab span{
   font-family: "Romanesco";
   line-height: 100%;
-  font-size: 34px;
+  font-size: 36px;
   display: block;
   width: 100%;
   text-align: center;
@@ -273,7 +273,7 @@
 
 .KA-juegod1-reglas span{
   font-family: "Romanesco";
-  font-size: 22px;
+  font-size: 28px;
   letter-spacing: 1px;
   line-height: 100%;
 }
