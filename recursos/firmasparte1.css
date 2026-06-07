@@ -108,7 +108,7 @@ font-display: swap;
   font-size: 9px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #e5e5e5;
+  color: #ababab;
   text-shadow: 1px 1px 0px #000;
   line-height: 140%;
   position: relative;
@@ -126,7 +126,7 @@ font-display: swap;
   font-size: 33px;
   color: #000;
   line-height: 100%;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   filter:drop-shadow(1px 1px 1px var(--groups));
 }
 
@@ -144,9 +144,9 @@ font-display: swap;
 
 .KA-sig1-texto1 b,.KA-sig1-texto1 strong{
   padding: 2px 3px 1px 5px;
-  background: rgba(0,0,0, .8);
+  background: rgba(0,0,0, .9);
   font-weight: 400;
-  color: #e5e5e5;
+  color: #cbcbcb;
   text-shadow: 1px 1px 1px var(--groups);
 }
 
