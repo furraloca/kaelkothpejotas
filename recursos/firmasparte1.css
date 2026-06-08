@@ -178,7 +178,7 @@ font-display: swap;
 .KA-sig1-texto2:before{
   font-family: "Ornaments1";
   color: var(--groups);
-  font-size: 44px;
+  font-size: 38px;
   position: absolute;
   top: 20px;
   left: 10px;
@@ -189,7 +189,7 @@ font-display: swap;
 .KA-sig1-texto2:after{
   font-family: "Ornaments1";
   color: #abaaaa;
-  font-size: 44px;
+  font-size: 38px;
   position: absolute;
   bottom: 10px;
   right: 10px;
