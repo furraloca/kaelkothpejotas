@@ -864,7 +864,7 @@ font-display: swap;
 }
 
 .KA-sig4v2 img{
-  filter: grayscale(1);
+  filter: grayscale(0);
 }
 
 
@@ -876,6 +876,7 @@ font-display: swap;
   left: 0px;
   z-index: 11;
   background-color: var(--groups);
+  backdrop-filter: grayscale(1);
   mix-blend-mode: multiply;
   transform: translateX(340px);
   transition: all ease-in-out 0.7s;
