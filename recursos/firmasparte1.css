@@ -1594,9 +1594,12 @@ font-display: swap;
   object-fit: cover; 
   object-position: center; 
   filter: grayscale(1);
+  position: absolute;
+  top: 0px;
+  z-index: 20;
 }
 
-.KA-sig8img2 img:before{
+.KA-sig8img2fil{
   width: 275px;
   height: 205px;
   position: absolute;
