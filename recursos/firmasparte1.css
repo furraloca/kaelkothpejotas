@@ -1589,14 +1589,14 @@ font-display: swap;
 }
 
 .KA-sig8img2 img{
-   width: 275px;
+  width: 275px;
   height: 205px;
   object-fit: cover; 
   object-position: center; 
   filter: grayscale(1);
 }
 
-.KA-sig8img2:before{
+.KA-sig8img2 img:before{
   width: 275px;
   height: 205px;
   position: absolute;
