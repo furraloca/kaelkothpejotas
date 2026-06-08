@@ -1531,7 +1531,7 @@ font-display: swap;
   border-image-slice: 1;
   border-width: 2px;
   border-image-source: linear-gradient(to bottom, #181818, #000);
-  transition: all ease-in 1.5s;
+  transition: all ease-in-out 1s;
 }
 
 .KA-sig8 img{
@@ -1560,7 +1560,7 @@ font-display: swap;
   text-transform:uppercase;
   padding: 5px 0px 3px 0px;
   background-color: rgba(0,0,0, .6);
-  transition: all ease-in 1.8s;
+  transition: all ease-in-out 1s;
 }
 
 .KA-sig8:hover .KA-sig8txt1{
@@ -1569,8 +1569,8 @@ font-display: swap;
 }
 
 .KA-sig8:hover{
-   border-image-source: linear-gradient(to bottom, #181818, var(--groups), var(--groups));
-  transition: all ease-in 1.5s;
+  border-image-source: linear-gradient(to bottom, #181818, var(--groups), var(--groups));
+  transition: all ease-in-out 1s;
 }
 
 .KA-sig8img2{
@@ -1579,12 +1579,12 @@ font-display: swap;
   position: absolute;
   top: 0px;
   z-index: 20;
-  transition: all ease-in 1.5s;
+  transition: all ease-in-out 1s;
   opacity: 0;
 }
 
 .KA-sig8:hover .KA-sig8img2{
-  transition: all ease-in 1.5s;
+  transition: all ease-in-out 1s;
   opacity: 1;
 }
 
@@ -1637,12 +1637,12 @@ font-display: swap;
   text-shadow: 1px 1px 0px #000;
   transform: scale(0.8);
   filter: blur(12px);
-  transition: all ease-in 1.2s;
+  transition: all ease-in-out 1s;
 }
 
 .KA-sig8:hover .KA-sig8txt2{
-  transition: all ease-in 1.2s;
-  transition-delay: .7s;
+  transition: all ease-in-out 1s;
+  transition-delay: .6s;
   transform: scale(1);
   filter: blur(0px);
   opacity: 1;
