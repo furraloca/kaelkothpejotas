@@ -1677,8 +1677,7 @@ font-display: swap;
 
 
 .KA-sig8txt2 b,.KA-sig8txt2 strong{
-  animation:fadej 1000ms infinite;
-  -webkit-animation:fadej 1000ms infinite;
+  animation: parpadeo1 1.9s infinite;
   color: var(--groups);
 }
 
