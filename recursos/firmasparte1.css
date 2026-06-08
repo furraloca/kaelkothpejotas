@@ -1526,7 +1526,7 @@ font-display: swap;
   overflow: hidden;
   position: relative;
   outline: 1px solid #181818;
-  outline-offset: 1px;
+  outline-offset: 10px;
   border: 2px solid;
   border-image-slice: 1;
   border-width: 2px;
