@@ -1600,12 +1600,12 @@ font-display: swap;
   transition: all ease-in 1.5s;
   opacity: 0;
   background-color: var(--groups);
-  mix-blend-mode: screen;
+  mix-blend-mode: overlay;
 }
 
 .KA-sig8:hover .KA-sig8img2{
   transition: all ease-in 1.5s;
-  opacity: .6;
+  opacity: 1;
 }
 
 .KA-sig8img2 img{
