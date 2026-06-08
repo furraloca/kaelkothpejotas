@@ -1,1 +1,1677 @@
-.
+@font-face{
+font-family: 'BetterFields';
+src: url('./Better-Fields-Demo-BF68511d7f724f2.woff2') format('woff2'),
+url('./Better-Fields-Demo-BF68511d7f724f2.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
+
+@font-face{
+font-family: 'Ornaments1';
+src: url('./Victorian Free Ornaments Two.woff2') format('woff2'),
+url('./Victorian Free Ornaments Two.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
+
+
+/** FIRMA 1 **/
+.KA-sig1{
+  width: 340px;
+  height: 200px;
+  border: 6px solid #181818;
+  outline: 1px solid #020202;
+  outline-offset: -6px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transition: all ease-in-out 0.7s;
+}
+
+.KA-sig1:hover{
+  outline: 1px solid var(--groups);
+  transition: all ease-in-out 0.7s;
+  transition-delay: .5s;
+}
+
+
+.KA-sig1 img{
+  width: 340px;
+  height: 200px;
+  object-fit: cover; 
+  object-position: center; 
+  filter: grayscale(0)brightness(85%)blur(0px);
+  transition: all ease-in-out 0.7s;
+  position: absolute;
+  z-index: 10;
+}
+
+.KA-sig1:hover.KA-sig1 img{
+  filter: grayscale(100%)brightness(30%)blur(2px);
+  transform: scale(1.7);
+  transition: all ease-in-out 0.7s;
+}
+
+
+.KA-sig1-filtro1{
+  width: 170px;
+  height: 200px;
+  background-color: #333;
+  mix-blend-mode: overlay;
+  position: absolute;
+  z-index: 12;
+  bottom: 200px;
+  left: 0px;
+  transition: all ease-in-out 0.7s;
+}
+
+.KA-sig1:hover .KA-sig1-filtro1{
+  bottom: 0px;
+  transition: all ease-in-out 0.7s;
+  transition-delay: .5s;
+}
+
+
+.KA-sig1-filtro2{
+  width: 170px;
+  height: 200px;
+  background-color: var(--groups);
+  mix-blend-mode: overlay;
+  position: absolute;
+  z-index: 12;
+  top: 200px;
+  right: 0px;
+  transition: all ease-in-out 0.7s;
+}
+
+.KA-sig1:hover .KA-sig1-filtro2{
+  top: 0px;
+  transition: all ease-in-out 0.7s;
+  transition-delay: .5s;
+}
+
+
+.KA-sig1-texto1{
+  width: 300px;
+  height: 200px;
+  padding: 0px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  font-family: "Gideon Roman", serif;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ababab;
+  text-shadow: 1px 1px 0px #000;
+  line-height: 140%;
+  position: relative;
+  z-index: 16;
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+  filter:blur(0px);
+}
+
+
+.KA-sig1-texto1 i{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 33px;
+  color: #000;
+  line-height: 100%;
+  padding-bottom: 8px;
+  filter:drop-shadow(1px 1px 1px var(--groups));
+}
+
+.KA-sig1-texto1 txt{
+  display: block;
+}
+
+
+.KA-sig1:hover .KA-sig1-texto1{
+  filter:blur(6px);
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all ease-in-out 0.7s;
+}
+
+.KA-sig1-texto1 b,.KA-sig1-texto1 strong{
+  padding: 2px 3px 1px 5px;
+  background: rgba(0,0,0, .9);
+  font-weight: 400;
+  color: #cbcbcb;
+  text-shadow: 1px 1px 1px var(--groups);
+}
+
+
+
+.KA-sig1-texto2{
+  width: 340px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  z-index: 20;
+  transition: all ease-in-out 0.7s;
+  filter:blur(5px);
+  opacity: 0;
+}
+
+.KA-sig1:hover .KA-sig1-texto2{
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+  filter:blur(0px);
+  opacity: 1;
+}
+
+.KA-sig1-texto2:before{
+  font-family: "Ornaments1";
+  color: var(--groups);
+  font-size: 35px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  content: "A";
+}
+
+
+.KA-sig1-texto2:after{
+  font-family: "Ornaments1";
+  color: #abaaaa;
+  font-size: 35px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  content: "B";
+}
+
+
+.KA-sig1-texto2 frase1{
+  width: 120px;
+  height: 160px;
+  font-family: "BetterFields";
+  color: var(--groups);
+  font-size: 25px;
+  line-height: 145%;
+  text-shadow: 1px 1px 0px #000;
+  text-transform: lowercase;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  left: 120px;
+  background: rgba(0,0,0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  transition: all ease-in-out 0.7s;
+}
+
+.KA-sig1:hover .KA-sig1-texto2 frase1{
+  left: 20px;
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+}
+
+.KA-sig1-texto2 frase1 b,.KA-sig1-texto2 frase1 strong{
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 145%;
+  letter-spacing: 1.5px;
+  font-size: 25px;
+  color: #abaaaa;
+}
+
+
+
+.KA-sig1-texto2 frase1v2{
+  width: 120px;
+  height: 160px;
+  font-family: "UnifrakturMaguntia", cursive;  
+  color: transparent;
+  -webkit-text-stroke: .5px #ababab;
+  text-shadow: 2px 2px 0px var(--groups);
+  text-transform: lowercase;
+  font-size: 28px;
+  line-height: 115%;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  left: 120px;
+  background: rgba(0,0,0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  transition: all ease-in-out 0.7s;
+}
+
+.KA-sig1:hover .KA-sig1-texto2 frase1v2{
+  left: 20px;
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+}
+
+.KA-sig1-texto2 frase2{
+  width: 120px;
+  height: 160px;
+  font-family: "Gideon Roman", serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #abaaaa;
+  text-shadow: 1px 1px 0px #000;
+  line-height: 170%;
+  text-align: justify;
+  position: absolute;
+  top: 20px;
+  right: 120px;
+  background: rgba(0,0,0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  transition: all ease-in-out 0.7s;
+}
+
+.KA-sig1:hover .KA-sig1-texto2 frase2{
+  right: 20px;
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+}
+
+
+.KA-sig1-texto2 txt{
+  display: block;
+}
+
+.KA-sig1-texto2 txt b,.KA-sig1-texto2 txt strong{
+  padding: 2px 3px 2px 5px;
+  background: rgba(0,0,0, .8);
+  font-weight: 400;
+  color: #abaaaa;
+  text-shadow: 1px 1px 0px var(--groups);
+}
+
+
+
+
+
+/** FIRMA 2 **/
+.KA-sig2{
+  width: 400px;
+  height: 200px;
+  border: 6px solid #181818;
+  outline: 1px solid #020202;
+  outline-offset: -6px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.KA-sig2-img1{
+  width: 215px;
+  height: 200px;
+  position: relative;
+}
+
+.KA-sig2-img1 img{
+  width: 215px;
+  height: 202px;
+  object-fit: cover; 
+  object-position: center; 
+  filter: grayscale(1)brightness(100%)blur(0px);
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.KA-sig2-img1:before{
+  content: "";
+  width: 215px;
+  height: 200px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 11;
+  background-color: var(--groups);
+  mix-blend-mode: multiply;
+}
+
+
+.KA-sig2-img2{
+  width: 180px;
+  height: 200px;
+  position: relative;
+  border-left: 3px solid #181818;
+}
+
+.KA-sig2-img2 img{
+  width: 180px;
+  height: 200px;
+  object-fit: cover; 
+  object-position: center; 
+  filter: grayscale(100%)brightness(90%)blur(0px);
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+}
+
+
+
+.KA-sig2-img2 icono,.KA-sig2-img2v2 icono{
+  position: relative;
+  z-index: 10;
+  width: 180px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  mix-blend-mode: screen;
+  color: #abaaaa;
+}
+
+.KA-sig2-img2 icono i,.KA-sig2-img2v2 icono i{
+  width: 100%;
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-size: 33px;
+  text-shadow: 1px 1px 0px var(--groups);
+  line-height: 100%;
+}
+
+.KA-sig2-img2 icono:before{
+  position: absolute;
+  left: 20px;
+  margin-bottom: 5px;
+  content: "";
+  height: 1px;
+  width: 40px;
+  background-color: #181818;
+}
+
+.KA-sig2-img2 icono:after{
+  position: absolute;
+  right: 20px;
+  margin-bottom: 5px;
+  content: "";
+  height: 1px;
+  width: 40px;
+  background-color: #181818;
+}
+
+
+.KA-sig2-img2 icono txt,.KA-sig2-img2v2 icono txt{
+  display: block;
+  width: 140px;
+  padding: 5px 0px;
+  font-family: "Gideon Roman", serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #e5e5e5;
+  text-shadow: 1px 1px 0px #000;
+  line-height: 150%;
+  text-align: center;
+  border-bottom: 1px solid #181818;
+}
+
+.KA-sig2-img2 icono b,.KA-sig2-img2v2 icono b{
+  color: #e5e5e5;
+  font-weight: 800;
+}
+
+
+/** FIRMA 2 SIN FILTROS **/
+
+.KA-sig2-img1v2{
+  width: 215px;
+  height: 200px;
+  position: relative;
+}
+
+.KA-sig2-img1v2 img{
+  width: 215px;
+  height: 202px;
+  object-fit: cover; 
+  object-position: center; 
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+
+.KA-sig2-img2v2 {
+  width: 180px;
+  height: 200px;
+  position: relative;
+  border-right: 3px solid #181818;
+}
+
+.KA-sig2-img2v2 img{
+  width: 180px;
+  height: 200px;
+  object-fit: cover; 
+  object-position: center; 
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+}
+
+
+.KA-sig2-img2v2 icono:before{
+  position: absolute;
+  left: 20px;
+  margin-bottom: 5px;
+  content: "";
+  height: 1px;
+  width: 40px;
+  background-color: #181818;
+}
+
+.KA-sig2-img2v2 icono:after{
+  position: absolute;
+  right: 20px;
+  margin-bottom: 5px;
+  content: "";
+  height: 1px;
+  width: 40px;
+  background-color: #181818;
+}
+
+
+
+
+
+/** FIRMA 3 **/
+.KA-sig3{
+  width: 400px;
+  height: 200px;
+  border: 6px solid #181818;
+  outline: 1px solid #020202;
+  outline-offset: 2px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transition: all ease-in-out 0.7s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.KA-sig3:hover{
+  outline: 1px solid var(--groups);
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+}
+
+
+.KA-sig3-img1{
+  width: 215px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.KA-sig3-img1 img{
+  width: 215px;
+  height: 202px;
+  object-fit: cover; 
+  object-position: center; 
+  filter: grayscale(1)brightness(100%)blur(0px);
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.KA-sig3-img1:before{
+  content: "";
+  width: 215px;
+  height: 200px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 11;
+  background-color: var(--groups);
+  mix-blend-mode: multiply;
+}
+
+.KA-sig3-quote{
+  width: 215px;
+  height: 200px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 11;
+  backdrop-filter: grayscale(100%)blur(3px)brightness(60%);
+  transform: translateX(215px);
+  transition: all ease-in-out 0.7s;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  transition-delay: .6s;
+}
+
+.KA-sig3:hover .KA-sig3-quote{
+  transform: translateX(0px);
+  transition: all ease-in-out 0.7s;
+}
+
+.KA-sig3-quote frase2{
+  display: block;
+  width:190px;
+  font-family: "UnifrakturMaguntia", cursive;  
+  color: transparent;
+  -webkit-text-stroke: .5px #ababab;
+  text-shadow: 1px 1px 0px var(--groups);
+  font-size: 26px;
+  letter-spacing: -1px;
+  line-height: 105%;
+  filter: blur(5px);
+  opacity: 0;
+  transform: translateY(-50px);
+  text-align: center;
+  transition: all ease-in-out 0.7s;
+  position: relative;
+}
+
+.KA-sig3:hover .KA-sig3-quote frase2{
+  filter: blur(0px);
+  transform: translateY(0px);
+  opacity: 1;
+  transition: all ease-in-out 0.7s;
+  transition-delay: .5s;
+}
+
+
+
+.KA-sig3-quote frase3{
+  position: relative;
+  width: 190px;
+  height: auto;
+  padding: 6px 15px 0px 15px;
+  margin: 5px 0px 0px 0px;
+  font-family: "Gideon Roman", serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #e5e5e5;
+  text-shadow: 1px 1px 0px #000;
+  line-height: 160%;
+  text-align: justify;
+  filter: blur(5px);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all ease-in-out 0.7s;
+}
+
+.KA-sig3:hover .KA-sig3-quote frase3{
+  filter: blur(0px);
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all ease-in-out 0.7s;
+  transition-delay: .5s;
+}
+
+
+
+
+.KA-sig3-img2{
+  width: 180px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-left: 3px solid var(--groups);
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+}
+
+.KA-sig3:hover .KA-sig3-img2{
+  transition: all ease-in-out 0.7s;
+  border-left: 3px solid #181818;
+ 
+}
+
+
+.KA-sig3-img2 img{
+  width: 180px;
+  height: 200px;
+  object-fit: cover; 
+  object-position: center; 
+  filter: grayscale(100%)brightness(80%)blur(3px);
+  position: absolute;
+  z-index: 12;
+  overflow: hidden;
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+}
+
+.KA-sig3:hover .KA-sig3-img2 img{
+  filter: grayscale(100%)brightness(100%)blur(0px);
+  transition: all ease-in-out 0.7s;
+}
+
+
+.KA-sig3-img2 frase1{
+  height: auto;
+  width: 140px;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 12;
+  font-family: "Gideon Roman", serif;
+  font-size: 7.5px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #e5e5e5;
+  text-shadow: 1px 1px 0px #000;
+  line-height: 160%;
+  text-align: justify;
+  filter: blur(0px);
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+}
+
+
+.KA-sig3:hover .KA-sig3-img2 frase1{
+  filter: blur(5px);
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all ease-in-out 0.7s;
+}
+
+
+
+.KA-sig3-img2 filtro{
+  width: 180px;
+  height: 200px;
+  position: absolute;
+  z-index: 12;
+  background: linear-gradient(-20deg,rgba(51, 51, 51, .9) 0%, rgba(0, 0, 0, .4) 50%, rgba(0, 0, 0, 1) 100%);
+  mix-blend-mode: luminosity;
+  opacity: 0;
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+}
+
+.KA-sig3:hover .KA-sig3-img2 filtro{
+  opacity: 1;
+  transition: all ease-in-out 0.7s;
+}
+
+
+.KA-sig3-img2 icono{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  align-content: flex-end;
+  justify-content: center;
+  width: 140px;
+  z-index: 15;
+  bottom: 15px;
+  left: 20px;
+  font-family: "Gideon Roman", serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #e5e5e5;
+  text-shadow: 1px 1px 0px #000;
+  line-height: 150%;
+  text-align: center;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-50px);
+  transition: all ease-in-out 0.7s;
+}
+
+.KA-sig3-img2 icono i{
+  font-size: 33px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  opacity: .7;
+  position: absolute;
+  z-index: 13;
+  mix-blend-mode: screen;
+  color: var(--groups);
+}
+
+.KA-sig3-img2 icono txt{
+  position: relative;
+  bottom: 0px;
+  z-index: 15;
+}
+
+
+
+.KA-sig3:hover .KA-sig3-img2 icono{
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0px);
+  transition: all ease-in-out 0.7s;
+  transition-delay: .5s;
+}
+
+
+
+
+
+
+/** FIRMA 4 **/
+.KA-sig4,.KA-sig4v2{
+  width: 340px;
+  height: 200px;
+  border: 6px solid #181818;
+  outline: 1px solid var(--groups);
+  outline-offset: 2px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.KA-sig4 img,.KA-sig4v2 img{
+  width: 340px;
+  height: 200px;
+  object-fit: cover; 
+  object-position: center; 
+  position: relative;
+  z-index: 10;
+}
+
+
+.KA-sig4-quote,.KA-sig4v2-quote{
+  position: absolute;
+  z-index: 13;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px;
+  border-left: 3px solid #181818;
+  text-align: left;
+  width: 200px;
+}
+
+.KA-sig4-quote frase1,.KA-sig4v2-quote frase1{
+  font-family: "UnifrakturMaguntia", cursive;  
+  color: transparent;
+  -webkit-text-stroke: .5px #ababab;
+  text-shadow: 1px 1px 0px var(--groups);
+  font-size: 30px;
+  letter-spacing: -1px;
+  line-height: 105%;
+}
+
+.KA-sig4-quote frase2,.KA-sig4v2-quote frase2{
+  display: block;
+  width: fit-content;
+  font-family: "Gideon Roman", serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #e5e5e5;
+  text-shadow: 1px 1px 0px #000;
+  line-height: 100%;
+  background: var(--groups);
+  padding: 3px 3px 2px 4px;
+  margin-top: 5px;
+}
+
+
+
+
+
+/** FIRMA 4 VERSION 2 **/
+.KA-sig4v2{
+  outline: 1px solid #000;
+  transition: all ease-in-out 0.7s;
+}
+
+.KA-sig4v2:hover{
+  outline: 1px solid var(--groups);
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+}
+
+.KA-sig4v2 img{
+  filter: grayscale(0);
+}
+
+
+.KA-sig4v2-filtro{
+  width: 340px;
+  height: 200px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 11;
+  background-color: var(--groups);
+  backdrop-filter: grayscale(1);
+  mix-blend-mode: multiply;
+  transform: translateX(340px);
+  transition: all ease-in-out 0.7s;
+  transition-delay: .4s;
+}
+
+.KA-sig4v2:hover .KA-sig4v2-filtro{
+  transform: translateX(0px);
+  transition: all ease-in-out 0.7s;
+}
+
+.KA-sig4v2-quote{
+  transform: translateX(0px);
+  transition: all ease-in-out 0.7s;
+  transition-delay: .4s;
+}
+
+.KA-sig4v2:hover .KA-sig4v2-quote{
+  transform: translateX(-220px);
+  transition: all ease-in-out 0.7s;
+}
+
+
+.KA-sig4v2-quote2{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  width: 340px;
+  height: 200px;
+  z-index: 15;
+  opacity: 0;
+  filter: blur(3px);
+  transition: all ease-in-out 0.7s;
+}
+
+.KA-sig4v2:hover .KA-sig4v2-quote2{
+  opacity: 1;
+  filter: blur(0px);
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+}
+
+
+.KA-sig4v2-quote2 txt{
+  position: relative;
+  width: 180px;
+  padding: 20px;
+  font-family: "Gideon Roman", serif;
+  font-size: 7.5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #e5e5e5;
+  text-shadow: 1px 1px 0px #000;
+  line-height: 175%;
+  text-align: justify;
+  background: rgba(0,0,0, .4);
+  backdrop-filter: grayscale(1)brightness(85%);
+  transform: scale(.7);
+  transition: all ease-in-out 0.7s;
+  outline: 1px solid #000;
+}
+
+
+.KA-sig4v2:hover .KA-sig4v2-quote2 txt{
+  transform: scale(1);
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+}
+
+
+
+
+/** FIRMA 5 **/
+.KA-sig5{
+  width: 340px;
+  height: 160px;
+  border: 6px solid #181818;
+  outline: 1px solid #020202;
+  outline-offset: -6px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.KA-sig5 img{
+  width: 200px;
+  height: 160px;
+  object-fit: cover; 
+  object-position: center; 
+  position: relative;
+  overflow: hidden;
+}
+
+
+.KA-sig5-de{
+  width: 138px;
+  height: 160px;
+  background:#111;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-family: "Gideon Roman", serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: #ababab;
+  text-shadow: 1px 1px 0px #000;
+  line-height: 185%;
+  position: relative;
+}
+
+
+.KA-sig5-de txt{
+  display: block;
+  padding: 10px 15px;
+  text-align: justify;
+}
+
+
+.KA-sig5-de i{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22px;
+  mix-blend-mode: lighten;
+  color: #ababab;
+  text-shadow: 1px 1px 0px #000;
+  padding-bottom: 5px;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+
+.KA-sig5-de c{
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 45px;
+  height: 1px;
+  background: linear-gradient(to right, #222, transparent);
+}
+
+.KA-sig5-de t{
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 45px;
+  height: 1px;
+  background: linear-gradient(to left, #222, transparent);
+}
+
+
+
+
+/** FIRMA 6 **/
+.KA-sig6{
+  width: 300px;
+  height: 200px;
+  border: 6px solid #181818;
+  outline: 1px solid #020202;
+  outline-offset: -6px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.KA-sig6:before{
+  position: absolute;
+  z-index: 15;
+  content:"";
+  width: 35px;
+  height: 35px;
+  border-top: 1px solid var(--groups);
+  border-left: 1px solid var(--groups);
+  top: 1px;
+  left: 1px;
+  transition: all ease-in-out 0.7s;
+  opacity: .4;
+}
+
+
+.KA-sig6:after{
+  position: absolute;
+  z-index: 15;
+  content:"";
+  width: 35px;
+  height: 35px;
+  border-bottom: 1px solid var(--groups);
+  border-right: 1px solid var(--groups);
+  bottom: 1px;
+  right: 1px;
+  transition: all ease-in-out 0.7s;
+  opacity: .4;
+}
+
+
+.KA-sig6:hover:after{
+  width: 16px;
+  height: 16px;
+  bottom: 38px;
+  right: 20px;
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+}
+
+.KA-sig6:hover:before{
+  width: 16px;
+  height: 16px;  
+  top: 38px;
+  left: 20px;
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+}
+
+
+
+.KA-sig6 img{
+  width: 300px;
+  height: 200px;
+  object-fit: cover; 
+  object-position: center; 
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+
+.KA-sig6-fil{
+  width: 300px;
+  height: 200px;
+  content:"";
+  position: absolute;
+  z-index:4;
+  top: 0px;
+  left: 300px;
+  background-color: var(--groups);
+  mix-blend-mode: multiply;
+  backdrop-filter: grayscale(1)blur(0px);
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+}
+
+.KA-sig6:hover .KA-sig6-fil{
+  left: 0px;
+  transition: all ease-in-out 0.7s;
+}
+
+
+.KA-sig6-over{
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  z-index: 3;
+  top: 0px;
+  opacity: 0;
+  transition: all ease-in-out 0.7s;
+}
+
+.KA-sig6:hover .KA-sig6-over{
+  opacity: 1;
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+}
+
+.KA-sig6-over img{
+  width: 300px;
+  height: 200px;
+  object-fit: cover; 
+  object-position: center; 
+  opacity: 1;
+}
+
+
+
+.KA-sig6-text{
+  width: 300px;
+  height: 200px;
+  content:"";
+  position: absolute;
+  z-index: 6;
+  top: 0px;
+  filter: blur(4px);
+  opacity: 0;
+  transition: all ease-in-out 0.7s;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.KA-sig6:hover .KA-sig6-text{
+  filter: blur(0px);
+  opacity: 1;
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+}
+
+
+.KA-sig6-text txt{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 35px;
+  font-family: "Gideon Roman", serif;
+  font-size: 8.5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ababab;
+  text-shadow: 1px 1px 0px #000;
+  line-height: 190%;
+  text-align: justify;
+}
+
+
+.KA-sig6-text txt b,.KA-sig6-text txt b{
+  color: var(--groups);
+  background: #111;
+  padding: 3px 2px 2px 3px;
+}
+
+
+
+.KA-sig6-corto{
+  width: fit-content;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 3;
+  font-family: "Gideon Roman", serif;
+  line-height: 160%;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ababab;
+  text-shadow: 1px 1px 0px #000;
+  filter: blur(0px);
+  opacity: 1;
+  transition: all ease-in-out 0.7s;
+  transition-delay: .6s;
+  text-align: center;
+}
+
+
+.KA-sig6:hover .KA-sig6-corto{
+  filter: blur(5px);
+  opacity: 0;
+  transition: all ease-in-out 0.7s;
+}
+
+
+.KA-sig6-corto i{
+  font-size: 24px;
+  position: relative;
+  bottom: 4px;
+  opacity: .6;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 100%;
+  text-shadow: 2px 2px 1px var(--groups);
+}
+
+
+
+
+
+/** FIRMA DELIRAN **/
+.KA-sig7{
+  width: 300px;
+  height: 240px;
+  margin:auto;
+  overflow:hidden;
+  position: relative;
+}
+
+.KA-sig7full{
+  position:relative;
+  margin: auto;
+  overflow:hidden;
+  height: 205px;
+  width: 275px;
+}
+
+.KA-sig7-1{
+  height: 205px;
+  width: 275px;  
+}
+
+.KA-sig7-1 img{
+  height: 205px;
+  width: 275px; 
+  object-fit: cover; 
+  object-position: center; 
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+
+.KA-sig7-2{
+  height: 205px;
+  width: 275px;
+  transition: all ease-in-out 1s;
+  opacity: 0;
+  position: absolute;
+  z-index: 5;
+}
+
+.KA-sig7:hover .KA-sig7-2{
+  opacity: 1;
+  transition: all ease-in-out 1s;
+  transition-delay:.5s;
+}
+
+
+.KA-sig7-2 img{
+  height: 205px;
+  width: 275px;
+  object-fit: cover; 
+  object-position: center; 
+  
+}
+
+
+.KA-sig7overl1{
+  height: 205px;
+  width: 138px;
+  background: var(--groups);
+  backdrop-filter: grayscale(1);
+  mix-blend-mode: multiply;  
+  position: absolute;
+  z-index: 10;
+  left: -205px;
+  transition: all ease-in-out 1s;
+  transition-delay:.5s;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.KA-sig7:hover .KA-sig7overl1{
+  left: 0px;
+  transition: all ease-in-out 1s;
+}
+
+.quote3{
+   font-family: "Gideon Roman", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 8px;
+  color: #abaaaa;
+  line-height: 190%;
+  letter-spacing: 1px; 
+  text-shadow: 1px 1px 1px #000;
+  text-transform:uppercase;
+  height: 205px;
+  width: 138px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:justify;
+  box-sizing:border-box;
+  position: absolute;
+  left: 137px;
+  z-index: 30;
+  padding: 0px 20px;
+  opacity: 0;
+  filter: blur(5px);
+  transition: all ease-in-out 1s;
+}
+
+.KA-sig7:hover .quote3{
+  opacity: 1;
+  filter: blur(0px);
+  transition: all ease-in-out 1s;
+  transition-delay:.5s;
+}
+
+.quote3 n{
+  display:block;
+  box-sizing:border-box;
+}
+
+.quote3 b{
+   animation: parpadeo1 1.9s infinite;
+}
+
+
+@keyframes parpadeo1 {
+  0% {color: #abaaaa;}
+  50% {color: var(--groups);}
+  100% {color: #abaaaa;}
+}
+
+
+.quote4{
+ font-family: "UnifrakturMaguntia", cursive;
+ color: transparent;
+ -webkit-text-stroke: .5px #ababab;
+  text-shadow: 1px 1px 0px var(--groups);
+  font-weight: 300;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0px; 
+  height: 205px;
+  width: 138px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:right;
+  box-sizing:border-box;
+  position: absolute;
+  left: 0px;
+  z-index: 30;
+  padding: 0px 20px;
+  opacity: 0;
+  filter: blur(5px);
+  transition: all ease-in-out 1s;
+}
+
+.KA-sig7:hover .quote4{
+  opacity: 1;
+  filter: blur(0px);
+  transition: all ease-in-out 1s;
+  transition-delay:.5s;
+}
+
+
+.KA-sig7overl2{
+  height: 205px;
+  width: 140px;
+  background: rgba(0,0,0, .7);
+  backdrop-filter: grayscale(1);
+  mix-blend-mode: multiply;  
+  position: absolute;
+  z-index: 10;
+  left: 355px;
+  transition: all ease-in-out 1s;
+  transition-delay:.5s;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.KA-sig7:hover .KA-sig7overl2{
+  left: 138px;
+  transition: all ease-in-out 1s;
+}
+
+.KA-sig7quo1{
+  width: 300px;
+  height: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  
+  padding: 0px 0px 8px 0px;
+}
+
+.KA-sig7quo1 c{
+  width: 290px;
+  font-family: "Gideon Roman", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 8px;
+  color: #abaaaa;
+  line-height: 100%;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 20;
+  left: 0px;
+  text-transform: uppercase;
+  transition: all ease-in-out 1s;
+  transition-delay:.3s;
+}
+
+
+.KA-sig7quo1 x{
+  width: 300px;
+  height: 1px;
+  background: var(--groups);
+  position: relative;
+  z-index: 20;
+  left: -20px;
+  transition: all ease-in-out 1s;
+  transition-delay:.3s;
+}
+
+.KA-sig7:hover .KA-sig7quo1 x{
+  left: -160px;
+  transition: all ease-in-out .7s;
+}
+
+.KA-sig7:hover .KA-sig7quo1 c{
+  opacity: 0;
+  left: 150px;
+  transition: all ease-in-out .7s;
+}
+
+.KA-sig7borders{
+  width: 298px;
+  height: 228px;
+  margin: auto;
+  border-left: 1px solid #181818;
+  border-bottom: 1px solid #181818;
+  border-right: 1px solid #181818;
+  border-top: 0px solid #181818;
+  position: absolute; 
+  top: 5px;
+  z-index: 8;
+  transition: all ease-in-out .5s;
+}
+
+
+.KA-sig7:hover .KA-sig7borders{
+  border-bottom: 1px solid var(--groups);
+  border-left: 1px solid var(--groups);
+  border-right: 1px solid var(--groups);
+  border-top: 1px solid var(--groups);
+  transition: all ease-in-out 1s;
+  transition-delay:.5s;
+}
+
+
+
+
+
+/** FIRMA 8 **/
+.KA-sig8{
+  width: 275px;
+  height: 205px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  outline: 1px solid #181818;
+  outline-offset: 10px;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to bottom, #181818, #000);
+  transition: all ease-in-out 1s;
+}
+
+.KA-sig8 img{
+  width: 275px;
+  height: 205px;
+  object-fit: cover; 
+  object-position: center; 
+  position: relative;
+}
+
+.KA-sig8txt1{
+  width: 275px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  font-family: "Gideon Roman", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 9px;
+  color: #bbbbbb;
+  line-height: 160%;
+  letter-spacing: 1px; 
+  text-shadow: 1px 1px 0px #000;
+  text-transform:uppercase;
+  padding: 5px 0px 3px 0px;
+  background-color: rgba(0,0,0, .6);
+  transition: all ease-in-out 1s;
+}
+
+.KA-sig8:hover .KA-sig8txt1{
+  bottom: -80px;
+  transition: all ease-in 1.5s;
+}
+
+.KA-sig8:hover{
+  border-image-source: linear-gradient(to bottom, #181818, var(--groups), var(--groups));
+  transition: all ease-in-out 1s;
+}
+
+.KA-sig8img2{
+  width: 275px;
+  height: 205px;
+  position: absolute;
+  top: 0px;
+  z-index: 20;
+  transition: all ease-in-out 1s;
+  opacity: 0;
+}
+
+.KA-sig8:hover .KA-sig8img2{
+  transition: all ease-in-out 1s;
+  opacity: 1;
+}
+
+.KA-sig8img2 img{
+  width: 275px;
+  height: 205px;
+  object-fit: cover; 
+  object-position: center; 
+  filter: grayscale(1);
+  position: absolute;
+  top: 0px;
+  z-index: 20;
+}
+
+.KA-sig8img2fil{
+  width: 275px;
+  height: 205px;
+  position: absolute;
+  top: 0px;
+  z-index: 21;
+  background-color: var(--groups);
+  mix-blend-mode: overlay;
+}
+
+
+
+.KA-sig8txt2{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  top: 0px;
+  height: 205px;
+  z-index:22;
+  margin: 0 auto;
+  width: 235px;
+  opacity: 0;
+  background: rgba(0,0,0, .0);
+  padding: 10px 20px;
+  text-align: justify;
+  font-family: "Gideon Roman", serif;
+  font-weight: 300;
+  font-size: 8px;
+  color: #bbbbbb;
+  line-height: 150%;
+  letter-spacing: 2px; 
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #000;
+  transform: scale(0.8);
+  filter: blur(12px);
+  transition: all ease-in-out 1s;
+}
+
+.KA-sig8:hover .KA-sig8txt2{
+  transition: all ease-in-out 1s;
+  transition-delay: .6s;
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+}
+
+.KA-sig8txt2 txt{
+  display: block;
+}
+
+.KA-sig8txt2 t{
+  width: 100%;
+  text-align: center;
+  font-family: "UnifrakturMaguntia", cursive;
+  color: var(--groups);
+  text-shadow: 1px 1px 0px #000;
+  text-transform: lowercase;
+  font-size: 22px;
+  line-height: 100%;
+  text-transform: none;
+  padding-top: 0px;
+  letter-spacing: .5px; 
+  opacity: 1;
+  position: relative;
+  padding-bottom: 5px;
+  font-weight: 800;
+}
+
+
+.KA-sig8txt2 b,.KA-sig8txt2 strong{
+  animation: parpadeo1 1.9s infinite;
+  color: var(--groups);
+}
