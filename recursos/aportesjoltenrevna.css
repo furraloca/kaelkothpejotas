@@ -1670,8 +1670,650 @@ font-display: swap;
   font-weight: 800;
 }
 
-
 .KA-sig8txt2 b,.KA-sig8txt2 strong{
   animation: parpadeo1 1.9s infinite;
   color: var(--groups);
 }
+
+
+
+
+
+
+/** TABLILLAS DE ROL **/
+@font-face {font-family: "Dark Whisper"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/recursos/DarkWhisperRegular-rvPdp.woff2');}
+@font-face {font-family: "Decorative1"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/recursos/Ornaments Salad.otf');}
+@font-face {font-family: 'Highborne';src: url('https://furraloca.github.io/kaelkothoficial/Highborne-Blackletter.otf') format('opentype');}
+@font-face {font-family: 'Menttalis';src: url('https://furraloca.github.io/kaelkothoficial/Menttalis.otf') format('opentype');}
+@font-face {font-family: "Metrim"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/recursos/MetrimLetterRegular.otf');}
+@font-face {font-family: 'Revolver';src: url('https://dl.dropbox.com//scl/fi/cu2ndj95j48hgzymvm2jx/RevolverBlackletter-Regular.otf?rlkey=r06cgm9o31ek5z44vlpoevx75&st=79lj6hai&dl=0') format('opentype');}
+
+
+/** POST SENCILLO 1 **/
+.KApost-1{
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  font-family: 'Gideon Roman';
+  line-height: 170%;
+  font-size: 16px;
+  text-align: justify;
+  color: #abaaaa;
+  padding-bottom: 20px;
+}
+
+.KApost-1-info{
+  width: 500px;
+  padding: 30px 0px 10px 0px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.KApost-1-info lugar,.KApost-1-info tiempo{
+  display: block;
+  width: 230px;
+  font-family: 'Gideon Roman';
+  line-height: 150%;
+  font-size: 10px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.KApost-1-info lugar{
+  margin: 0px 20px 0px 0px;
+}
+
+.KApost-1-info tiempo{
+  text-align: right;
+  margin: 0px 0px 0px 20px;
+}
+
+.KApost-1-info lugar i,.KApost-1-info tiempo i{
+  color: var(--groups);
+  font-size: 15px;
+}
+
+.KApost-1 tit,.KApost-1 tit2,.KApost-1 tit3,.KApost-1 tit4,.KApost-1 tit5,.KApost-2 tit,.KApost-2 tit2,.KApost-2 tit3,.KApost-2 tit4,.KApost-2 tit5{
+  display: block;
+  width: 500px;
+  text-align: center;
+  font-family: 'Highborne';
+  color: transparent;
+  -webkit-text-stroke: .5px #333;
+  text-shadow: 1px 1px 0px var(--groups);
+  font-size: 40px;
+  line-height: 100%;
+  margin: 0 auto;
+  padding: 20px 0px 0px 0px;
+}
+
+.KApost-1 sub,.KApost-2 sub{
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 8px;
+  text-align: center;
+  line-height: 100%;
+  margin: 0 auto;
+}
+
+.KApost-1 inicial,.KApost-2 inicial{
+  float: left;
+  font-family: 'Dark Whisper';
+  font-size: 46px;
+  line-height: 120%;
+  width: 60px;
+  text-align: center;
+  margin-top: 10px;
+  padding-right: 10px;
+  background:-webkit-linear-gradient(342deg,rgba(0, 0, 0, 1) 0%, var(--groups) 50%, rgba(0, 0, 0, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
+
+.KApost-1-separador,.KApost-1-separador2{
+  width: 500px;
+  height: auto;
+  padding: 5px 0px 15px 0px;
+  position: relative;
+  margin: 0 auto;
+  font-family: "Decorative1";
+  text-align: center;
+  font-size: 34px;
+  color: transparent;
+  -webkit-text-stroke: .5px #000;
+  text-shadow: 1px 1px 1px var(--groups);
+  opacity: .5;
+  margin-bottom: 20px;
+}
+
+.KApost-1-separador2{
+  margin-top: 30px;
+  transform: scaleY(-1);
+  padding-bottom: 10px;
+}
+
+.KApost-1-separador:before,.KApost-1-separador:after,.KApost-1-separador2:before,.KApost-1-separador2:after{
+  content: "";
+  position: absolute;
+  top: 19px;
+  width: 43%;
+  height: 1px;
+}
+
+.KApost-1-separador:before,.KApost-1-separador2:before{
+  left: 0px;
+  background: linear-gradient(to right, transparent, var(--groups));
+}
+
+.KApost-1-separador:after,.KApost-1-separador2:after{
+  right: 0px;
+  background: linear-gradient(to left, transparent, var(--groups));
+}
+
+.KApost-1-final{
+  width: 500px;
+  height: auto;
+  padding: 0px 0px 20px 0px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.KApost-1-final aviso{
+  padding-right: 0px;
+  display: block;
+  width: 100%;
+  font-family: 'Gideon Roman';
+  line-height: 100%;
+  font-size: 9.5px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: .8;
+}
+
+.KApost-1-final personaje,.KApost-1-final personaje2,.KApost-1-final personaje3,.KApost-1-final personaje4,.KApost-1-final personaje5{
+  display: block;
+  width: 100%;
+  font-family: 'Highborne';
+  background:-webkit-linear-gradient(342deg, var(--groups) 0%, rgba(85, 85, 85, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px #000;
+  text-shadow: 0px 0px 0px transparent;
+  font-size: 22px;
+  line-height: 100%;
+  text-transform: none;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.KApost-1-final personaje a{
+  text-decorative: none;
+}
+
+.KApost-1-final span{
+  font-size: 10px;
+  letter-spacing: 0px;
+  margin-right: 0px;
+}
+
+.KApost-1-final span:before{
+  content:"¡!";
+  font-size: 13px;
+  color: var(--groups);
+  font-weight: 900;
+  padding-right: 2px;
+  position: relative;
+  top: 0px;
+  line-height: 100%;
+  animation: kblink1 1000ms infinite;
+  -webkit-animation:kblink1 1000ms infinite;
+}
+
+
+
+/** POST 1 CON BETTER FIELDS **/
+.KApost-1 tit2,.KApost-2 tit2{
+  font-family: "BetterFields";
+  font-size: 44px;
+  color: var(--groups);
+  -webkit-text-stroke: .3px #000;
+   text-shadow: 0px 0px 0px transparent;
+}
+
+.KApost-1-final personaje2,.KApost-2-final personaje2,.KApost-2-final2-info personaje2{
+  font-family: "BetterFields";
+  font-size: 22px;
+  background:-webkit-linear-gradient(342deg, var(--groups) 0%, rgba(85, 85, 85, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px #000;
+  text-shadow: 0px 0px 0px transparent;
+  line-height: 170%;
+}
+
+.KApost-1-final personaje2 a,.KApost-2-final personaje2 a,.KApost-2-final2-info personaje2 a{
+   background:-webkit-linear-gradient(342deg, var(--groups) 0%, rgba(85, 85, 85, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   -webkit-text-stroke: 0px #000;
+   text-shadow: 0px 0px 0px transparent;
+}
+
+
+/** POST 1 CON MENTTALIST **/
+.KApost-1 tit3,.KApost-2 tit3{
+  font-family: 'Menttalis';
+  font-size: 45px;
+  color: transparent;
+  text-shadow: 1px 1px var(--groups);
+  -webkit-text-stroke: .5px #000;
+  font-weight: 300;
+}
+
+.KApost-1-final personaje3,.KApost-2-final personaje3,.KApost-2-final2-info personaje3{
+  font-family: 'Menttalis';
+  font-size: 23px;
+  background:-webkit-linear-gradient(342deg, var(--groups) 0%, rgba(85, 85, 85, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px #000;
+  text-shadow: 0px 0px 0px transparent;
+  line-height: 160%;
+}
+
+.KApost-1-final personaje3 a,.KApost-2-final personaje3 a,.KApost-2-final2-info personaje3 a{
+   background:-webkit-linear-gradient(342deg, var(--groups) 0%, rgba(85, 85, 85, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   -webkit-text-stroke: 0px #000;
+   text-shadow: 0px 0px 0px transparent;
+}
+
+
+/** POST 1 CON METRIM **/
+.KApost-1 tit4,.KApost-2 tit4{
+  font-family: "Metrim";
+  font-size: 38px;
+  background:-webkit-linear-gradient(90deg, var(--groups) 0%, rgba(11, 11, 11, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: .5px #000;
+  text-shadow: 1px 1px 1px transparent;
+  padding-bottom: 6px;
+}
+
+.KApost-1-final personaje4,.KApost-2-final personaje4,.KApost-2-final2-info personaje4{
+  font-family: "Metrim";
+  font-size: 15px;
+  background:-webkit-linear-gradient(342deg, var(--groups) 0%, rgba(85, 85, 85, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px #000;
+  text-shadow: 0px 0px 0px transparent;
+  line-height: 150%;
+  letter-spacing: 1px;
+}
+
+.KApost-1-final personaje4 a,.KApost-2-final personaje4 a,.KApost-2-final2-info personaje4 a{
+   background:-webkit-linear-gradient(342deg, var(--groups) 0%, rgba(85, 85, 85, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   -webkit-text-stroke: 0px #000;
+   text-shadow: 0px 0px 0px transparent;
+}
+
+
+/** POST 1 CON REVOLVER **/
+.KApost-1 tit5,.KApost-2 tit5{
+  font-family: "Revolver";
+  font-size: 82px;
+  background:-webkit-linear-gradient(90deg, var(--groups) 0%, rgba(11, 11, 11, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px #000;
+  text-shadow: 1px 1px 1px transparent;
+  padding-bottom: 4px;
+}
+
+.KApost-1-final personaje5,.KApost-2-final personaje5,.KApost-2-final2-info personaje5{
+  font-family: "Revolver";
+  font-size: 35px;
+  background:-webkit-linear-gradient(342deg, var(--groups) 0%, rgba(85, 85, 85, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px #000;
+  text-shadow: 0px 0px 0px transparent;
+  line-height: 130%;
+  letter-spacing: 0px;
+  padding-bottom: 6px;
+  position: relative;
+  top: -12px;
+  text-transform: none;
+}
+
+.KApost-1-final personaje5 a,.KApost-2-final personaje5 a,.KApost-2-final2-info personaje5 a{
+   background:-webkit-linear-gradient(342deg, var(--groups) 0%, rgba(85, 85, 85, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   -webkit-text-stroke: 0px #000;
+   text-shadow: 0px 0px 0px transparent;
+  text-transform: none;
+}
+
+
+
+
+/** POST SENCILLO 2 CON ICONO **/
+.KApost-2{
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  font-family: 'Gideon Roman';
+  line-height: 170%;
+  font-size: 16px;
+  text-align: justify;
+  color: #abaaaa;
+  padding-bottom: 20px;
+}
+
+.KApost-2 icon{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--groups);
+  font-size: 50px;
+  text-shadow: 1px 1px 0px #000; 
+}
+
+.KApost-2-info{
+  width: 500px;
+  height: auto;
+  padding: 8px 0px 5px 0px;
+  background: transparent;
+  border-top: 2px solid #181818;
+  border-bottom: 2px solid #181818;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  margin: 25px 0px;
+}
+
+.v2.KApost-2-info{
+  background: linear-gradient(342deg,rgba(51, 51, 51, .7) 0%, rgba(8, 8, 8, .9) 50%, rgba(51, 51, 51, .7) 100%);
+  margin: 25px 0px 40px 0px;
+  margin: 0px 0px 30px 0px;
+}
+
+.KApost-2-info notas,.KApost-2-info aviso{
+  width: 214px;
+  margin: 5px;
+  line-height: 140%;
+  font-style: normal;
+  letter-spacing: .5px;
+  font-size: 9px;
+  color: #abaaaa;
+  text-transform: uppercase;
+  font-family: 'Gideon Roman';
+}
+
+.KApost-2-info aviso{
+  text-align: right;
+}
+
+.KApost-2-info notas span,.KApost-2-info aviso span{
+  display: block;
+  color: var(--groups);
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0px;
+}
+
+.KApost-2-info sep{
+  font-size: 22px;
+  text-align: center;
+  margin: 0 auto;
+  width: 26px;
+  text-transform: uppercase;
+  line-height: 100%;
+  color: transparent;
+  -webkit-text-stroke: .5px #000;
+  text-shadow: 1px 1px 1px var(--groups);
+  opacity: .8; 
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.KApost-2-final{
+  width: 500px;
+  height: auto;
+  padding: 15px 0px 5px 0px;
+  margin-top: 35px;
+  border-top: 2px solid #181818;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  align-items: flex-start;
+ line-height: 150%;
+  letter-spacing: .5px;
+  font-size: 9.5px;
+  color: #abaaaa;
+  text-transform: uppercase;
+}
+
+.KApost-2-final txt{
+  display: block;
+}
+
+.KApost-2-final i{
+  font-size: 12px;
+  color: var(--groups);
+}
+
+.KApost-2-final personaje,.KApost-2-final2-info personaje{
+  display: block;
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: 'Highborne';
+  background:-webkit-linear-gradient(342deg, var(--groups) 0%, rgba(85, 85, 85, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px #000;
+  text-shadow: 0px 0px 0px transparent;
+  position: relative;
+  text-transform: none;
+}
+
+.KApost-2-final2-info personaje{
+  -webkit-text-stroke: .1px #000;
+  filter:drop-shadow(0px 0px 1px #000);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+
+
+/** POST SENCILLO 2 CON FOTO **/
+.KApost-2-foto{
+  width: 70px;
+  height: 100px;
+  border-radius: 100%;
+  padding: 12px;
+  border: 6px solid #181818;
+  box-shadow: 0px 0px 16px var(--groups);
+  outline: 1px solid var(--groups);
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.KApost-2-foto img{
+  width: 100px;
+  height: 130px;
+  filter: grayscale(100%)contrast(103%)brightness(85%);
+  -webkit-filter: grayscale(100%)contrast(103%)brightness(85%);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  left: -15px;
+  top: -15px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+
+/** POST SENCILLO 2 CON 3 FOTOS **/
+.KApost-2-final2 {
+  position: relative;
+  width: 500px;
+  height: auto;
+  padding: 0px 0px 0px 0px;
+  border-top: 2px solid #181818;
+  margin: 40px 0px;
+}
+
+.KApost-2-final2-bg{
+  background: url(https://i.pinimg.com/1200x/81/bb/9e/81bb9e9b0bb94cc9e1e2361ac6b88800.jpg) no-repeat center top / cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.KApost-2-final2-bg:after{
+  position: absolute;
+  top: 0px;
+  content: "";
+  width: 100%;
+  height: 101%;
+  backdrop-filter: grayscale(1)brightness(15%)contrast(96%);
+}
+
+.KApost-2-final2-info{
+  position: relative;
+  z-index: 12;
+  top: 0px;
+  width: 480px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding: 25px 10px 10px 10px;
+  line-height: 150%;
+  letter-spacing: .5px;
+  font-size: 9.5px;
+  color: #abaaaa;
+  text-transform: uppercase;
+}
+
+.KApost-2-final2-info txt{
+  display: block;
+}
+
+.KApost-2-final2-info i{
+  font-size: 12px;
+  color: var(--groups);
+}
+
+.KApost-2-cabecera{
+  position: relative;
+  width: 500px;
+  height: auto;
+}
+
+.KApost-2-cabecera-bg{
+  background: url(https://i.pinimg.com/1200x/81/bb/9e/81bb9e9b0bb94cc9e1e2361ac6b88800.jpg) no-repeat center top / cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 25px;
+  padding-top: 30px;
+}
+
+.KApost-2-cabecera-bg:after{
+  position: absolute;
+  top: 0px;
+  content: "";
+  width: 100%;
+  height: 101%;
+  backdrop-filter: grayscale(1)brightness(15%)contrast(96%);
+}
+
+.KApost-2-cabecera-full{
+  position: relative;
+  z-index: 12;
+  top: 0px;
+  width: 480px;
+  height: 100%;
+  padding: 0px 10px;
+}
+
+.KApost-2-cabecera-full tit{
+  display: block;
+  width: 480px;
+  text-align: center;
+  font-family: 'Highborne';
+  color: transparent;
+  -webkit-text-stroke: .5px #333;
+  text-shadow: 1px 1px 0px var(--groups);
+  font-size: 40px;
+  line-height: 100%;
+  margin: 0 auto;
+  padding: 15px 10px 0px 10px;
+}
+
+.KApost-2-cabecera-full sub{
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 8px;
+  text-align: center;
+  line-height: 100%;
+  margin: 0 auto;
+}
+
+
+@keyframes kblink1 {
+    from { opacity: 1.0; }
+    50% { opacity: 0.1; }
+    to { opacity: 1.0; }
+}
+
+@-webkit-keyframes kblink1 {
+    from { opacity: 1.0; }
+    50% { opacity: 0.1; }
+    to { opacity: 1.0; }
+}
+
+
+
