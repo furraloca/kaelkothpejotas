@@ -2058,6 +2058,9 @@ font-display: swap;
   margin: 0px 0px 20px 0px;
 }
 
+.v2.KApost-2-info sep i{
+  padding-left: 15px;}
+
 .KApost-2-info notas,.KApost-2-info aviso{
   width: 214px;
   margin: 5px;
@@ -2098,6 +2101,9 @@ font-display: swap;
   align-content: center;
   justify-content: center;
 }
+
+.KApost-2-info sep i{
+  padding-left: 15px;}
 
 .KApost-2-final{
   width: 500px;
