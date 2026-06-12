@@ -1841,7 +1841,7 @@ font-display: swap;
   opacity: .8;
 }
 
-.KApost-1-final personaje,.KApost-1-final personaje2,.KApost-1-final personaje3,.KApost-1-final personaje4,.KApost-1-final personaje5,.KApost-2-final2-info personaje,.KApost-2-final2-info personaje1,.KApost-2-final2-info personaje3,.KApost-2-final2-info personaje4,.KApost-2-final2-info personaje5{
+.KApost-1-final personaje,.KApost-1-final personaje2,.KApost-1-final personaje3,.KApost-1-final personaje4,.KApost-1-final personaje5,.KApost-2-final2-info personaje,.KApost-2-final2-info personaje2,.KApost-2-final2-info personaje3,.KApost-2-final2-info personaje4,.KApost-2-final2-info personaje5{
   display: block;
   width: 100%;
   font-family: 'Highborne';
@@ -1926,7 +1926,7 @@ font-display: swap;
 
 .KApost-1-final personaje3,.KApost-2-final personaje3,.KApost-2-final2-info personaje3{
   font-family: 'Menttalis';
-  font-size: 23px;
+  font-size: 20px;
   background:-webkit-linear-gradient(342deg, var(--groups) 0%, rgba(85, 85, 85, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1934,6 +1934,8 @@ font-display: swap;
   text-shadow: 0px 0px 0px transparent;
   line-height: 160%;
   text-transform: none;
+  letter-spacing:1.5px;
+  font-weight:300;
 }
 
 .KApost-1-final personaje3 a,.KApost-2-final personaje3 a,.KApost-2-final2-info personaje3 a{
