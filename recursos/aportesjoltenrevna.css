@@ -1990,13 +1990,13 @@ font-display: swap;
 /** POST 1 CON REVOLVER **/
 .KApost-1 tit5,.KApost-2 tit5{
   font-family: "Revolver";
-  font-size: 82px;
+  font-size: 84px;
   background:-webkit-linear-gradient(90deg, var(--groups) 0%, rgba(11, 11, 11, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px #000;
   text-shadow: 1px 1px 1px transparent;
-  padding-bottom: 4px;
+  padding: 5px 0px 4px 0px;
 }
 
 .KApost-1-final personaje5,.KApost-2-final personaje5,.KApost-2-final2-info personaje5{
