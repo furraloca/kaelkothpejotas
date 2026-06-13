@@ -1,0 +1,133 @@
+@font-face {font-family: "White Knight"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/pedidos/The White Knight demo.ttf');}
+
+
+.moodb-kay{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 570px;
+  height: auto;
+  padding: 30px 0px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.moodb-kay-foto{
+  width: 180px;
+  height: 180px;
+  outline: 2px solid #151515;
+  outline-offset: 2px;
+  margin: 5px 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.moodb-kay-foto img{
+  width: 180px;
+  height: 180px;
+  object-fit: cover; 
+  object-position: center; 
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  filter: grayscale(1)brightness(80%)contrast(90%);
+  transition: all 1.1s;
+}
+
+.moodb-kay-foto img:hover{
+  transition: all 1.1s;
+  filter: grayscale(0)brightness(100%)contrast(100%);
+}
+
+.v2.moodb-kay-foto img{
+  filter: grayscale(0)brightness(100%)contrast(100%);
+}
+
+.moodb-kay-foto fil{
+  position: absolute;
+  z-index: 6;
+  top: 0px;
+  left: 0px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--groups);
+  mix-blend-mode: overlay;
+  backdrop-filter: grayscale(1)brightness(80%)contrast(90%);
+  transition: all 1.1s;
+}
+
+.moodb-kay-foto:hover.moodb-kay-foto fil{
+  transition: all 1.1s;
+  opacity: 0;
+}
+
+.moodb-kay t{
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  top: -35px;
+  font-family: "White Knight";
+  font-size: 180px;
+  line-height: 100%;
+  padding-bottom: 16px;
+  background:-webkit-linear-gradient(342deg,rgba(0, 0, 0, 1) 0%, var(--groups) 50%, rgba(0, 0, 0, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0px 0px 2px #000);
+}
+
+.moodb-kay txt{
+  display: block;
+  position: relative;
+  width: 430px;
+  margin: 0 auto;
+  line-height: 140%;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-family: 'Cormorant Garamond';
+  color: #abaaaa;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.moodb-kay i{
+  width: 430px;
+  text-align: center;
+  font-size: 135px;
+  margin: 0 auto;
+  color: #333;
+  opacity: .4;
+  position: relative;
+  padding: 40px 0px 10px 0px;
+  filter: drop-shadow(0px 0px 2px #000);
+  text-shadow: 1px 1px 1px #000;
+}
+
+.moodb-kay txt2{
+  position: absolute;
+  top: 125px;
+  margin: 0 auto;
+  font-size: 15px;
+  letter-spacing: 0px;
+  font-weight: 800;
+  font-family: 'Cormorant Garamond';
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--groups);
+  line-height: 100%;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.moodb-kay txt2 span{
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #ababab;
+  font-size: 11px;
+  font-style: italic;
+}
