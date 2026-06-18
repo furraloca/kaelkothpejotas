@@ -274,7 +274,7 @@ font-display: swap;
 }
 
 .jtab4foto img{
-  width: 155px;
+  width: 175px;
   height: 220px;
   background-position: 50% 0%;
   background-size: cover;
@@ -283,7 +283,7 @@ font-display: swap;
   filter: grayscale(100%)brightness(85%)contrast(98%);
   -webkit-filter: grayscale(100%)brightness(85%)contrast(98%);
   bottom: 75px;
-  left: -35px;
+  left: -55px;
   transition: all 0.7s ease-in-out;
 }
 
