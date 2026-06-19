@@ -55,11 +55,12 @@
 .Ka-portada1-dentro{
   position: absolute;
   z-index: 30;
-  top: 12px;
+  top: 0px;
   left: 0px;
   z-index: 8;
   width: 500px;
   height: 480px;
+  padding-top: 10px;
   opacity: 0;
   backdrop-filter: blur(2px);
   transition: all 0.8s;
