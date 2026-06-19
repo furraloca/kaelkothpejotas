@@ -1,0 +1,635 @@
+
+.Ka-portada1{
+  width: 500px;
+  min-height: 595px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #181818;
+  outline-offset: 0px;
+  background: #000;
+}
+
+.Ka-portada1-foto{
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+.Ka-portada1-foto img{
+  width: 500px;
+  height: 500px;
+  object-fit: cover; 
+  object-position: center; 
+  position: relative;
+  z-index: 1; /* Bajado de 2 a 1 */
+  overflow: hidden;
+}
+.Ka-portada1 fil{
+  position: absolute;
+  z-index: 6;
+  top: 0px;
+  left: 0px;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(0deg, #000000, rgba(0,0,0, .5), transparent);
+}
+
+.Ka-portada1 fil2{
+  background-color: var(--groups);
+  mix-blend-mode: multiply;
+  backdrop-filter: grayscale(1);
+  position: absolute;
+  z-index: 7;
+  width: 500px;
+  height: 500px;
+  left: 500px;
+  transition: all 0.8s;
+  transition-delay: .7s;
+  /* ¡AÑADE ESTO! Hace que el filtro sea invisible para el ratón */
+  pointer-events: none;
+}
+.Ka-portada1:hover fil2{
+  left: 0px;
+  transition: all 0.8s;
+}
+.Ka-portada1-dentro{
+  position: absolute;
+  z-index: 30;
+  top: 0px;
+  left: 0px;
+  z-index: 8;
+  width: 500px;
+  height: 480px;
+  opacity: 0;
+  backdrop-filter: blur(2px);
+  transition: all 0.8s;
+  background: rgba(0,0,0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  /* ¡ESTO ES LO NUEVO! Desactiva los clics mientras sea invisible */
+  pointer-events: none;
+}
+
+.Ka-portada1:hover .Ka-portada1-dentro{
+  opacity: 1;
+  transition: all 0.8s;
+  transition-delay: .5s;
+  /* ¡ESTO ES LO NUEVO! Vuelve a activar los clics cuando se vuelve visible */
+  pointer-events: auto;
+}
+
+.Ka-portada1-iz,.Ka-portada1-de{
+  height: 480px;
+  width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: relative;
+  top: 10px;
+  opacity: 0;
+  filter: blur(6px);
+  transition: all 0.8s;
+  background: transparent;
+ /* Forzamos que hereden la capacidad de recibir clics */
+  z-index: 35;
+  pointer-events: auto;
+}
+
+/* 6. Aseguramos que al hacer hover el blur se quite y permita clicar */
+.Ka-portada1:hover .Ka-portada1-iz,
+.Ka-portada1:hover .Ka-portada1-de {
+  filter: blur(0px);
+  opacity: 1;
+  transition: all 0.8s;
+  transition-delay: .5s;
+  pointer-events: auto;
+}
+
+.ka-dentro-foto{
+  height: 220px;
+  width: 200px;
+  padding: 2px;
+  corner-shape: bevel;
+  border-radius: 6px;
+  box-shadow: 0px 0px 8px var(--groups);
+  border: 1px solid #181818;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.ka-dentro-foto img{
+  height: 220px;
+  width: 200px;
+  padding: 2px;
+  corner-shape: bevel;
+  border-radius: 6px;
+  object-fit: cover;
+  object-position: center; 
+  filter: brightness(85%)contrast(95%);
+  box-sizing: border-box;
+}
+
+.Ka-portada1-iz cita{
+  margin: 15px 0px 10px 0px;
+  height: 100px;
+  width: 210px;
+  padding: 0px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-end;
+  font-family: 'Gideon Roman';
+  line-height: 150%;
+  font-size: 9.5px;
+  text-align: justify;
+  color: #abaaaa;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.Ka-portada1-iz span{
+  display: block;
+  width: fit-content;
+  border-bottom: 1px solid var(--groups);
+  text-shadow: 0px 0px 1px #000;
+  font-size: 8px;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.Ka-portada1-iz cita txt{display: block; 
+  width: 100%;
+}
+
+.Ka-portada1-iz song{
+  height: 100px;
+  margin: 5px 0px;
+  width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Ka-portada1-iz album{
+  margin-left: 0px;
+  margin-top:10px;
+  width: 35px;
+  height: 35px;
+  outline: 1px solid #181818;
+  outline-offset: 1px;
+}
+
+.Ka-portada1-iz album img{
+  width: 35px;
+  height: 35px;
+  object-fit: cover; 
+  object-position: center; 
+  filter: grayscale(1);
+}
+
+.Ka-portada1-iz info{
+  position: relative;
+  top: 0px;
+  height: 35px;
+  width: 150px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-family: 'Gideon Roman';
+  line-height: 100%;
+  font-size: 9.5px;
+  text-align: justify;
+  color: #abaaaa;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  padding-top: 3px;
+  filter: drop-shadow(0px 0px 5px rgba(171, 171, 171, .5));
+}
+
+.Ka-portada1-iz info artista{
+  display: block;
+  width: 100%;
+  color: var(--groups);
+  font-size: 9.5px;
+  padding-top: 4px;
+}
+
+/* Contenedor principal reproductor mini */
+.reproductor-mini {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin-left: 2px;
+  height: 30px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  gap: 8px; /* Reducimos un poco el espacio entre elementos */
+  background-color: transparent; /* Fondo Negro (cambia a transparent si lo prefieres) */
+  border: 0px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+/* Botón de Play */
+.control-btn {
+  background: transparent;
+  border: none;
+  color: var(--groups);
+  font-size: 12px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+}
+/* Contenedor de la barra de progreso (ahora comparte espacio con el volumen) */
+.progreso-container {
+  flex-grow: 1;
+  height: 4px; /* Un poco más delgada para estilizar */
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+.progreso-llenado {
+  height: 100%;
+  width: 0%;
+  background-color: var(--groups); 
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+/* Contenedor y estilizado del Slider de Volumen */
+.volumen-container {
+  display: flex;
+  align-items: center;
+  width: 40px; /* Ancho fijo y pequeño para el volumen */
+  flex-shrink: 0;
+}
+#volumen-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+/* Estilo del tirador (el puntito) del volumen en Chrome/Safari/Edge */
+#volumen-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--groups);
+  transition: transform 0.1s;
+}
+#volumen-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.3);
+}
+/* Estilo del tirador del volumen en Firefox */
+#volumen-slider::-moz-range-thumb {
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  transition: transform 0.1s;
+  cursor: pointer;
+}
+
+
+.Ka-portada1-de tit{
+  margin-top: 15px;
+  width: 220px;
+  padding-right: 10px;
+  font-family: 'Highborne';
+  font-size: 25px;
+  text-align: right;
+  color: var(--groups);
+  line-height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Ka-portada1-de tit:before{
+  content:"";
+  position: relative;
+  width: 32px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--groups));
+  margin-right: 6px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.Ka-portada1-de extra{
+  height: 78px;
+  margin-top: 5px;
+  overflow: auto;
+  width: 100%;
+  font-family: 'Gideon Roman';
+  line-height: 158%;
+  font-size: 12px;
+  text-align: center;
+  color: #abaaaa;
+  letter-spacing: 0px;
+  font-weight: 400;
+  text-shadow: 1px 1px 1px #111;
+  scrollbar-color: #181818 transparent;
+  scrollbar-width: thin;
+  margin-bottom: 0px;
+}
+
+.Ka-portada1-de extra txt{
+  display: block;
+  width: 200px;
+  padding: 0px 10px 10px 10px;
+  text-align: justify;
+}
+
+.Ka-portada1-de extra b,.Ka-portada1-de extra strong{
+  color: var(--groups);
+  font-family: 'Highborne';
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.Ka-portada1-de rasgos{
+  width: 200px;
+  height: 170px;
+  position: relative;
+  top: 5px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+
+.medidor{
+    width: 200px;
+    margin: 10px 0;
+    height: 6px;
+    corner-shape: bevel;
+    border-radius: 6px;
+    position: relative;
+    outline: 1px solid #222;
+    overflow: hidden;
+}
+
+.medidor c{
+    display: block;
+    background: linear-gradient(to left, transparent, var(--groups), var(--groups));
+    width: 10%;
+    height: 3px;
+    margin: 2px;
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.medidordatos{
+  position: relative;
+  top: -3px;
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Gideon Roman';
+  text-transform: uppercase;
+  line-height: 100%;
+  font-style: normal;
+  font-weight: 300;
+  color: #ababab;
+  padding-bottom: 7px;
+}
+
+.medidordatos span{
+    display: block;
+    font-size: 9px;
+    letter-spacing: .5px;
+}
+
+.Ka-portada1-de .moodb{
+  position: relative;
+  top: 0px;
+  height: 132px;
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Ka-portada1-de .moodb img{
+  width: 55px;
+  height: 55px;
+  filter: grayscale(100%)brightness(55%)contrast(105%);
+  -webkit-filter: grayscale(100%)brightness(55%)contrast(105%);
+  object-fit: cover;
+  object-position: center; 
+  outline: 1px solid #333;
+  outline-offset: 1px;
+  transition: all 0.8s;
+}
+
+
+.Ka-portada1-de .moodb img:hover{
+   filter: grayscale(0%)brightness(100%)contrast(95%);
+  -webkit-filter: grayscale(0%)brightness(100%)contrast(95%);
+  transition: all 0.8s;
+}
+
+
+
+
+
+.Ka-portada1-links{
+  height: 95px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  position: relative;
+}
+.Ka-portada1-links:before{
+  content: "";
+  position: absolute;
+  width: 490px;
+  margin: 0 auto;
+  height: 2px;
+  left: 5px;
+  top: 50%;
+  background: #161616;
+}
+.Ka-portada1-links box{
+  width: 46px;
+  height: 46px;
+  margin: 0px 15px;
+  background: #161616;
+  transition: all 0.8s;
+  position: relative;
+  outline: 1px solid #181818;
+}
+.Ka-portada1-links box:hover{
+  transform:rotate(45deg);
+  background: var(--groups);
+  transition: all 0.8s;
+}
+.Ka-portada1-links span{
+  transform: rotate(45deg);
+  width: 46px;
+  height: 46px;
+  background: var(--groups);
+  position: absolute;
+  z-index:5;
+  transition: all 0.8s;
+  outline: 1px solid #181818;
+}
+.Ka-portada1-links span:hover{
+  transform:rotate(-45deg);
+  background: #161616;
+  transition: all 0.8s;
+}
+.Ka-portada1-links i{
+  position: absolute;
+  z-index: 6;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  font-size: 21px;
+  color: #ababab;
+  font-weight: 300;
+  text-shadow: 1px 1px 0px #000;
+  filter:drop-shadow(0px 0px 0px #000);
+  transform: rotate(-45deg);
+  transition: all 0.8s;
+}
+.Ka-portada1-links box:hover i{
+  transform: rotate(0deg);
+  color: #ababab;
+  filter:drop-shadow(0px 0px 1px #000);
+  transition: all 0.8s;
+}
+.Ka-portada1-links a{
+  text-decoration: none;
+}
+.Ka-portada1-datos{
+  height: 80px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 37px);
+  gap: 5px;
+  align-content: center;
+  width: 478px;
+  position: relative;
+}
+
+.Ka-portada1-datos t{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Gideon Roman';
+  line-height: 100%;
+  font-size: 9.5px;
+  text-align: center;
+  color: #abaaaa;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  font-weight: 400;
+  text-shadow: 1px 1px 1px #111;
+  background: linear-gradient(40deg, transparent 0%, rgba(65,65,65, .2) 50%);
+  padding-top: 2px;
+  corner-shape: bevel;
+  border-radius: 6px;
+  transition: all 0.8s;
+  filter:drop-shadow(0px 0px 0px #333);
+}
+
+.Ka-portada1-datos span{
+  display: block;
+  width: 100%;
+  letter-spacing: 1.5px;
+  font-size: 8.5px;
+  position: relative;
+  top: 1px;
+  color: var(--groups);
+}
+
+.Ka-portada1-datos t:hover{
+  filter:drop-shadow(1px 1px 6px #333);
+  box-shadow: 0px 0px 6px #333;
+  transition: all 0.8s; 
+}
+.Ka-portada1-tit{
+  position: relative;
+  height: auto;
+  padding: 12px 20px;
+  width: 460px;
+  font-family: 'Highborne';
+  font-size: 33px;
+  color: #333;
+  -webkit-text-stroke: 0px #000;
+  line-height: 105%;
+  filter: drop-shadow(0px 0px 2px #000);
+  text-shadow: 1px 1px 1px #000;
+  transition: all 0.9s;
+  text-align: center;
+}
+.Ka-portada1-tit t{
+  color: var(--groups);
+}
+.Ka-portada1-tit txt{
+  display: block;
+  width: 100%;
+}
+.Ka-portada1-tit sub{
+  display: block;
+  font-family: 'Gideon Roman';
+  line-height: 100%;
+  font-size: 9px;
+  text-align: center;
+  color: #abaaaa;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding-top: 4px;
+}
+
+/* Y esto asegura que tu reproductor esté por encima de absolutamente TODO */
+.reproductor-mini {
+  position: relative !important;
+  z-index: 99999 !important;
+  pointer-events: auto !important;
+}
+.control-btn {
+  position: relative !important;
+  z-index: 999999 !important;
+  pointer-events: auto !important;
+}
