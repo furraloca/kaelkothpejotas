@@ -275,14 +275,14 @@ font-display: swap;
 
 .jtab4foto img{
   width: 175px;
-  height: 220px;
+  height: 230px;
   background-position: 50% 0%;
   background-size: cover;
   transform: rotate(-45deg);
   position: relative;
   filter: grayscale(100%)brightness(85%)contrast(98%);
   -webkit-filter: grayscale(100%)brightness(85%)contrast(98%);
-  bottom: 75px;
+  bottom: 85px;
   left: -55px;
   transition: all 0.7s ease-in-out;
 }
