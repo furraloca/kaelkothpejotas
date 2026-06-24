@@ -16,8 +16,7 @@
   color: #555;
   font-size: 40px;
   left: 0px;
-  text-shadow: 1px 1px 0px #000;
-  background: linear-gradient(250deg, #181818 10%, var(--groups));
+  background: linear-gradient(250deg, var(--dbckg6) 10%, var(--accent1));
   background-size: 800%;
   animation: moveGradient 5s ease-in-out infinite;
   background-clip: text;
