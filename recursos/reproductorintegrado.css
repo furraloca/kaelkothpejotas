@@ -2,7 +2,7 @@
   position: absolute;
   z-index:3;
   display: flex; 
-  margin-top: -320px;
+  margin-top: 0px;
 }
 
 .reproductorbg i{
