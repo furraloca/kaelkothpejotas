@@ -3,7 +3,7 @@
    ========================================== */
 
 .reprodlinea {
-  width: 100% !important;   /* Cambiado de 980px a 100% para adaptarse a .KApostbody (504px) */
+  width: 980px;   /* Cambiado de 980px a 100% para adaptarse a .KApostbody (504px) */
   max-width: 980px;         /* Límite máximo por si se usa en zonas más anchas */
   height: auto;
   padding: 8px 0px;
