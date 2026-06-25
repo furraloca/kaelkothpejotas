@@ -1,55 +1,65 @@
-jQuery(document).ready(function($) {
-  const audio = document.getElementById('audio-track');
-  const btnPlay = document.getElementById('play-pause-btn');
-  const barra = document.getElementById('progreso-barra');
-  const contenedorProgreso = document.getElementById('progreso-click');
-  const volumenSlider = document.getElementById('volumen-slider');
+(function() {
+  // Función que se ejecuta repetidamente hasta encontrar el reproductor en la página
+  var checkExist = setInterval(function() {
+    var audio = document.getElementById('audio-track');
+    var btnPlay = document.getElementById('play-pause-btn');
+    var barra = document.getElementById('progreso-barra');
+    var contenedorProgreso = document.getElementById('progreso-click');
+    var volumenSlider = document.getElementById('volumen-slider');
 
-  if (btnPlay && audio) {
-    // Forzamos el icono de Play inicial (Código HTML del triángulo)
-    $(btnPlay).html('&#9654;');
+    if (audio && btnPlay) {
+      clearInterval(checkExist); // Paramos el bucle porque ya existen
 
-    // Evento de click limpio
-    $(btnPlay).off('click').on('click', function() {
-      if (audio.paused) {
-        audio.play().catch(e => console.log("Error al reproducir:", e));
-        $(btnPlay).html('&#10074;&#10074;'); // Icono Pausa
-      } else {
-        audio.pause();
-        $(btnPlay).html('&#9654;'); // Icono Play
+      // Forzamos el texto inicial si está vacío
+      if(!btnPlay.textContent.trim()) {
+        btnPlay.textContent = '▶';
       }
-    });
 
-    // Actualizar barra de progreso
-    audio.addEventListener('timeupdate', () => {
-      if (barra && audio.duration) {
-        const porcentaje = (audio.currentTime / audio.duration) * 100;
-        barra.style.width = porcentaje + '%';
-      }
-    });
-
-    // Click en la barra para saltar tiempo
-    if (contenedorProgreso) {
-      contenedorProgreso.addEventListener('click', (e) => {
-        const anchoTotal = contenedorProgreso.clientWidth;
-        const clickX = e.offsetX;
-        if (audio.duration) {
-          audio.currentTime = (clickX / anchoTotal) * audio.duration;
+      // Añadimos el evento de clic de forma nativa e independiente
+      btnPlay.onclick = function() {
+        if (audio.paused) {
+          audio.play().then(function() {
+            btnPlay.textContent = '❚❚';
+          }).catch(function(e) {
+            console.log("Error al reproducir, verifica que el enlace sea HTTPS:", e);
+          });
+        } else {
+          audio.pause();
+          btnPlay.textContent = '▶';
         }
-      });
-    }
+      };
 
-    // Control de volumen
-    if (volumenSlider) {
-      volumenSlider.addEventListener('input', (e) => {
-        audio.volume = e.target.value;
-      });
-    }
+      // Actualizar barra de progreso
+      audio.ontimeupdate = function() {
+        if (barra && audio.duration) {
+          var porcentaje = (audio.currentTime / audio.duration) * 100;
+          barra.style.width = porcentaje + '%';
+        }
+      };
 
-    // Al terminar la canción
-    audio.addEventListener('ended', () => {
-      $(btnPlay).html('&#9654;');
-      if (barra) barra.style.width = '0%';
-    });
-  }
-});
+      // Saltos en la barra de progreso
+      if (contenedorProgreso) {
+        contenedorProgreso.onclick = function(e) {
+          var anchoTotal = contenedorProgreso.clientWidth;
+          var clickX = e.offsetX;
+          if (audio.duration) {
+            audio.currentTime = (clickX / anchoTotal) * audio.duration;
+          }
+        };
+      }
+
+      // Slider de Volumen
+      if (volumenSlider) {
+        volumenSlider.oninput = function(e) {
+          audio.volume = e.target.value;
+        };
+      }
+
+      // Al terminar
+      audio.onended = function() {
+        btnPlay.textContent = '▶';
+        if (barra) barra.style.width = '0%';
+      };
+    }
+  }, 100); // Revisa cada 100 milisegundos si ya cargó el HTML
+})();
