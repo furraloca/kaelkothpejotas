@@ -28,6 +28,7 @@
   text-shadow: 0px 0px 1px #000;
   border-bottom: 2px solid #181818;
   border-top: 2px solid #181818;
+   pointer-events: auto !important;
 }
 
 /* Animación del fondo */
