@@ -1,13 +1,8 @@
-
-
-
 .reproductorbg{
   position: absolute;
-  top: 20px;
-  left: 20px;
   z-index:3;
-  display: flex;
-  
+  display: flex; 
+  margin-top: -320px;
 }
 
 .reproductorbg i{
