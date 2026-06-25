@@ -36,6 +36,12 @@
   background-color: transparent;
 }
 
+.reproductor-mini2 {
+    position: relative !important;
+    z-index: 99999 !important;
+    pointer-events: auto !important;
+}
+
 
 .reproductor-mini2 nombre{
   position: absolute;
