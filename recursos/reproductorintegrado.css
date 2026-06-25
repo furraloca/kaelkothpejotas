@@ -21,7 +21,7 @@
 @keyframes moveGradient { 0% { background-position: 0% 20%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
 
 /* Contenedor principal reproductor mini */
-.reproductor-mini {
+.reproductor-mini2 {
   position: relative;
   top: 5px;
   left: -10px;
@@ -37,7 +37,7 @@
 }
 
 
-.reproductor-mini nombre{
+.reproductor-mini2 nombre{
   position: absolute;
   width: 100%;
   text-align: center;
@@ -52,7 +52,7 @@
   text-transform: uppercase;
 }
 
-.reproductor-mini:hover.reproductor-mini nombre{
+.reproductor-mini2:hover.reproductor-mini2 nombre{
   opacity: 1;
   top: 35px;
   transition: all 0.7s ease-out;
