@@ -70,16 +70,20 @@
 .control-btn {
   background: transparent;
   border: none;
-  color: #ababab;
-  font-size: 10px;
+  color: #ababab; /* O #ffffff para que resalte más */
+  font-size: 14px; /* ¡Aumentado de 10px a 18px para que el carácter se vea! */
   cursor: pointer;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
   flex-shrink: 0;
+  
+  /* Evita que herede transparencias de otros lados */
+  background-clip: border-box !important; 
+  -webkit-background-clip: border-box !important;
 }
 /* Contenedor de la barra de progreso (ahora comparte espacio con el volumen) */
 .progreso-container {
