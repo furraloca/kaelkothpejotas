@@ -67,7 +67,7 @@
 
 /* Inyectamos el emoji :arrow-forward: de forma segura mediante CSS */
 #play-pause-btn.control-btn::after {
-  content: "\25B6\FE0F" !important; /* Si tu foro da error con el emoji, usa "\25B6\FE0F" */
+  content: "\25B6" !important; /* Si tu foro da error con el emoji, usa "\25B6\FE0F" */
   font-size: 16px !important; /* Tamaño del emoji */
   position: absolute !important;
   display: flex !important;
