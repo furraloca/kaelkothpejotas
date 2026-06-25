@@ -9,7 +9,7 @@
   position: relative;
   z-index:2;
   color: #555;
-  font-size: 40px;
+  font-size: 35px;
   left: 0px;
   background: linear-gradient(250deg, var(--dbckg6) 10%, var(--accent1));
   background-size: 800%;
