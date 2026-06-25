@@ -9,7 +9,7 @@
   padding: 8px 0px;
   position: relative;
   display: flex !important;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-family: 'Gideon Roman', serif;
   line-height: 100%;
