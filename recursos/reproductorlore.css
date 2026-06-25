@@ -71,19 +71,26 @@
   border-radius: 6px;
 }
 /* Botón de Play */
+/* Botón de Play - Solución Forzada por CSS */
 .control-btn {
-  background: transparent;
-  border: none;
-  color: #ababab;
-  font-size: 12px;
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  flex-shrink: 0;
+  background: transparent !important;
+  border: none !important;
+  color: #ababab !important;
+  cursor: pointer !important;
+  width: 20px !important;
+  height: 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  flex-shrink: 0 !important;
+  /* Corrige el problema del texto invisible: */
+  font-family: 'Segoe UI', Arial, sans-serif !important; /* Forzamos fuentes del sistema que sí tienen el símbolo */
+  font-size: 14px !important;                           /* Subimos de 10px a 14px para que sea visible */
+  line-height: 1 !important;                             /* Evita que el símbolo se desplace hacia abajo */
+  text-transform: none !important;                       /* Evita que el foro intente pasar el símbolo a "mayúsculas" */
+  letter-spacing: 0px !important;                        /* Evita que el espacio entre letras deforme el símbolo */
+  overflow: visible !important;                          /* Por si el símbolo es más grande que los 20px */
 }
 /* Contenedor de la barra de progreso (ahora comparte espacio con el volumen) */
 .progreso-container {
