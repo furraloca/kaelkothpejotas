@@ -80,6 +80,7 @@
   justify-content: center;
   padding: 0;
   flex-shrink: 0;
+  font-family: Arial, sans-serif !important; /* Forzamos una fuente limpia para el icono */
   
   /* Evita que herede transparencias de otros lados */
   background-clip: border-box !important; 
