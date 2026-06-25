@@ -6,19 +6,21 @@ jQuery(document).ready(function($) {
   const volumenSlider = document.getElementById('volumen-slider');
 
   if (btnPlay && audio) {
-    // Forzamos el icono de Play con código HTML seguro para Foroactivo
-    btnPlay.innerHTML = '&#9654;';
+    // Forzamos el icono de Play inicial (Código HTML del triángulo)
+    $(btnPlay).html('&#9654;');
 
+    // Evento de click limpio
     $(btnPlay).off('click').on('click', function() {
       if (audio.paused) {
         audio.play().catch(e => console.log("Error al reproducir:", e));
-        btnPlay.innerHTML = '&#10074;&#10074;'; // Icono de pausa seguro (❚❚)
+        $(btnPlay).html('&#10074;&#10074;'); // Icono Pausa
       } else {
         audio.pause();
-        btnPlay.innerHTML = '&#9654;';
+        $(btnPlay).html('&#9654;'); // Icono Play
       }
     });
 
+    // Actualizar barra de progreso
     audio.addEventListener('timeupdate', () => {
       if (barra && audio.duration) {
         const porcentaje = (audio.currentTime / audio.duration) * 100;
@@ -26,6 +28,7 @@ jQuery(document).ready(function($) {
       }
     });
 
+    // Click en la barra para saltar tiempo
     if (contenedorProgreso) {
       contenedorProgreso.addEventListener('click', (e) => {
         const anchoTotal = contenedorProgreso.clientWidth;
@@ -36,14 +39,16 @@ jQuery(document).ready(function($) {
       });
     }
 
+    // Control de volumen
     if (volumenSlider) {
       volumenSlider.addEventListener('input', (e) => {
         audio.volume = e.target.value;
       });
     }
 
+    // Al terminar la canción
     audio.addEventListener('ended', () => {
-      btnPlay.innerHTML = '&#9654;';
+      $(btnPlay).html('&#9654;');
       if (barra) barra.style.width = '0%';
     });
   }
