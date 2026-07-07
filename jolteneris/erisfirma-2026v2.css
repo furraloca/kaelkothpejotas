@@ -31,6 +31,10 @@ font-display: swap;
   background-size: 108%;
 }
 
+.verano.f26erisv4gif{background-image: url(https://64.media.tumblr.com/8fc6d0a568b8911c00113ddbc2400af1/c4654520a2d1fd69-6e/s500x750/f003cd419fa18f3477c2a0942df5ae34bc0f2837.gif);
+  background-position: 50% 50%;
+  background-size: 100%;}
+
 .f26gifover{
   width: 226px;
   height: 210px;
@@ -62,6 +66,10 @@ font-display: swap;
   opacity: 0;
   transition: all .9s ease-in-out;
 }
+
+.verano.f26erisv4gif2{background-image: url(https://i.pinimg.com/originals/8b/4b/d6/8b4bd6f85ffd49f48026527183eae7bf.gif);
+  background-position: 50% 50%;
+  background-size: 100%;}
 
 
 .f26erisv4:hover .f26erisv4gif2{
@@ -109,6 +117,9 @@ font-display: swap;
   transition-delay: .5s;
 }
 
+.verano.f26erisv4pic{background-image: url(https://images2.imgbox.com/d5/22/UgCXjTs8_o.jpg);
+  background-position: 0% 50%;
+  background-size: 210%;}
 
 .f26erisv4:hover .f26erisv4pic{
   border-left: 3px solid var(--bruma);
