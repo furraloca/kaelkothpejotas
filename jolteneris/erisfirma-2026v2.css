@@ -53,6 +53,24 @@ font-display: swap;
   transition: all 1.3s ease-in-out; 
 }
 
+.verano.f26gifover{
+  width: 226px;
+  height: 210px;
+  position: absolute;
+  z-index:5;
+  backdrop-filter: grayscale(70%)brightness(95%)contrast(106%)hue-rotate(0deg);
+  -webkit-backdrop-filter: grayscale(70%)brightness(95%)contrast(106%)hue-rotate(0deg);
+  background: rgba(0,0,0, .3);
+  mix-blend-mode: multiply;
+  transition: all 1.3s ease-in-out;
+}
+
+.f26erisv4:hover .verano.f26gifover{
+ backdrop-filter: grayscale(85%)brightness(95%)contrast(106%)hue-rotate(0deg)blur(15px);
+  -webkit-backdrop-filter: grayscale(85%)brightness(95%)contrast(106%)hue-rotate(0deg)blur(15px);
+  transition: all 1.3s ease-in-out; 
+}
+
 
 .f26erisv4gif2{
   width: 226px;
@@ -69,7 +87,7 @@ font-display: swap;
 
 .verano.f26erisv4gif2{background-image: url(https://i.pinimg.com/originals/8b/4b/d6/8b4bd6f85ffd49f48026527183eae7bf.gif);
   background-position: 50% 50%;
-  background-size: 100%;}
+  background-size: 175%;}
 
 
 .f26erisv4:hover .f26erisv4gif2{
