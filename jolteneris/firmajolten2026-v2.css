@@ -310,13 +310,37 @@ font-display: swap;
 
 .verano.f26jolv4pic{background-image: url(https://images2.imgbox.com/b5/9d/Kt4KYWjs_o.jpg);
     background-position: 20% 50%;
-    background-size: 180%;}
+    background-size: 220%;}
 
 .verano.f26jolv4gif2{background-image: url(https://images2.imgbox.com/e3/73/X56Gxetw_o.gif);
     background-position: 50% 50%;
     background-size: 104%;}
 
-.verano.f26jolv4gif{background-image: url(https://images2.imgbox.com/4c/20/ppQlj3de_o.gif);
+.verano.f26jolv4gif{background-image: url(https://images2.imgbox.com/5b/93/yLfHAI5U_o.gif);
   background-position: 50% 50%;
   background-size: 100%;}
 
+.f26jolv4:hover .verano.f26jolv4pic{
+  border-right: 3px solid var(--bruma);
+  background-position: 50% 50%;
+  background-size: 120%;
+  transition: all 1.3s ease-in-out;
+}
+
+.verano.f26gifoverj{
+  width: 226px;
+  height: 210px;
+  position: absolute;
+  z-index:5;
+  backdrop-filter: grayscale(60%)brightness(95%)contrast(100%)hue-rotate(0deg);
+  -webkit-backdrop-filter: grayscale(60%)brightness(95%)contrast(100%)hue-rotate(0deg);
+  background: rgba(0,0,0, .3);
+  mix-blend-mode: multiply;
+  transition: all 1.3s ease-in-out;
+}
+
+.f26jolv4:hover .verano.f26gifoverj{
+ backdrop-filter: grayscale(85%)brightness(95%)contrast(109%)hue-rotate(0deg)blur(15px);
+  -webkit-backdrop-filter: grayscale(85%)brightness(95%)contrast(109%)hue-rotate(0deg)blur(15px);
+  transition: all 1.3s ease-in-out; 
+}
