@@ -308,7 +308,7 @@ font-display: swap;
 }
 
 
-.verano.f26jolv4pic{background-image: url(https://images2.imgbox.com/b5/9d/Kt4KYWjs_o.jpg);
+.verano.f26jolv4pic{background-image: url(https://images2.imgbox.com/d5/76/pq7xMkt9_o.jpg);
     background-position: 20% 50%;
     background-size: 220%;}
 
@@ -323,7 +323,7 @@ font-display: swap;
 .f26jolv4:hover .verano.f26jolv4pic{
   border-right: 3px solid var(--bruma);
   background-position: 50% 50%;
-  background-size: 120%;
+  background-size: 100%;
   transition: all 1.3s ease-in-out;
 }
 
