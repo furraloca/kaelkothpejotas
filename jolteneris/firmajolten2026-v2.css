@@ -265,7 +265,7 @@ font-display: swap;
   filter: drop-shadow(1px 1px 2px #000)blur(15px)grayscale(1)brightness(90%)contrast(111%);
   transform: rotate(0deg);
   position: absolute;
-  bottom: 15px;
+  bottom: 22px;
   opacity: 0;
   transition: all 0.7s ease-in-out;
 }
@@ -323,7 +323,7 @@ font-display: swap;
 .f26jolv4:hover .verano.f26jolv4pic{
   border-right: 3px solid var(--bruma);
   background-position: 50% 50%;
-  background-size: 100%;
+  background-size: 180%;
   transition: all 1.3s ease-in-out;
 }
 
