@@ -868,3 +868,19 @@
   filter: blur(0px);
   transition: all 0.7s ease-in-out;
 }
+
+
+
+/* 1. Forzar que el contenedor de progreso ocupe el 100% del espacio del grid central */
+.medidor .progreso {
+    display: block;
+    width: 100%;
+    min-width: 50px; /* Evita que se colapse a 0 píxeles */
+    background: rgba(255, 255, 255, 0.05); /* Fondo sutil para ver el camino del medidor */
+}
+
+/* 2. Asegurar que la barra de relleno interna tenga dimensiones físicas */
+.progreso .rell {
+    display: block;
+    height: 100%;
+}
