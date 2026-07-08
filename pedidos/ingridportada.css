@@ -203,7 +203,7 @@
 }
 
 
-.medidor{
+.medidoring{
   width: 279px;
   display: grid; 
   grid-template-columns: 80px 1fr 80px;
@@ -220,11 +220,11 @@
   overflow: hidden;
 }
 
-.medidor span{
+.medidoring span{
   text-align: right;
 }
 
-.medidor c{
+.medidoring c{
   text-align: left;
 }
 
@@ -869,52 +869,3 @@
   transition: all 0.7s ease-in-out;
 }
 
-
-/* 1. REESTRUCTURACIÓN COMPLETA DEL MEDIDOR */
-.medidor {
-    display: flex !important;           /* Cambiamos grid por flex para evitar colapsos */
-    justify-content: space-between;
-    align-items: center;
-    width: 279px !important;
-    height: 14px !important;            /* Le damos una altura física para que no mida 0px */
-    margin: 6px 0 !important;
-    overflow: visible !important;       /* Evitamos que se mutile el contenido */
-}
-
-/* 2. FORZAR TAMAÑO FIJO A LOS TEXTOS IZQUIERDA Y DERECHA */
-.medidor span {
-    display: inline-block !important;
-    width: 75px !important;             /* Espacio exacto para la palabra izquierda */
-    text-align: right !important;
-    white-space: nowrap;                /* Evita que el texto salte de línea */
-}
-
-.medidor .c {
-    display: inline-block !important;
-    width: 75px !important;             /* Espacio exacto para la palabra derecha */
-    text-align: left !important;
-    white-space: nowrap;
-}
-
-/* 3. ARREGLAR LA BARRA DE PROGRESO CENTRAL */
-.medidor .progreso {
-    display: block !important;
-    flex-grow: 1;                       /* Hace que ocupe todo el espacio que sobra en el centro */
-    margin: 0 8px !important;           /* Separa la barra de los textos */
-    height: 6px !important;             /* Altura visible de la barra */
-    border-radius: 6px !important;
-    background: rgba(255, 255, 255, 0.1) !important; /* Fondo sutil para que veas el riel */
-    border: 1px solid var(--alianza) !important;     /* Borde usando tu color */
-    position: relative !important;
-    overflow: hidden !important;
-}
-
-/* 4. ASEGURAR EL RELLENO INTERNO DE LA BARRA */
-.progreso .rell {
-    display: block !important;
-    height: 100% !important;
-    background-color: var(--alianza) !important;     /* Color de relleno */
-    position: absolute !important;
-    top: 0;
-    left: 0;
-}
