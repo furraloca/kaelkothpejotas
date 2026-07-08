@@ -870,17 +870,51 @@
 }
 
 
-
-/* 1. Forzar que el contenedor de progreso ocupe el 100% del espacio del grid central */
-.medidor .progreso {
-    display: block;
-    width: 100%;
-    min-width: 50px; /* Evita que se colapse a 0 píxeles */
-    background: rgba(255, 255, 255, 0.05); /* Fondo sutil para ver el camino del medidor */
+/* 1. REESTRUCTURACIÓN COMPLETA DEL MEDIDOR */
+.medidor {
+    display: flex !important;           /* Cambiamos grid por flex para evitar colapsos */
+    justify-content: space-between;
+    align-items: center;
+    width: 279px !important;
+    height: 14px !important;            /* Le damos una altura física para que no mida 0px */
+    margin: 6px 0 !important;
+    overflow: visible !important;       /* Evitamos que se mutile el contenido */
 }
 
-/* 2. Asegurar que la barra de relleno interna tenga dimensiones físicas */
+/* 2. FORZAR TAMAÑO FIJO A LOS TEXTOS IZQUIERDA Y DERECHA */
+.medidor span {
+    display: inline-block !important;
+    width: 75px !important;             /* Espacio exacto para la palabra izquierda */
+    text-align: right !important;
+    white-space: nowrap;                /* Evita que el texto salte de línea */
+}
+
+.medidor .c {
+    display: inline-block !important;
+    width: 75px !important;             /* Espacio exacto para la palabra derecha */
+    text-align: left !important;
+    white-space: nowrap;
+}
+
+/* 3. ARREGLAR LA BARRA DE PROGRESO CENTRAL */
+.medidor .progreso {
+    display: block !important;
+    flex-grow: 1;                       /* Hace que ocupe todo el espacio que sobra en el centro */
+    margin: 0 8px !important;           /* Separa la barra de los textos */
+    height: 6px !important;             /* Altura visible de la barra */
+    border-radius: 6px !important;
+    background: rgba(255, 255, 255, 0.1) !important; /* Fondo sutil para que veas el riel */
+    border: 1px solid var(--alianza) !important;     /* Borde usando tu color */
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+/* 4. ASEGURAR EL RELLENO INTERNO DE LA BARRA */
 .progreso .rell {
-    display: block;
-    height: 100%;
+    display: block !important;
+    height: 100% !important;
+    background-color: var(--alianza) !important;     /* Color de relleno */
+    position: absolute !important;
+    top: 0;
+    left: 0;
 }
