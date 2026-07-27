@@ -121,7 +121,7 @@ font-display: swap;
   corner-shape: bevel;
   border-radius: 12px;
   margin: 10px 5px;
-  background: #121212;
+  background: #000;
   filter: drop-shadow(0px 0px 3px var(--groups));
   font-family: "Grenze", serif;
   font-weight: 300;
