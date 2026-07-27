@@ -1,3 +1,12 @@
+@font-face{
+font-family: 'valkofont1';
+src: url('./BreatheFireIi-2z9W.woff2') format('woff2'),
+url('./BreatheFireIi-2z9W.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
+
 .valkodiceg{
   width:360px;
   height: auto;
