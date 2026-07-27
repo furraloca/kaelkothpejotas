@@ -1,0 +1,238 @@
+.valkodiceg{
+  width:360px;
+  height: auto;
+  padding: 20px;
+  margin: 0 auto;
+  background:linear-gradient(50deg, rgba(41,41,41, .4), rgba(0,0,0, 1), rgba(41,41,41, .4));
+  corner-shape: bevel;
+  border-radius: 12px;
+  outline: 1px solid #181818;
+  border: 4px solid #060606;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.valkodicegdice{
+  width: 150px;
+  height:150px;
+  margin: 5px 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+.valkodicegdice img{
+  width: 150px;
+  height:150px;
+  object-fit: cover; 
+  object-position: center; 
+  filter: grayscale(0)contrast(140%)brightness(110%);
+  mix-blend-mode:screen;
+  position: relative;
+}
+
+.valkodicegdice fil{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+  background-color: var(--groups);
+  mix-blend-mode: hue;
+}
+
+.valkodiceg tit{
+  display: block;
+  width:100%;
+  font-size:32px;
+  text-align: center;
+  color: #000;
+  text-shadow: 2px 2px 0px var(--groups);
+  font-family: "valkofont1";
+  margin: 0 auto;
+}
+
+.valkodiceg sub{
+  display: block;
+  text-align: center;
+  font-family: "Grenze", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 100%;
+  color: #abaaaa;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #000;
+  width: fit-content;
+  padding: 2px 12px 3px 12px;
+  border-bottom: 1px solid var(--groups);
+  corner-shape: bevel;
+  border-radius: 5px;
+  margin: 5px 0px;
+}
+
+.valkodiceg info{
+  width: 90%;
+  padding: 10px;
+  text-align: justify;
+  font-family: "Grenze", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14.5px;
+  line-height: 125%;
+  color: #abaaaa;
+  letter-spacing: .5px;
+  margin-top: 20px;
+}
+
+.valkodiceg span{
+  text-decoration: underline 1px solid var(--groups);
+  text-underline-offset: 3px;
+}
+
+
+
+.valkodicegtab{
+  margin-top:20px;
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.valkodicegtab acierto,.valkodicegtab fallo{
+  width: 105px;
+  height: 220px;
+  corner-shape: bevel;
+  border-radius: 12px;
+  margin: 10px 5px;
+  background: #121212;
+  filter: drop-shadow(0px 0px 3px var(--groups));
+  font-family: "Grenze", serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #abaaaa;
+  text-shadow: 1px 1px 2px #000;
+  line-height: 100%;
+  font-size: 11px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.valkodicegtab fallo{
+  filter: drop-shadow(0px 0px 3px #333);
+}
+
+.valkodicegtab t{
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-bottom:5px;
+  position: relative;
+}
+
+.valkodicegtab fallo t:before{
+  position: absolute;
+  content: "\E68C";
+  top: -18px;
+  right: -18px;
+  font-size: 20px;
+  opacity: .4;
+  color: var(--groups);
+  filter:drop-shadow(0px 0px 3px var(--groups));
+  font-family: "game-icons";
+}
+
+.valkodicegtab t:before{
+  position: absolute;
+  content: "\E697";
+  top: -18px;
+  right: -12px;
+  font-size: 20px;
+  opacity: .4;
+  color: var(--groups);
+  filter:drop-shadow(0px 0px 3px var(--groups));
+  font-family: "game-icons";
+}
+
+.valkodicegtab pj{
+  display: block;
+  width: fit-content;
+  border-bottom: 1px solid var(--groups);
+  margin: 5px 0px 0px 0px;
+  font-size: 11px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.valkodicegtabresultado{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-top:10px;
+}
+
+.valkodicegtab n{
+  font-size: 26px;
+  line-height:100%;
+  text-align: center;
+  color: var(--groups);
+  font-family: "valkofont1";
+}
+
+.valkodicegtab c{
+  font-size: 15px;
+  line-height:100%;
+  text-align: center;
+  color: #ababab;
+  font-family: "Grenze", serif;
+  font-weight:900;
+}
+
+
+.valkodicegtab x{
+  text-transform: none;
+  font-size: 13px;
+  text-align: center;
+  display: block;
+  width:90%;
+  height: 70px;
+  margin: 0 auto;
+  padding-top: 10px;
+  line-height:125%;
+  position: relative;
+  top: 8px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #252525 transparent;
+}
+
+
+.valkodicegtab acierto:before,.valkodicegtab fallo:before{
+  position: absolute;
+  content: "\E177";
+  bottom: 7px;
+  left: 4px;
+  font-size: 22px;
+  opacity: .4;
+  color: var(--groups);
+  filter:drop-shadow(0px 0px 3px var(--groups));
+  font-family: "game-icons";
+}
+
