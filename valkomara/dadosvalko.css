@@ -154,7 +154,7 @@ font-display: swap;
 
 .valkodicegtab fallo t:before{
   position: absolute;
-  content: "\E68C";
+  content: "\f45a";
   top: -18px;
   right: -18px;
   font-size: 20px;
@@ -166,7 +166,7 @@ font-display: swap;
 
 .valkodicegtab t:before{
   position: absolute;
-  content: "\E697";
+  content: "\f46c";
   top: -18px;
   right: -12px;
   font-size: 20px;
@@ -235,7 +235,7 @@ font-display: swap;
 
 .valkodicegtab acierto:before,.valkodicegtab fallo:before{
   position: absolute;
-  content: "\E177";
+  content: "\fbb5";
   bottom: 7px;
   left: 4px;
   font-size: 22px;
