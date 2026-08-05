@@ -51,7 +51,7 @@
   color: #D1D0D0;
   text-transform: uppercase;
   writing-mode: vertical-rl;
-  transform: rotate(180deg)translateX(-0px);
+  transform: rotate(0deg)translateX(-10px);
   transition: all 1.3s ease-in-out;
   transition-delay: 0.6s;
 }
@@ -63,7 +63,7 @@
 }
 
 .jolten-firma:hover .jolten-firmaquo1{
-  transform: rotate(180deg)translateX(60px); transition: all 1.3s ease-in-out;
+  transform: rotate(0deg)translateX(60px); transition: all 1.3s ease-in-out;
 }
 
 .jolten-firmaoverlay1{
