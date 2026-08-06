@@ -1,0 +1,379 @@
+@font-face {font-family: "joltenfont1"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/jolteneris/holyrose-bonbongothique.woff');}
+
+@font-face {font-family: 'Revnafont1';src: url(https://hartrp.github.io/kaelkoth/fonts/Brighthorse-Regular.otf);}
+
+
+.combatbg{
+  width: 480px;
+  margin: 0 auto;
+  position: relative;
+  height: auto;
+  background: transparent;
+  corner-top-right-shape: bevel;
+  border-radius: 0px 16px 0px 0px;
+  outline: 1px solid #222;
+}
+
+.combatbg:before{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-left: 1px solid var(--groups);
+  border-top: 1px solid var(--groups);
+}
+
+.combatbg:after{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-right: 1px solid var(--groups);
+  border-bottom: 1px solid var(--groups);
+}
+
+
+.combattop{
+  width: 100%;
+  height: 380px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.combattopleft,.combattopright{
+  width: 240px;
+  height: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.combattopleft{
+  font-family: "Rosarivo", cursive;
+  font-size: 12px;
+  color: #ababab;
+  line-height: 100%;
+}
+
+
+.combattopleft c{
+  display: block;
+  width: 75%;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: .5px;
+}
+
+.combattopleft nombre{
+  display: block;
+  width: 75%;
+  text-align: left;
+  font-family: "joltenfont1";
+  font-size: 55px;
+  letter-spacing: 2px;
+  color: var(--groups);
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.combattopleft x{
+  color: var(--groups);
+}
+
+.revna.combattopleft nombre{
+  font-family: "revnafont1";
+}
+
+
+.combattopleft n{
+  position: relative;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  width: 75%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+.combattopleft n:before{
+  position: relative;
+  width: 5px;
+  height: 5px;
+  background: var(--groups);
+  content: "";
+  margin-right: 5px;
+}
+
+.combathab{
+  margin-top: 8px;
+  width: 75%;
+  background: #121212;
+  height: 70px;
+  position: relative;
+  display: flex;
+  corner-top-right-shape: bevel;
+  border-radius: 0px 16px 0px 0px;
+  outline: 1px solid #222;
+}
+
+.combathab-iz{
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  letter-spacing: .5px;
+  color: var(--groups);
+  text-transform: uppercase;
+  position: relative;
+}
+
+.combathab-iz txt{
+  display: block;
+  text-align: center;
+  line-height: 125%;
+}
+
+.combathab-iz:after{
+  position: absolute;
+  top: 10px;
+  right: -3px;
+  content: "";
+  background: linear-gradient(transparent, #282828, transparent);
+  height: 50px;
+  width: 1px;
+}
+
+.combathab-iz i{
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+
+
+.combathab-der{
+  width: 90px;
+  margin: 10px 10px;
+  height: 50px;
+  padding: 0px 5px;
+  overflow: auto;
+  scrollbar-color: #333 transparent;
+  scrollbar-width: thin;
+  font-size: 11px;
+  display: block;
+  text-align: justify;
+  line-height: 150%;
+}
+
+
+.combattopright-img{
+  width: 200px;
+  height: 300px;
+  corner-shape: bevel;
+  border-radius: 16px;
+  outline: 1px solid #181818;
+  overflow: hidden;
+}
+
+.combattopright-img img{
+  width: 200px;
+  height: 300px;
+  object-fit: cover; 
+  object-position: center; 
+  filter: grayscale(0%)brightness(100%)blur(0px)contrast(108%);
+}
+
+
+.combatresult{
+  min-height: 200px;
+  padding: 15px 0px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #181818;
+  position: relative;
+}
+
+.combatresult tit{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: "joltenfont1";
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: var(--groups);
+}
+
+.revna.combatresult tit{
+  font-family: "revnafont1";
+}
+
+.combatresult-dado{
+  width: 240px;
+  height: auto;
+  font-family: "joltenfont1";
+  font-size: 60px;
+  letter-spacing: 1px;
+  color: #ababab;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.revna.combatresult-dado{
+  font-family: "revnafont1";
+}
+
+.combatresult-dado t{
+  display: block;
+  font-family: "Rosarivo", cursive;
+  font-size: 10px;
+  color: #ababab;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.combatresult-dado i{
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 100%;
+  color: #222;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+
+.combatresult-dado dado{
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 100%;
+  position: relative;
+}
+
+.combatresult signo{
+  position: absolute;
+  content: "";
+  right: 238px;
+  top: 95px;
+  color: #ababab;
+  width: 10px;
+  height: 20px;
+  display: block;
+  font-family: "Rosarivo", cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.combatresult-acc{
+  width: 70%;
+  height: auto;
+  padding: 15px;
+  margin: 15px;
+  background: #121212;
+  font-family: "Rosarivo", cursive;
+  font-size: 12px;
+  color: #ababab;
+  line-height: 150%;
+  display: block;
+  outline: 1px solid #222;
+  corner-shape: bevel;
+  border-radius: 8px;
+}
+
+
+.combatvidas{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top, #000000, rgba(0, 0, 0, .85), rgba(0, 0, 0, .45)), url(https://i.imgur.com/27oX7l0.png) 50% 10% / cover;
+  background-blend-mode: multiply;
+}
+
+
+.combatvidas alianza,.combatvidas imperio{
+  width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rosarivo", cursive;
+  font-size: 13px;
+  color: #ababab;
+  letter-spacing: 1px;
+  line-height: 100%;
+  text-transform: uppercase; 
+  text-shadow: 1px 1px 0px #000;
+}
+
+.combatvidas-corazones{
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.combatvidas-corazones lleno{
+  color: var(--groups);
+  padding: 0px 2px;
+}
+
+.combatvidas-corazones lleno:before{
+  font-family: "Phosphor";
+  content: "\fc8f";
+  color: var(--groups);
+  -webkit-text-stroke: .1px var(--groups);
+  font-size: 18px;
+}
+
+imperio.combatvidas-corazones lleno{
+  color: var(--imperio);
+  padding: 0px 2px;
+}
+
+.imperio.combatvidas-corazones lleno:before{
+  font-family: "Phosphor";
+  content: "\fc8f";
+  color: var(--imperio);
+  -webkit-text-stroke: .1px var(--imperio);
+  font-size: 18px;
+}
+
+
+.combatvidas-corazones no:before{
+  font-family: "Phosphor";
+  content: "\fc8f";
+  color: #555;
+  -webkit-text-stroke: .1px #555;
+  font-size: 18px;
+}
