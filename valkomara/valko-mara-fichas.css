@@ -1,5 +1,20 @@
-@font-face {font-family: "valkofont1"; src: url('https://dl.dropbox.com/scl/fi/9vyw2y42w7lds2d2k7gpz/BreatheFireIi-2z9W.ttf?rlkey=c3akbdcmrnon7ks1aumgye3dv&st=ul0g0qgo');}
+@font-face{
+font-family: 'valkofont1';
+src: url('./BreatheFireIi-2z9W.woff2') format('woff2'),
+url('./BreatheFireIi-2z9W.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
+@font-face{
+font-family: 'marafont1';
+src: url('./The Solitude.woff2') format('woff2'),
+url('./The Solitude.woff') format('woff');
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
 
 .dentro-f{
   font-family: "Gideon Roman", serif;
@@ -86,7 +101,7 @@
 .dentro-f-icon-img{
   width: 50px;
   height: 50px;
-  background: url(https://images2.imgbox.com/5f/75/rhOmU2Rs_o.png);
+  background: url(https://i.ibb.co/tT6HVGCM/wolf3.png);
   background-size: cover;
   background-position: 50% 50%;
   filter: drop-shadow(1px 1px 1px var(--sombrias));
@@ -113,13 +128,6 @@
   text-shadow: 1px 1px 2px #000;
 }
 
-
-
-
-
-
-
-@font-face {font-family: "marafont1"; src: url('https://dl.dropbox.com/scl/fi/623fi9zhq21r6potcmwiy/The-Solitude.ttf?rlkey=nd06h64y6ejws5dvy9a8ewxi4&st=afllufm0');}
 
 .dentromara-ficha{
   font-family: "PT Serif", serif;
@@ -158,7 +166,7 @@
 .dentromara-f-icon-img{
   width: 50px;
   height: 50px;
-  background: url(https://images2.imgbox.com/86/68/DpUDpzs2_o.png);
+  background: url(https://i.ibb.co/ymWb7XD2/104272762.png);
   background-size: cover;
   background-position: 50% 50%;
   filter: drop-shadow(0px 0px 6px var(--sombrias));
@@ -200,7 +208,7 @@
 .dentromara-cable{
   width: 100%;
   height: 40px;
-  background: url(https://images2.imgbox.com/42/75/uKK6UQnM_o.png);
+  background: url(https://i.ibb.co/vvvc9KYv/pngtree-the-barbed-wire-png-image-png-image-11461267-2.png);
   background-size: repeat;
   background-position: 50% 50%;
   filter: drop-shadow(0px 0px 3px var(--sombrias));
