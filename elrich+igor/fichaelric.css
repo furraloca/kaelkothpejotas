@@ -1,0 +1,335 @@
+@font-face {font-family: "elricfont1"; src: url('https://dl.dropbox.com/scl/fi/dfbj6hw41ntt6xw2pivdx/kingston-williams.regular.ttf?rlkey=kotfs15xwjwpiny6n44n6ejwr&st=kxez5jm8');}
+
+@font-face {font-family: "elricrunas1"; src: url('https://dl.dropbox.com/scl/fi/qbzdly9oewnfxm7q9wejn/DARUNE.otf?rlkey=io2b8hwpz2fjrbk3j34uwcmiz&st=9khn1zza');}
+
+@font-face {font-family: "elricinicial1"; src: url('https://dl.dropbox.com/scl/fi/47uriyl8relv2xu5qs9iz/cs-lamia-drawn-demo.regular.otf?rlkey=s0hsprgb3ow03551xh89udf0g&st=v17apqww');}
+
+
+.fichasep{
+  width: 335px;
+  height: 102px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-image: url(https://images2.imgbox.com/6b/a2/PAdoNzOQ_o.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: .8;
+}
+
+.v2.fichasep{
+  width: 335px;
+  height: 90px;
+  background-image: url(https://images2.imgbox.com/eb/29/ix67uqgr_o.png);
+}
+
+.v3.fichasep{
+  width: 335px;
+  height: 75px;
+  background-image: url(https://images2.imgbox.com/dd/19/rqMePmWk_o.png);
+}
+
+
+.fichasep-tit{
+  width: 335px;
+  position: relative;
+  font-family: "elricfont1";
+  background: linear-gradient(to right, rgba(2,2,2, .5), #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 36px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 100%;
+  letter-spacing: 0px;
+  padding-top: 10px;
+}
+
+
+.fichasep-sub{
+  width: 335px;
+  margin: 0 auto;
+  line-height: 100%;
+  font-size: 10px;
+  text-align: center;
+  font-family: "Ibarra Real Nova", serif;
+  color: #000;
+  letter-spacing: 0px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 2px;
+}
+
+
+.testimony{
+  width: 281px;
+  margin: 25px auto;
+  line-height: 140%;
+  font-size: 16px;
+  text-align: justify;
+  font-family: "Ibarra Real Nova", serif;
+  color: #abaaaa;
+  letter-spacing: 0px;
+  font-weight: 400;
+  padding: 50px 20px 50px 20px;
+  background: linear-gradient(0deg,rgba(51, 51, 51, .4) 0%, rgba(8, 8, 8, .2) 50%, rgba(8, 8, 8, .4) 100%);
+  corner-shape: bevel;
+  border-radius: 22px;
+  border: 2px solid #181818;
+  outline: 2px solid #121212;
+  outline-offset: 5px;
+  position: relative;
+}
+
+.testimony span,.testimony c{
+  width: 295px;
+  display: block;
+  font-family: "elricrunas1";
+  position: absolute;
+  text-align: center;
+  letter-spacing: 8px;
+  font-size: 18px;
+  line-height: 100%;
+   background: linear-gradient(to right, rgba(2,2,2, 1), var(--alianza),rgba(2,2,2, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  text-shadow: 3px 3px 5px #000;
+}
+
+.testimony span{
+  top: 15px;
+}
+
+.testimony c{
+  bottom: 15px;
+}
+
+
+
+
+.otrosdatoselric{
+  width: 335px;
+  height: 241px;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  opacity: 1;
+}
+
+.otrosdatoselric img{
+  position: relative;
+  z-index: 5;
+  width: 335px;
+  height: 241px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(35%)grayscale(20%);
+}
+
+
+.otrosdatoselric-cab{
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  width: 335px;
+  height: 241px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.otrosdatoselric-cab t{
+  position: relative;
+  top: -20px;
+  font-family: "elricfont1";
+  background: linear-gradient(to right, var(--alianza), #181818, var(--alianza));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 46px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0px var(--alianza);
+}
+
+.otrosdatoselric-cab span,.otrosdatoselric-cab c{
+  height: 201px;
+  display: block;
+  font-family: "elricrunas1";
+  position: absolute;
+  padding: 20px 0px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 18px;
+  line-height: 100%;
+  background: linear-gradient(to right, rgba(2,2,2, 1), var(--alianza),rgba(2,2,2, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  text-shadow: 3px 3px 5px #000;
+  filter: drop-shadow(0px 0px 1px var(--alianza));
+}
+
+.otrosdatoselric-cab span{
+  left: 10px;
+}
+
+.otrosdatoselric-cab c{
+  right: 10px;
+}
+
+
+.otrosdatoselric-cab x{
+  width: 335px;
+  margin: 0 auto;
+  line-height: 100%;
+  font-size: 11px;
+  text-align: center;
+  font-family: "Ibarra Real Nova", serif;
+  color: #abaaaa;
+  letter-spacing: 2px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 2px;
+  padding-top: 5px;
+  position: relative;
+  top: -20px;
+}
+
+.otrosdatoselric-cab i{
+  font-size: 40px;
+  position: relative;
+  top: -12px;
+  line-height: 100%;
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(to right, rgba(2,2,2, 1), var(--alianza),rgba(2,2,2, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  text-shadow: 2px 2px 1px #000;
+  filter: drop-shadow(0px 0px 5px var(--alianza));
+}
+
+
+.datoelric{
+  width: 295px;
+  min-height: 45px;
+  padding: 20px;
+  border-top: 0px solid #181818;
+  border-bottom: 0px solid #181818;
+  position: relative;
+  margin: 30px auto;
+}
+
+
+.datoelric span{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: var(--alianza);
+  height: 55px;
+  width: 50px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.datoelric x{
+  transform: rotate(-180deg);
+  font-family: "elricfont1";
+  font-size: 26px;
+  color: #000;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+
+.datoelric c{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: var(--alianza);
+  height: 55px;
+  width: 50px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+
+
+.datoelric txt{
+  display: block;
+  padding: 5px 30px;
+  margin: 0 auto;
+  line-height: 135%;
+  font-size: 17px;
+  text-align: justify;
+  font-family: "Ibarra Real Nova", serif;
+  color: #abaaaa;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+
+
+
+#glow {
+        animation: neon1 linear infinite 2.2s;
+        will-change: opacity;
+    }
+
+#blink {
+        animation: blink linear infinite 2.8s;
+    }
+
+
+@keyframes neon1 {
+        20% {
+            opacity: 1;
+        }
+        80% {
+            opacity: 0.2;
+        }
+    }
+
+
+    @keyframes blink {
+        70% {
+            opacity: 1;
+        }
+        79% {
+            opacity: 0;
+        }
+        81% {
+            opacity: 1;
+        }
+        82% {
+            opacity: 0;
+        }
+        83% {
+            opacity: 1;
+        }
+        92% {
+            opacity: 0;
+        }
+        92.5% {
+            opacity: 1;
+        }
+    }
