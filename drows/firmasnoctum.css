@@ -1,6 +1,5 @@
 @font-face {font-family: "ninevehfont1"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/drows/HellCross.ttf');}
 
-
 .nocsig1{
   width: 350px;
   height: 260px;
@@ -52,15 +51,12 @@
   
 }
 
-
 .nocsig1gif img{
   width: 320px;
   height: 230px;
   object-fit: cover;
   object-position: center;
 }
-
-
 
 .nocsig1filtro{
   position: absolute;
@@ -122,15 +118,11 @@
   transform: translateX(-110px);
   transition: all .8s ease-in-out;
 }
-
-
 @keyframes bounce2 {
 	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
 	40% {transform: translateY(-10px)rotateY(360deg);}
 	60% {transform: translateY(-5px);}
 }
-
-
 
 .nocsig1filtro2{
   width: 230px;
@@ -256,165 +248,3 @@
   transition: all .8s ease-in-out;
   transition-delay: 1.5s;
 } 
-
-
-
-
-
-.inte{
-  display: block;
-  margin: 0px auto 50px auto;
-  font-size: 17.5px;
-  max-width: 400px;
-  font-family: "Libertinus Serif Display", system-ui;
-  line-height: 145%;
-  color: #ababab;
-  text-align: center;
-}
-
-
-
-.miedo{
- display: inline-block;
- font-weight: 600;
- background: linear-gradient(100deg, #675A7C 0%, #3A354A 25%, #9E98B4 50%, #7E759B 75%, #3A354A 100%);
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: hkth-ss-move 4s ease-in-out infinite alternate;
-  filter: drop-shadow(0px 0px 10px #ababab);
-  letter-spacing: 0px;
-  position: relative;
-}
-
-.miedo:after{
-  position: absolute;
-  bottom: 2px;
-  left: 0px;
-  content: "";
-  height: 1px;
-  width: 100%;
-  background:linear-gradient(45deg, transparent, var(--noctum), transparent);
-}
-
-@keyframes hkth-ss-move {
-      0%   { background-position: 0%;letter-spacing: 0px;}
-      100% { background-position: 200%;letter-spacing: .5px;}
-    }
-
-.asco{
- display: inline-block;
- font-weight: 600;
- background: linear-gradient(100deg, #BACCCD 0%, #98B3B4 25%, #597B7C 50%, #35494A 75%, #98B3B4 100%);
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: hkth-ss-move 4s ease-in-out infinite alternate;
-  filter: drop-shadow(0px 0px 10px #ababab);
-  letter-spacing: 0px;
-  position: relative;
-}
-.asco:after{
-  position: absolute;
-  bottom: 2px;
-  left: 0px;
-  content: "";
-  height: 1px;
-  width: 100%;
-  background:linear-gradient(45deg, transparent, #98B3B4, transparent);
-}
-
-.ira{
- display: inline-block;
- font-weight: 600;
- background: linear-gradient(100deg, #C48A88 0%, #904947 25%, #723A38 50%, #391D1C 75%, #904947 100%);
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: hkth-ss-move 4s ease-in-out infinite alternate;
-  filter: drop-shadow(0px 0px 10px #ababab);
-  letter-spacing: 0px;
-  position: relative;
-}
-.ira:after{
-  position: absolute;
-  bottom: 2px;
-  left: 0px;
-  content: "";
-  height: 1px;
-  width: 100%;
-  background:linear-gradient(45deg, transparent, #904947, transparent);
-}
-
-.tristeza{
- display: inline-block;
- font-weight: 600;
- background: linear-gradient(100deg, #AFC2D7 0%, #6085B0 25%, #476990 50%, #2A3E56 75%, #6085B0 100%);
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: hkth-ss-move 4s ease-in-out infinite alternate;
-  filter: drop-shadow(0px 0px 10px #ababab);
-  letter-spacing: 0px;
-  position: relative;
-}
-.tristeza:after{
-  position: absolute;
-  bottom: 2px;
-  left: 0px;
-  content: "";
-  height: 1px;
-  width: 100%;
-  background:linear-gradient(45deg, transparent, #6085B0, transparent);
-}
-
-.alegria{
- display: inline-block;
- font-weight: 600;
- background: linear-gradient(100deg, #EED889 0%, #D9C16A 25%, #A79B70 50%, #4A4227 75%, #D9C16A 100%);
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: hkth-ss-move 4s ease-in-out infinite alternate;
-  filter: drop-shadow(0px 0px 10px #ababab);
-  letter-spacing: 0px;
-  position: relative;
-}
-.alegria:after{
-  position: absolute;
-  bottom: 2px;
-  left: 0px;
-  content: "";
-  height: 1px;
-  width: 100%;
-  background:linear-gradient(45deg, transparent, #D9C16A, transparent);
-}
-
-.sorpresa{
- display: inline-block;
- font-weight: 600;
- background: linear-gradient(100deg, #DFC4CA 0%, #B06D7C 25%, #C08A95 50%, #4A272F 75%, #B06D7C 100%);
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: hkth-ss-move 4s ease-in-out infinite alternate;
-  filter: drop-shadow(0px 0px 10px #ababab);
-  letter-spacing: 0px;
-  position: relative;
-}
-.sorpresa:after{
-  position: absolute;
-  bottom: 2px;
-  left: 0px;
-  content: "";
-  height: 1px;
-  width: 100%;
-  background:linear-gradient(45deg, transparent, #B06D7C, transparent);
-}
-
