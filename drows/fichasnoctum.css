@@ -1,25 +1,9 @@
 @font-face {font-family: "ninevehfont1"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/drows/HellCross.ttf');}
 
-
-
-.ficha-dos{
-  width: 400px;
-  margin: 0 auto;
-  height: 680px;
-  background: rgba(0, 0, 0, 0.59);
-  border-left: 10px solid;
-  border-image: linear-gradient(to top, #101010, var(--groups)) 1;
-  text-align: justify;
-  position: relative;
-}
-
-
 .nineft1{
   height: 600px;
   overflow: auto;
-  padding: 30px;
   font-size: 17.5px;
-  max-width: 400px;
   font-family: "Libertinus Serif Display", system-ui;
   line-height: 145%;
   margin: 0 auto;
@@ -232,5 +216,6 @@
   background: linear-gradient(to left, transparent, var(--noctum));
   margin-left: 5px;
 }
+
 
 
