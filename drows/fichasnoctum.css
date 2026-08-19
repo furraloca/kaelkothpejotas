@@ -1,0 +1,236 @@
+@font-face {font-family: "ninevehfont1"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/drows/HellCross.ttf');}
+
+
+
+.ficha-dos{
+  width: 400px;
+  margin: 0 auto;
+  height: 680px;
+  background: rgba(0, 0, 0, 0.59);
+  border-left: 10px solid;
+  border-image: linear-gradient(to top, #101010, var(--groups)) 1;
+  text-align: justify;
+  position: relative;
+}
+
+
+.nineft1{
+  height: 600px;
+  overflow: auto;
+  padding: 30px;
+  font-size: 17.5px;
+  max-width: 400px;
+  font-family: "Libertinus Serif Display", system-ui;
+  line-height: 145%;
+  margin: 0 auto;
+  color: #ababab;
+  text-align: justify;
+  position: relative;
+  z-index: 12;
+}
+
+.nineft1fondo{
+  position: absolute;
+  z-index:2;
+  top: 0px;
+  left: 0px;
+  background: url(https://i.pinimg.com/originals/48/57/97/48579739bf87f99539351f9a9f7e1168.gif);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 680px;
+  width: 400px;
+  opacity: .4;
+  filter: grayscale(1);
+}
+
+.nineftit{
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  margin: 20px auto 30px auto;
+  position: relative;
+  z-index: 12;
+  background: transparent;
+}
+
+.nineftit t{
+  font-family: "ninevehfont1";
+  line-height:100%;
+  font-size: 35px;
+  text-shadow: 0px 0px 0px var(--noctum);
+  color: transparent;
+  -webkit-text-stroke: 0px #000;
+  padding-top: 5px;
+}
+
+.nineftit sub{
+  width: 220px;
+  height: auto;
+  padding: 5px 0px 3px 0px;
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to left, #000 0%, var(--noctum) 50%, #000 100%) 1;
+  border-left: none;
+  border-right: none;
+  font-family: "Libertinus Serif Display", system-ui;
+  line-height: 150%;
+  text-transform: uppercase;
+  font-size: 8px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.nineftit c{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "ninevehfont1";
+  font-size: 35px;
+  text-shadow: 2px 1px 0px var(--noctum);
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+  line-height: 100%;
+  position: relative;
+  top: 2px;
+  left: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.nineftitluna{
+  position: relative;
+  z-index: 12;
+  top: -20px;
+  width:180px;
+  height:180px;
+  margin: 0 auto;
+  background: url(https://i.ibb.co/qYz4kYvB/purepng-com-moonmoonastronomical-bodyfifth-largest-natural-satellitenatural-satellitemoon-light-1411.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  transform: rotate(50deg);
+  opacity: 1;
+  filter:drop-shadow(1px 1px 5px var(--noctum))brightness(90%)contrast(95%);
+}
+
+
+.nineftit b{
+  font-weight: 400;
+  background: linear-gradient(to bottom, var(--noctum), rgba(30,27,37, 1), rgba(0, 0, 0, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px 0px transparent;
+  color: transparent;
+  -webkit-text-stroke: 0px #000;
+}
+
+
+
+.curiosidadestit{
+  font-family: "ninevehfont1";
+  line-height:100%;
+  margin: 25px auto;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 400;
+  background: linear-gradient(to bottom, var(--noctum), rgba(30,27,37, 1), rgba(0, 0, 0, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px 0px transparent;
+  color: transparent;
+  -webkit-text-stroke: 0px #000;
+}
+
+
+
+
+.loading-text{
+	background: linear-gradient(40deg, var(--noctum), #1d1a22, var(--noctum)) -100%/ 200%;
+	/* being excessively careful with compat, 
+	 * though this has been supported unprefixed and 
+	 * in the shorthand across major browsers for a while;
+	 * but it catches the latest browser versions supported 
+	 * on Wndows XP, 7 and 8; yeah, they exist in 2025 */
+	-webkit-background-clip: text;
+	 background-clip: text;
+	/* use color, don't use -webkit-text-fill-color anymore, 
+	 * was meant to solve a problem we haven't had in years */
+	color: transparent;
+	font-family: "Libertinus Serif Display", system-ui;
+	animation: shimmer 5s linear infinite;
+  filter: drop-shadow(0px 0px 8px rgba(192,187,199, .5));
+}
+
+@keyframes shimmer { to { background-position: 100% } }
+
+/* avoid problems in high contrast mode */
+@media (forced-colors: active) {
+  p {
+    background: #212121;
+    color: var(--noctum);
+  }
+}
+
+.curiosidadesdato{
+  font-size: 15.5px;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  line-height: 135%;
+  position: relative;
+  padding: 10px;
+}
+
+.curiosidadesdato icono{
+  float: left;
+  font-size: 28px;
+  font-weight: 900;
+  background: linear-gradient(to bottom, var(--noctum), rgba(0, 0, 0, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 30px;
+  height: 30px;
+  padding: 5px 6px 0px 6px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+
+.curiosidadsep{
+  margin: 0 auto;
+  font-size: 16px;
+  color: var(--noctum);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px 0px;
+}
+
+.curiosidadsep:before{
+  width: 140px;
+  height:1px;
+  content: "";
+  background: linear-gradient(to right, transparent, var(--noctum));
+  margin-right: 5px;
+}
+
+.curiosidadsep:after{
+  width: 140px;
+  height:1px;
+  content: "";
+  background: linear-gradient(to left, transparent, var(--noctum));
+  margin-left: 5px;
+}
+
+
