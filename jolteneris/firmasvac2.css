@@ -1,0 +1,401 @@
+@font-face {font-family: "erisfont1"; src: url('https://dl.dropbox.com/scl/fi/6w68wwkvg1dcndxresfr1/Offenbacher-Reform-CAT.ttf?rlkey=a293dduxr2fr6bjo1okkcueds&st=kw9m7kdy');}
+
+@font-face {font-family: "joltenfont1"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/jolteneris/holyrose-bonbongothique.woff');}
+
+.postvacations1 {
+  position: relative;
+  margin: 0 auto;
+  width: 346px;
+  height: 216px;
+  border: 1px solid transparent;
+  background:
+        linear-gradient(#121212, #121212) padding-box,
+        linear-gradient(90deg, var(--groups), #181818, #181818, var(--groups)) border-box;
+    background-size: 100% 100%, 200% 100%;
+  animation: borde 6s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes borde {
+    from {
+        background-position: 0 0, 0% 0;
+    }
+    to {
+        background-position: 0 0, 200% 0;
+    }
+}
+
+
+.postv1gif{
+  width: 330px;
+  height: 200px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.postv1gif img{
+  width: 330px;
+  height: 200px;
+  object-fit: cover; 
+  object-position: center; 
+  position: relative;
+}
+
+
+.postv1filtro{
+  width: 330px;
+  height: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index:2;
+  backdrop-filter: grayscale(50%)brightness(100%)contrast(106%)hue-rotate(38deg);
+  -webkit-backdrop-filter: grayscale(50%)brightness(100%)contrast(106%)hue-rotate(38deg);
+   transition: all 1.2s ease;
+   transition-delay: 1.5s;
+}
+
+.postvacations1:hover .postv1filtro{
+    backdrop-filter: grayscale(100%)brightness(65%)contrast(112%)hue-rotate(30deg);
+  -webkit-backdrop-filter: grayscale(100%)brightness(65%)contrast(112%)hue-rotate(30deg);
+   transition: all 1.2s ease;
+}
+
+.jolten.postv1filtro{
+   backdrop-filter: grayscale(50%)brightness(80%)contrast(100%)hue-rotate(20deg);
+  -webkit-backdrop-filter: grayscale(50%)brightness(80%)contrast(100%)hue-rotate(20deg);
+}
+
+.postvacations1:hover.jolten.postv1filtro{
+    backdrop-filter: grayscale(100%)brightness(45%)contrast(112%)hue-rotate(0deg);
+  -webkit-backdrop-filter: grayscale(100%)brightness(45%)contrast(112%)hue-rotate(0deg);
+}
+
+
+.postv1shellq{
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+  z-index: 5;
+  font-family: "erisfont1";
+  font-size: 17px;
+  color: #ababab;
+  line-height: 115%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 1px #000;
+  filter: drop-shadow(0px 0px 12px #000);
+}
+
+.jolten.postv1shellq{
+  right: 240px;
+}
+
+.postv1shellq t{
+  font-size: 28px;
+  color: var(--groups);
+  opacity: 1;
+  transform:scale(1);
+  transition: all 1.2s ease;
+  transition-delay: 1.5s;
+}
+
+.jolten.postv1shellq t{
+  font-family: "joltenfont1";
+  text-transform: lowercase;
+  font-size: 40px;
+  line-height: 70%;
+}
+
+.postvacations1:hover .postv1shellq t{
+  transform:scale(1.5);
+  opacity: 0;
+  transition: all 1.2s ease;
+  transition-delay: 1.4s;
+}
+
+.postv1shellq c{
+  opacity: 1;
+  filter: blur(0);
+  letter-spacing: 2px;
+  transition: all 1.2s ease;
+  transition-delay: 1.5s;
+}
+
+.postvacations1:hover .postv1shellq c{
+  opacity: 0;
+  filter: blur(10px);
+  transition: all 1.2s ease;
+  transition-delay: .8s;
+}
+
+
+.postv1sh{
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  z-index: 4;
+  width: 100px;
+  height: 80px;
+  background: url(https://i.ibb.co/nMKT8v6h/shell1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  opacity: .4;
+  transition: all 1.2s ease;
+  filter: drop-shadow(0px 0px 6px var(--groups))blur(0px);
+  transition-delay: 1.5s;
+}
+
+.jolten.postv1sh{
+  bottom: 8px;
+  right: 225px;
+  background: url(https://i.ibb.co/MxCjNr4S/image-from-rawpixel-id-22024311-png.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.postvacations1:hover .postv1sh{
+  transform:scale(1.5);
+  opacity: 0;
+  filter: drop-shadow(0px 0px 6px var(--groups))blur(10px);
+  transition: all 1.2s ease;
+  transition-delay: 1.4s;
+}
+
+.psirenag{
+  width: 330px;
+  height: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 6;
+  background: url(https://i.imgur.com/kHDFkgP.gif);
+  background-size: cover;
+  background-position: 50% 50%;
+  filter: grayscale(1)brightness(35%);
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+
+.jolten.psirenag{
+  background: url(https://i.ibb.co/Pv1RbGgr/darksoulsgif2.gif);
+  background-size: cover;
+  background-position: 50% 30%;
+}
+
+.postvacations1:hover .psirenag{
+  opacity: 1;
+  transition: all 1.2s ease;
+  transition-delay: 2.6s;
+}
+
+.psfil1{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 8;
+  width: 165px;
+  height: 200px;
+  background: var(--groups);
+  mix-blend-mode: overlay;
+  transform:translateX(-100%);
+  transition: all 1.2s ease;
+  transition-delay: .5s;
+}
+
+.postvacations1:hover .psfil1{
+  transform:translateX(0%);
+  transition: all 1.2s ease;
+  transition-delay: 1.9s;
+}
+.psfil2{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 8;
+  width: 165px;
+  height: 200px;
+  background: var(--groups);
+  mix-blend-mode: overlay;
+  transform:translateX(100%);
+  transition: all 1.2s ease;
+  transition-delay: .5s;
+}
+.postvacations1:hover .psfil2{
+  transform:translateX(0%);
+  transition: all 1.2s ease;
+  transition-delay: 1.9s;
+}
+
+
+.pqu2{
+  width: 330px;
+  height: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.pqu2 tit{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: "erisfont1";
+  font-size: 28px;
+  color: var(--groups);
+  text-shadow: 1px 1px 1px #000;
+  letter-spacing: .5px;
+  padding-bottom: 10px;
+  filter: blur(10px);
+  transform:translateY(15px);
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+
+.jolten.pqu2 tit{
+  font-size: 45px;
+  line-height: 100%;
+  font-family: "joltenfont1";
+}
+
+.postvacations1:hover .pqu2 tit{
+  transform:translateY(0px);
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 1.2s ease;
+  transition-delay: 2.8s;
+}
+
+
+.pqu2 sub{
+  display: flex;
+  gap: 10px;
+  font-size: 8px;
+  text-transform: uppercase;
+  font-family: "Gideon Roman", serif;
+  color: #b3b3b3;
+  text-shadow: 1px 1px 0px #000;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: .5px;
+  text-align: center;
+  line-height: 150%;
+}
+
+
+.pqu2 n{
+  width: 60px;
+  transform:translateY(15px);
+  filter: blur(10px);
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+
+.postvacations1:hover .pqu2 n{
+  transform:translateY(0px);
+  opacity: 1;
+  filter: blur(0px);
+  transition: all 1.2s ease;
+  transition-delay: 3.4s;
+}
+
+
+.hbeat{
+  width: 25px;
+  height: 25px;
+  background: url(https://i.imgur.com/EEv5JGi.gif);
+  background-size: cover;
+  background-position: 50% 50%;
+  filter: grayscale(1)contrast(110%);
+  opacity: 0;
+  filter: blur(10px);
+  transform:scale(1.6);
+  transition: all 1.2s ease;
+}
+
+
+.postvacations1:hover .hbeat{
+  opacity: 1;
+  filter: blur(0px);
+  transform:scale(1);
+  transition: all 1.2s ease;
+  transition-delay: 3.8s;
+}
+
+
+.postv1gif l1{
+  width: 1px;
+  height: 90px;
+  background: linear-gradient(to bottom, var(--groups), transparent);
+  position: absolute;
+  z-index:10;
+  left: 30px;
+  top: -12px;
+  transform: rotate(-45deg)scale(0);
+  transition: all 1.2s ease;
+}
+
+.postvacations1:hover .postv1gif l1,.postvacations1:hover .postv1gif l4{
+  transform: rotate(-45deg)scale(1);
+  transition: all 1.2s ease;
+  transition-delay: 3.8s;
+}
+
+.postv1gif l2{
+  width: 1px;
+  height: 90px;
+  background: linear-gradient(to bottom, var(--groups), transparent);
+  position: absolute;
+  z-index:10;
+  right: 30px;
+  top: -12px;
+  transform: rotate(45deg)scale(0);
+  transition: all 1.2s ease;
+}
+
+.postvacations1:hover .postv1gif l3,.postvacations1:hover .postv1gif l2{
+  transform: rotate(45deg)scale(1);
+  transition: all 1.2s ease;
+  transition-delay: 3.8s;
+}
+
+
+.postv1gif l3{
+  width: 1px;
+  height: 90px;
+  background: linear-gradient(to top, var(--groups), transparent);
+  position: absolute;
+  z-index:10;
+  left: 30px;
+  bottom: -12px;
+  transform: rotate(45deg)scale(0);
+  transition: all 1.2s ease;
+}
+
+
+.postv1gif l4{
+  width: 1px;
+  height: 90px;
+  background: linear-gradient(to top, var(--groups), transparent);
+  position: absolute;
+  z-index:10;
+  right: 30px;
+  bottom: -12px;
+  transform: rotate(-45deg)scale(0);
+  transition: all 1.2s ease;
+}
+
+
+
+
