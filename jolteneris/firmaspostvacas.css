@@ -1,0 +1,393 @@
+@font-face {font-family: "erisfont1"; src: url('https://dl.dropbox.com/scl/fi/6w68wwkvg1dcndxresfr1/Offenbacher-Reform-CAT.ttf?rlkey=a293dduxr2fr6bjo1okkcueds&st=kw9m7kdy');}
+
+@font-face {font-family: "erisfont2"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/jolteneris/Hasfegia-Yqne4.ttf');}
+
+@font-face {font-family: "joltenfont1"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/jolteneris/holyrose-bonbongothique.woff');}
+
+
+.fneweris{
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  width: 370px;
+  height: 210px;
+}
+
+
+.fneweris cor1{
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 50px;
+  height:50px;
+  border-top: 1px solid var(--bruma);
+  border-left: 1px solid var(--bruma);
+  transition: all 1.3s ease-in-out;
+  transition-delay: 1.5s;
+}
+
+
+.fneweris cor2{
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  width: 50px;
+  height:50px;
+  border-bottom: 1px solid var(--bruma);
+  border-right: 1px solid var(--bruma);
+  transition: all 1.3s ease-in-out;
+  transition-delay: 1.5s;
+}
+
+.fneweris:hover.fneweris cor1{  
+  width: 384px;
+  height: 224px;
+  border-top: 1px solid #181818;
+  border-left: 1px solid #181818;
+  transition: all 1.3s ease-in-out;
+}
+
+
+.fneweris:hover.fneweris cor2{  
+  width: 384px;
+  height: 224px;
+  border-bottom: 1px solid #181818;
+  border-right: 1px solid #181818;
+  transition: all 1.3s ease-in-out;
+}
+
+
+.fnewerisquo1{
+  width: 120px;
+  height: 210px;
+  margin-left: 4px;
+  box-sizing: border-box;
+  background: #151515;
+  overflow: hidden;
+}
+
+
+.fnewerisgif1{
+  width: 246px;
+  height: 210px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.fnewerisgif1 img{
+  width: 246px;
+  height: 210px;
+  object-fit: cover; 
+  object-position: center; 
+  position: relative;
+}
+
+
+.fnewerisgif1 filtro1{
+  width: 246px;
+  height: 210px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index:5;
+  backdrop-filter: grayscale(70%)brightness(95%)contrast(106%)hue-rotate(50deg);
+  -webkit-backdrop-filter: grayscale(70%)brightness(95%)contrast(106%)hue-rotate(50deg);
+  background: rgba(0,0,0, .3);
+  mix-blend-mode: multiply;
+}
+
+
+.fnewerisgif1 filtro2{
+  width: 246px;
+  height: 208px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index:6;
+  border-top: 1px solid var(--bruma);
+  border-bottom: 1px solid var(--bruma);
+  backdrop-filter: grayscale(1)brightness(55%);
+  -webkit-backdrop-filter: grayscale(1)brightness(55%);
+  transform: scaleX(0);
+  transition: all 1.3s ease-in-out;
+  transition-delay: 1.5s;
+}
+
+.fneweris:hover .fnewerisgif1 filtro2{
+  transform: scaleX(1);
+  transition: all 1.3s ease-in-out;
+}
+
+.fnewerisgif2{
+  width: 246px;
+  height: 208px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  z-index:7;
+  background-image: url(https://i.imgur.com/Fce1oRI.gif);
+  filter: grayscale(1)brightness(65%);
+  background-position: 50% 50%;
+  background-size: 104%;
+  opacity: 0;
+  transition: all 1.3s ease-in-out;
+  transition-delay: .6s;
+}
+
+.jolten.fnewerisgif2{
+  background-image: url(https://i.ibb.co/Pv1RbGgr/darksoulsgif2.gif);
+}
+
+.fneweris:hover .fnewerisgif2{
+  opacity: 1;
+  transition: all 1.3s ease-in-out;
+  transition-delay: .9s;
+}
+
+
+.fnewerisgif1 filtro3{
+  width: 246px;
+  height: 208px;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  z-index:8;
+  background-color: var(--bruma);
+  mix-blend-mode:multiply;
+  opacity: 0;
+  transition: all 1.3s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+.fneweris:hover .fnewerisgif1 filtro3{
+  opacity: 1;
+  transition: all 1.3s ease-in-out;
+  transition-delay: 1.1s;
+}
+
+
+.fgifdentro{
+  width: 246px;
+  height: 210px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index:10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.fgifdentro t{
+  display: block;
+  width:100%;
+  height: auto;
+  overflow: hidden;
+  filter: blur(9px);
+  opacity:0;
+  margin-top: 10px;
+  font-size:50px;
+  line-height:90%;
+  letter-spacing: -1px;
+  color: var(--bruma);
+  text-align: center;
+  text-shadow: 1px 1px 0px #000;
+  font-family: "erisfont2";
+  transition: all 0.8s ease-in-out;
+}
+
+.jolten.fgifdentro t{
+  font-size:48px;
+  font-family: "joltenfont1";
+}
+
+.fneweris:hover .fgifdentro t{
+  filter: blur(0px);
+  opacity: 1;
+  transition: all 1.3s ease-in-out;
+  transition-delay: 1.1s;
+}
+
+.fgifdentro txt{
+  display:block;
+  width: 130px;
+  font-size: 7.5px;
+  text-transform: uppercase;
+  font-family: "Gideon Roman", serif;
+  color: #b3b3b3;
+  text-shadow: 1px 1px 0px #000;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  text-align: center;
+  line-height: 170%;
+  filter: blur(9px);
+  opacity:0;
+  transition: all 0.8s ease-in-out;
+}
+
+.fneweris:hover .fgifdentro txt{
+  filter: blur(0px);
+  opacity: 1;
+  transition: all 1.3s ease-in-out;
+  transition-delay: 1.1s;
+}
+
+.fgifdentro txt i{
+  margin-top: 11px;
+  font-size:15px;
+  color: var(--bruma);
+  filter: blur(0px);
+  display:block;
+  animation: blurr1e 2.6s infinite;
+}
+
+
+@keyframes blurr1e {
+  0% {filter: blur(0px);}
+  50% {filter: blur(0px);}
+  54% {filter: blur(2px);}
+  55% {filter: blur(0px);}
+  56% {filter: blur(0px);}
+  59% {filter: blur(2px);}
+  60% {filter: blur(0px);}
+  96% {filter: blur(0px);}
+  98% {filter: blur(2px);}
+  100% {filter: blur(0px);}
+}
+
+
+.fnewerisquo1 quo2{
+  width: 120px;
+  height: 210px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index:10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  filter: blur(0px);
+  transition: all 0.8s ease-in-out;
+  transition-delay: 1.5s;
+}
+
+.fneweris:hover .fnewerisquo1 quo2{
+  filter: blur(3px);
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+  transition-delay: 1.1s;
+}
+
+.fnewerisquo1 quo2 txt,.fnewerisquo1 quo3 txt{
+  display: block;
+  padding: 0px 12px;
+  font-size: 7px;
+  text-transform: uppercase;
+  font-family: "Gideon Roman", serif;
+  color: #b3b3b3;
+  text-shadow: 1px 1px 0px #000;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: .5px;
+  text-align: justify;
+  line-height: 190%;
+}
+
+
+.fnewerisquo1 quo2 c,.fnewerisquo1 quo3 c{
+   color: var(--bruma);
+  animation:fadej 1000ms infinite;
+  -webkit-animation:fadej 1000ms infinite;
+}
+
+
+.fnewerisquo1 quo3{
+  width: 120px;
+  height: 210px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index:11;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  filter: blur(3px);
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+  transition-delay: .9s;
+}
+
+.fneweris:hover .fnewerisquo1 quo3{
+  filter: blur(0px);
+  opacity: 1;
+  transition: all 0.8s ease-in-out;
+  transition-delay: 1.1s;
+}
+
+@keyframes fadej {
+    from { opacity: 1.0; }
+    50% { opacity: 0.2; }
+    to { opacity: 1.0; }
+}
+@-webkit-keyframes fadej {
+    from { opacity: 1.0; }
+    50% { opacity: 0.2; }
+    to { opacity: 1.0; }
+}
+
+
+
+.fnewerisluna{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-image: url(https://i.imgur.com/EEv5JGi.gif);
+  background-position: 50% 50%;
+  background-size: cover;
+  filter: drop-shadow(0px 0px 6px var(--bruma));
+  transform: rotate(45deg);
+  margin-bottom:15px;
+  opacity: .75;
+}
+
+.jolten.fnewerisluna{
+  background-image: url(https://i.ibb.co/whdDr2Yp/espada.png);
+  filter: drop-shadow(0px 0px 6px var(--bruma));
+  transform: rotate(5deg);
+}
+
+.fnewerisluna2{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-image: url(https://i.imgur.com/EEv5JGi.gif);
+  background-position: 50% 50%;
+  background-size: cover;
+  filter: drop-shadow(0px 0px 6px var(--bruma));
+  transform: rotate(-45deg);
+  margin-bottom:15px;
+  opacity: .75;
+}
+
+.jolten.fnewerisluna2{
+  background-image: url(https://i.ibb.co/whdDr2Yp/espada.png);
+  filter: drop-shadow(0px 0px 6px var(--bruma));
+  transform: rotate(-85deg);
+}
+
+
