@@ -120,6 +120,9 @@
 }
 
 .postv1shellq c{
+  font-family: "erisfont1";
+  font-size: 17px;
+  color: #ababab;
   opacity: 1;
   filter: blur(0);
   letter-spacing: 2px;
