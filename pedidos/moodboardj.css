@@ -1,0 +1,275 @@
+
+.jmbbg{
+  display: flex;
+  flex-wrap: wrap;
+  width: 720px;
+  height: 580px;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+.jmcol1{
+  width: 240px;
+  height: 580px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.jmcol1-box1{
+  width: 115px;
+  height: 580px;
+  position: relative;
+  outline: 1px solid #181818;
+}
+
+.jmcol1-box1 img{
+  object-fit: cover;
+  width: 115px;
+  height: 580px;
+  object-position: center;
+}
+
+.jmcol1-fbw{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #111;
+  mix-blend-mode: color;
+  opacity: 1;
+  transition: 1.2s ease;
+}
+
+.jmcol1-box1:hover .jmcol1-fbw,.jmcol1-box2-img:hover .jmcol1-fbw{
+  opacity: 0;
+  transition: 1.2s ease;
+}
+
+
+
+.jmcol1-box2{
+  width: 120px;
+  height: 580px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.jmcol1-box2-img{
+  height: 190px;
+  width: 120px;
+  position: relative;
+  transition: 1.2s ease;
+  outline: 1px solid #181818;
+}
+
+.jmcol1-box2-img img{
+  height: 190px;
+  width: 120px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.jmcol1-color{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: var(--groups);
+  mix-blend-mode: color;
+  opacity: 1;
+  transition: 1.2s ease;
+}
+
+.jmcol1-box2-img:hover .jmcol1-color{
+  opacity: 0;
+  transition: 1.2s ease;
+}
+
+
+
+.jmcol2{
+  width: 240px;
+  height: 580px;
+  display: flex;
+  justify-content: center;
+}
+
+.jmcol2-img{
+  position: relative;
+  width: 230px;
+  height: 580px;
+  transition: 1.2s ease;
+}
+
+.jmcol2-img img{
+  position: relative;
+  width: 230px;
+  height: 580px;
+  object-fit: cover;
+  outline: 1px solid #181818;
+  object-position: center;
+}
+
+.jmcol2-img:hover .jmcol1-color{
+  opacity: 0;
+  transition: 1.2s ease;
+}
+
+
+.jmbtit{
+  margin: 10px 0px 35px 0px;
+  text-align:center;
+  font-family: 'Highborne';
+  font-size: 75px;
+  color: #abaaaa;
+  text-shadow: 3px 0px 3px #000;
+  letter-spacing: 1px;
+  position: relative;
+  line-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.jmbtit sub{
+  position: absolute;
+  top: 36px;
+  margin: 0 auto;
+  transform: rotate(-4deg);
+  font-size: 48px;
+  color: var(--groups);
+  padding-left: 0px;
+}
+
+.jmbtiticon{
+  font-size: 75px;
+  color: #abaaaa;
+  width: 100%;
+  line-height: 100%;
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+  display: block;
+  animation: letterflickerj 3s linear infinite;
+  opacity: 0.1;
+  text-shadow: 0px 0px 29px var(--groups);
+}
+
+.jmbtit2{
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 5px 0px 20px 0px;
+  font-size: 12px;
+  color: var(--groups);
+  font-family: "Gideon Roman", serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  filter: drop-shadow(0px 0px 4px var(--groups));
+  text-shadow: 1px 1px 0px #000;
+}
+
+.jmbsep{
+  width: 1px;
+  height: 70px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, var(--groups), transparent);
+}
+
+@keyframes letterflickerj {
+  0% {opacity:0.1;text-shadow: 0px 0px 29px var(--groups);
+  }
+  2% {opacity:0.1;text-shadow: 0px 0px 29px var(--groups);
+  }
+  4% {opacity:1;text-shadow: 0px 0px 29px var(--groups);
+  }   
+  19% {opacity:1;text-shadow: 0px 0px 29px var(--groups);
+  }
+  21% {opacity:0.1;text-shadow: 0px 0px 29px var(--groups);
+  }
+  23% {opacity:1;text-shadow: 0px 0px 29px var(--groups);
+  } 
+  80% {opacity:1;text-shadow: 0px 0px 29px var(--groups);
+  }
+  83% {opacity:0.4;text-shadow: 0px 0px 29px var(--groups);
+  }
+  87% {opacity:1;text-shadow: 0px 0px 29px var(--groups);
+  }
+}
+
+
+.jmquote{
+  width: 700px;
+  height: auto;
+  min-height: 200px;
+  position: relative;
+  top: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.jmbtitoso{
+  display: block;
+  position: relative;
+  top: -25px;
+  right: -10px;
+  background: url(https://i.imgur.com/dRvVied.png);
+  width: 160px;
+  height: 260px;
+  background-size: cover;
+  opacity: .5;
+}
+
+.jmbtitoso2{
+  position: relative;
+  top: -25px;
+  left: -40px;
+  background: url(https://i.imgur.com/ESyyWxO.png);
+  width: 160px;
+  height: 260px;
+  background-size: cover;
+  opacity: .5;
+}
+
+
+.jmquote txt{
+  display: block;
+  width: 400px;
+  line-height: 155%;
+  font-size: 14px;
+  color: #ababab;
+  font-family: "Gideon Roman", serif;
+  background: #111;
+  background: linear-gradient(208deg, color-mix(in srgb, var(--groups) 65%, transparent), #080808, #080808, color-mix(in srgb, var(--groups) 65%, transparent));
+  padding: 40px 20px;
+  text-align: justify;
+}
+
+
+.jmquote c{
+  display: block;
+  font-size: 11px;
+  text-align: right;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+
+.jmquote a{
+  text-decoration: none;
+  color: var(--groups);
+  font-weight: 800;
+}
+
