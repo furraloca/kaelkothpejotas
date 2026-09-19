@@ -223,7 +223,7 @@
 .jmbtitoso{
   display: block;
   position: relative;
-  top: -25px;
+  top: 0px;
   right: -10px;
   background: url(https://i.imgur.com/dRvVied.png);
   width: 160px;
@@ -234,7 +234,7 @@
 
 .jmbtitoso2{
   position: relative;
-  top: -25px;
+  top: 0px;
   left: -40px;
   background: url(https://i.imgur.com/ESyyWxO.png);
   width: 160px;
