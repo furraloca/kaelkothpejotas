@@ -1,0 +1,355 @@
+@font-face {font-family: "caligraf1"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/drows/Babylonica-Regular.ttf');}
+
+@font-face {font-family: "decod"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/recursos/Vintage Decorative Signs 3.ttf');}
+
+
+.diariokk{
+  width: 850px;
+  height: 550px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.diariokk-bg{
+  width: 850px;
+  height: 550px;
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  background: url(https://i.ibb.co/FqqMJ35x/pngwing-com.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  filter: grayscale(50%)brightness(60%)sepia(75%)drop-shadow(0px 0px 10px color-mix(in srgb, #ababab 40%, transparent));
+}
+
+
+.diariokk-pag1iz{
+  width: 365px;
+  padding: 10px;
+  height: 420px;
+  position: absolute;
+  top: 55px;
+  z-index: 5;
+  left: 30px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, #181818 35%, transparent) transparent;
+  display: block;
+}
+
+
+.diariokk-pag1iz txt,.diariokk-pag1der txt{
+  color: #000;
+  font-size: 30px;
+  display: block;
+  padding: 10px;
+  text-align: justify;
+  font-family: "caligraf1";
+  line-height: 110%;
+  margin: 10px;
+}
+
+
+.diariokk-pag1der{
+  width: 365px;
+  padding: 10px;
+  height: 420px;
+  position: absolute;
+  top: 55px;
+  z-index: 5;
+  right: 45px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, #181818 35%, transparent) transparent;
+  display: block;
+}
+
+
+.diariokk-foto{
+  width: 90px;
+  height: 90px;  
+  margin: 0 auto;
+  float: left;
+  margin: 0px 10px;
+  opacity: .85;
+}
+
+.diariokk-foto img{
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+.diariokk-pag2iz{
+  width: 365px;
+  padding: 10px;
+  height: 420px;
+  position: absolute;
+  top: 55px;
+  z-index: 5;
+  left: 35px;
+  display: block;
+}
+
+.diariokk-pag2iz-portada{
+  width: 360px;
+  height: 190px;
+  margin: 0 auto;
+}
+
+.diariokk-pag2iz-portada img{
+  width: 360px;
+  height: 190px;
+  object-fit: cover;
+  object-position: center;
+  corner-shape: bevel;
+  border-radius: 12px;
+}
+
+.diariokk-pag2iz fecha{
+  color: #000;
+  font-size: 30px;
+  display: block;
+  padding: 10px 10px;
+  text-align: justify;
+  font-family: "caligraf1";
+  line-height: 110%;
+  font-weight: 800;
+}
+
+
+.diariokk-pag2iz-intro{
+  position: relative;
+  top: 10px;
+  height: 160px;
+  width: 350px;
+  padding: 10px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, #181818 35%, transparent) transparent;
+}
+
+.diariokk-pag2iz-intro txt{
+  display: block;
+  color: #000;
+  font-size: 30px;
+  padding: 0px;
+  text-align: justify;
+  font-family: "caligraf1";
+  line-height: 110%;
+  margin: 10px 10px 10px 0px;
+}
+
+
+
+.diariokk-portadalarga{
+  width: 360px;
+  height: 420px;
+  margin: 0 auto;
+}
+
+.diariokk-portadalarga img{
+  width: 360px;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+  corner-shape: bevel;
+  border-radius: 12px;
+}
+
+
+.diariokk-ar{
+  width: 760px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  top: 10px;
+}
+
+.diariokk-cover{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 400px;
+  height: 580px;
+  background: url(https://i.pinimg.com/1200x/97/54/e7/9754e74512acb72f53354697c0ae5265.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  margin: 0px auto;
+  box-shadow: inset 0 0 12px color-mix(in srgb, #ababab 65%, transparent);
+  border-radius: 5px 5px 5px 5px;
+  filter: drop-shadow(0px 0px 4px color-mix(in srgb, #ababab 35%, transparent))contrast(128%);
+}
+
+
+.diariokk-cover tit{
+  width: 300px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  font-family: "caligraf1";
+  line-height: 100%;
+  font-size: 60px;
+  transform: rotate(-16deg);
+  filter: drop-shadow(0px 0px 8px color-mix(in srgb, #000 45%, transparent));
+  color: #000;
+  text-shadow: 1px 1px 4px color-mix(in srgb, #ababab 65%, transparent);
+  opacity: .85;
+  display: block;
+}
+
+
+.diariokk-indice{
+  width: 330px;
+  margin: 5px 5px;
+  height: 535px;
+  padding: 20px 5px;
+  position: relative;
+  top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-start;
+  gap: 5px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: 
+color-mix(in srgb, #181818 35%, transparent) transparent;
+  background: linear-gradient(195deg, color-mix(in srgb, #181818 85%, transparent), #080808, #080808, color-mix(in srgb, #181818 85%, transparent));
+  border-radius: 5px 5px 5px 5px;
+  filter: drop-shadow(0px 0px 10px color-mix(in srgb, #ababab 20%, transparent));
+}
+
+
+.diariokk-indice t{
+  display: block;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  font-family: "caligraf1";
+  line-height: 100%;
+  font-size: 40px;
+  color: var(--groups);
+}
+
+.diariokk-indice icon{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  position: relative;
+  top: 0px;
+  margin: 0 auto;
+  font-family: "decod";
+  line-height: 100%;
+  font-size: 24px;
+  color: var(--groups);
+  padding: 10px 0px;
+  margin-bottom: 5px;
+}
+
+.diariokk-indice icon:before{
+  content: "";
+  position: absolute;
+  left: 30px;
+  width: 30%;
+  height: 1px;
+  background: linear-gradient(to left, var(--groups), #181818);
+}
+
+.diariokk-indice icon:after{
+  content: "";
+  position: absolute;
+  right: 30px;
+  width: 30%;
+  height: 1px;
+  background: linear-gradient(to right, var(--groups), #181818);
+}
+
+.contenidosbox {
+  height: 25px;
+  width: 280px;
+  margin: 2px 10px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.contenidosbox tit{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  display: flex;
+  white-space: nowrap;
+  width: 95%;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: "Gideon Roman", serif;
+  color: #ababab;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+.indicetext {
+  position: relative;
+  left: 0px;
+}
+
+.contenidosbox tit:after {
+    content: "";
+    width: -webkit-fill-available;
+    height: 1px;
+    display: inline-block;
+    border-bottom: 1px dotted #ababab;
+    vertical-align: middle;
+    position: relative;
+    top: 1px;
+}
+
+.contenidosbox span{
+    width: 5px;
+    text-align: right;
+    font-family: "Gideon Roman", serif;
+    color: #ababab;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-weight: 300;
+    position: absolute;
+    right: 0px;
+}
+
+
+.contenidosbox a{
+  text-decoration: none;
+  color: #ababab;
+  transition: .8s ease;
+}
+
+
+.contenidosbox a:hover{
+  opacity: .7;
+  color: var(--groups);
+  transition: .8s ease;
+}
+
