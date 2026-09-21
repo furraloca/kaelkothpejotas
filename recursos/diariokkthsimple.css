@@ -343,6 +343,7 @@ color-mix(in srgb, #181818 35%, transparent) transparent;
 .contenidosbox a{
   text-decoration: none;
   color: #ababab;
+  font-weight: 400;
   transition: .8s ease;
 }
 
