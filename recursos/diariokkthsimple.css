@@ -282,9 +282,9 @@ color-mix(in srgb, #181818 35%, transparent) transparent;
 }
 
 .contenidosbox {
-  height: 25px;
+  height: auto;
   width: 280px;
-  margin: 2px 10px;
+  margin: 10px 10px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
