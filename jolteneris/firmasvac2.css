@@ -52,8 +52,8 @@
   left: 0px;
   top: 0px;
   z-index:2;
-  backdrop-filter: grayscale(50%)brightness(100%)contrast(106%)hue-rotate(38deg);
-  -webkit-backdrop-filter: grayscale(50%)brightness(100%)contrast(106%)hue-rotate(38deg);
+  backdrop-filter: grayscale(65%)brightness(100%)contrast(106%)hue-rotate(38deg);
+  -webkit-backdrop-filter: grayscale(65%)brightness(100%)contrast(106%)hue-rotate(38deg);
    transition: all 1.2s ease;
    transition-delay: 1.5s;
 }
