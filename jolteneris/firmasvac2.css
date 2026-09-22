@@ -76,8 +76,8 @@
 
 
 .v2.postv1filtro{
-   backdrop-filter: grayscale(0%)brightness(100%)contrast(100%)hue-rotate(0deg);
-  -webkit-backdrop-filter: grayscale(0%)brightness(100%)contrast(100%)hue-rotate(0deg);
+   backdrop-filter: grayscale(5%)brightness(100%)contrast(100%)hue-rotate(0deg);
+  -webkit-backdrop-filter: grayscale(5%)brightness(100%)contrast(100%)hue-rotate(0deg);
 }
 
 .postvacations1:hover.v2.postv1filtro{
