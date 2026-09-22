@@ -75,6 +75,17 @@
 }
 
 
+.v2.postv1filtro{
+   backdrop-filter: grayscale(0%)brightness(100%)contrast(100%)hue-rotate(0deg);
+  -webkit-backdrop-filter: grayscale(0%)brightness(100%)contrast(100%)hue-rotate(0deg);
+}
+
+.postvacations1:hover.v2.postv1filtro{
+    backdrop-filter: grayscale(100%)brightness(45%)contrast(105%)hue-rotate(0deg);
+  -webkit-backdrop-filter: grayscale(100%)brightness(45%)contrast(105%)hue-rotate(0deg);
+}
+
+
 .postv1shellq{
   position: absolute;
   right: 20px;
