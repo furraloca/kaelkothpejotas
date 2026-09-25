@@ -93,8 +93,7 @@
 }
 
 
-
-.mbjuniper tit{
+.mbjuniper-tit{
   display: block;
   width: 100%;
   text-align: center;
@@ -110,9 +109,6 @@
 }
 
 @keyframes colorcha1 { 0% { background-position: 0% 20%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
-
-
-
 
 .mbjuniper-quote{
   width: 560px;
