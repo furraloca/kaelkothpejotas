@@ -1,0 +1,252 @@
+.cronbase{
+  width: 779px;
+  position: relative;
+  margin: 0 auto;
+  height: auto;
+  padding: 50px;
+  background: #090909;
+  font: 16.5px 'Gideon Roman', serif;
+  text-align: justify;
+  line-height: 25px;
+}
+.cronbbg{
+  width: 779px;
+  height: 500px;
+  background: url(https://i.ibb.co/9kgQ5CPj/cronicasportadabg-copia.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  filter: brightness(80%)contrast(106%);
+  position: relative;
+  overflow: hidden;
+}
+.cronbbg fil{
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  width: 779px;
+  height: 500px;
+  background: linear-gradient(0deg, #000000, rgba(0, 0, 0, .3), transparent);
+}
+.cronbbg fil2{
+  position: absolute;
+  z-index: 3;
+  top: 0px;
+  left: 0px;
+  width: 779px;
+  height: 500px;
+  background: url(https://i.pinimg.com/originals/81/ee/88/81ee8875aa937f462c70a2a27660bfa3.gif);
+  background-size: 125%;
+  background-position: 50% 55%;
+  mix-blend-mode: lighten;
+  filter: grayscale(1);
+  opacity: .4;
+}
+
+
+
+.cronbportada{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 6;
+  width: 779px;
+  height: 500px;
+  display: block;
+}
+
+.cronbp1{
+  height: 30px;
+  width: 759px;
+  padding: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cronbp1-dato{
+  display: block;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: .5px;
+  background: linear-gradient(260deg, var(--groups) 0%, #141414 100%);
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 50px;
+  padding: 4px 10px;
+  color: #ababab;
+  line-height: 100%;
+}
+
+.cronbtit{
+  height: 400px;
+  width: 759px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+  gap: 25px 0px;
+}
+
+.cronbtit txt{
+  display: block;
+  width: 739px;
+  padding: 0px 10px;
+  text-align: center;
+  font-family: 'Highborne';
+  font-size: 50px;
+  color: #121212;
+  text-shadow: -2px -3px var(--groups);
+  -webkit-text-stroke: .1px #181818;
+  font-weight: 900;
+  line-height: 100%;
+}
+
+.cronbtit sub{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font: 12px Cinzel;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 0px #000;
+  color: #ababab;
+}
+
+.cronbtitimg{
+  width: 200px;
+  height: 200px;
+  outline: 2px solid #181818;
+  outline-offset: 2px;
+  border: 1px solid #181818;
+  border-radius: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cronbtitimg img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100%;
+  filter: grayscale(1)brightness(100%);
+  transition: .8s ease;
+}
+
+.cronbtitimg:hover.cronbtitimg img{
+  filter: grayscale(0)brightness(100%);
+  transition: .8s ease;
+}
+.cronimgcolor1{
+  background: var(--groups);
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 3;
+  top: 0px;
+  left: 0px;
+  mix-blend-mode: color;
+  opacity: 1;
+  transition: .8s ease;
+}
+.cronbtitimg:hover .cronimgcolor1{
+  opacity: 0;
+  transition: .8s ease;
+}
+
+
+.cronbtitmano1{
+  position: absolute;
+  top: 0px;
+  left: 60px;
+  width: 250px;
+  height: 400px;
+  background: url(https://i.ibb.co/pvd04Wh2/manoder.png);
+  background-size: cover;
+  z-index: 4;
+  filter: drop-shadow(0px 0px 10px var(--groups));
+  opacity: .7;
+  transition: .8s ease;
+}
+
+.cronbtitmano2{
+  position: absolute;
+  top: -12px;
+  right: 0px;
+  width: 250px;
+  height: 400px;
+  background: url(https://i.ibb.co/xtBfKMmD/manoiz.png);
+  background-size: cover;
+  z-index: 4;
+  filter: drop-shadow(0px 0px 10px var(--groups));
+  opacity: .7;
+  transition: .8s ease;
+}
+
+.cronbase:hover .cronbtitmano1{
+  opacity: .3;
+  top: -30px;
+  transform: scale(0.9);
+  transition: .8s ease;
+}
+
+.cronbase:hover .cronbtitmano2{
+  opacity: .3;
+  top: -30px;
+  right: -20px;
+  transform: scale(0.9);
+  transition: .8s ease;
+}
+
+
+.cronbp2{
+  height: 30px;
+  width: 759px;
+  padding-bottom: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.cronbp2 dato{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 250px;
+  height: 30px;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  line-height: 100%;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #ababab;
+}
+
+.cronbp2 dato c{
+  display: block;
+}
+
+.cronbp2 dato a{
+  text-decoration: none;
+  color: var(--groups);
+  font-weight: 800;
+}
+
+.cronbp2 l{
+  display: block;
+  height: 60%;
+  width: 1px;
+  background: var(--groups);
+  opacity: .5;
+}
+
+
