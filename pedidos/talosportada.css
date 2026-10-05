@@ -262,7 +262,7 @@
 }
 .ptalosmidfoto skull{
   position: absolute;
-  top: -6px;
+  top: -12px;
   left: -6px;
   color: #181818;
   text-shadow: 1px 1px 2px var(--groups);
@@ -270,7 +270,7 @@
 }
 .ptalosmidfoto skull2{
   position: absolute;
-  bottom: -6px;
+  bottom: -12px;
   right: -6px;
   color: #181818;
   text-shadow: 1px 1px 2px var(--groups);
