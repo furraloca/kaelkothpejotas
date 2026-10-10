@@ -284,7 +284,7 @@
   line-height: 100%;
   font-size: 30px;
   text-shadow: 3px 2px 0px color-mix(in srgb, var(--groups) 25%, #080808);
-  color: var(--noctum);
+  color: var(--groups);
 }
 
 
@@ -415,7 +415,7 @@
   background-position: 50% 12%;
   display: flex;
   border: 1px solid transparent;
-  border-image: radial-gradient(circle, #000 0%, var(--noctum) 50%, #000 100%) 1;
+  border-image: radial-gradient(circle, #000 0%, var(--groups) 50%, #000 100%) 1;
 }
 
 .piralf fil1{
