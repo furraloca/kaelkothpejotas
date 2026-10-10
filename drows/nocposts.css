@@ -1,0 +1,528 @@
+@font-face {font-family: "ninevehfont1"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/drows/HellCross.ttf');}
+
+.inte{
+  display: block;
+  margin: 0px auto 50px auto;
+  font-size: 17.5px;
+  max-width: 400px;
+  font-family: "Libertinus Serif Display", system-ui;
+  line-height: 145%;
+  color: #ababab;
+  text-align: center;
+}
+
+.miedo{
+ display: inline-block;
+ font-weight: 600;
+ background: linear-gradient(100deg, #675A7C 0%, #3A354A 25%, #9E98B4 50%, #7E759B 75%, #3A354A 100%);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: hkth-ss-move 4s ease-in-out infinite alternate;
+  filter: drop-shadow(0px 0px 10px #ababab);
+  letter-spacing: 0px;
+  position: relative;
+}
+
+.miedo:after{
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background:linear-gradient(45deg, transparent, var(--noctum), transparent);
+}
+
+@keyframes hkth-ss-move {
+      0%   { background-position: 0%;}
+      100% { background-position: 200%;}
+    }
+
+.asco{
+ display: inline-block;
+ font-weight: 600;
+ background: linear-gradient(100deg, #BACCCD 0%, #98B3B4 25%, #597B7C 50%, #35494A 75%, #98B3B4 100%);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: hkth-ss-move 4s ease-in-out infinite alternate;
+  filter: drop-shadow(0px 0px 10px #ababab);
+  letter-spacing: 0px;
+  position: relative;
+}
+.asco:after{
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background:linear-gradient(45deg, transparent, #98B3B4, transparent);
+}
+
+.ira{
+ display: inline-block;
+ font-weight: 600;
+ background: linear-gradient(100deg, #C48A88 0%, #904947 25%, #723A38 50%, #391D1C 75%, #904947 100%);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: hkth-ss-move 4s ease-in-out infinite alternate;
+  filter: drop-shadow(0px 0px 10px #ababab);
+  letter-spacing: 0px;
+  position: relative;
+}
+.ira:after{
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background:linear-gradient(45deg, transparent, #904947, transparent);
+}
+
+.tristeza{
+ display: inline-block;
+ font-weight: 600;
+ background: linear-gradient(100deg, #AFC2D7 0%, #6085B0 25%, #476990 50%, #2A3E56 75%, #6085B0 100%);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: hkth-ss-move 4s ease-in-out infinite alternate;
+  filter: drop-shadow(0px 0px 10px #ababab);
+  letter-spacing: 0px;
+  position: relative;
+}
+.tristeza:after{
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background:linear-gradient(45deg, transparent, #6085B0, transparent);
+}
+
+.alegria{
+ display: inline-block;
+ font-weight: 600;
+ background: linear-gradient(100deg, #EED889 0%, #D9C16A 25%, #A79B70 50%, #4A4227 75%, #D9C16A 100%);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: hkth-ss-move 4s ease-in-out infinite alternate;
+  filter: drop-shadow(0px 0px 10px #ababab);
+  letter-spacing: 0px;
+  position: relative;
+}
+.alegria:after{
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background:linear-gradient(45deg, transparent, #D9C16A, transparent);
+}
+
+.sorpresa{
+ display: inline-block;
+ font-weight: 600;
+ background: linear-gradient(100deg, #DFC4CA 0%, #B06D7C 25%, #C08A95 50%, #4A272F 75%, #B06D7C 100%);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: hkth-ss-move 4s ease-in-out infinite alternate;
+  filter: drop-shadow(0px 0px 10px #ababab);
+  letter-spacing: 0px;
+  position: relative;
+}
+.sorpresa:after{
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background:linear-gradient(45deg, transparent, #B06D7C, transparent);
+}
+
+
+
+
+
+
+.piralhead{
+  width: 480px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Libertinus Serif Display", system-ui;
+  line-height: 100%;
+  color: #ababab;
+}
+
+.piralhead1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 15px 0px;
+}
+
+.piralhead1 fecha{
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-shadow: 1px 1px 0px #000;
+  line-height: 100%;
+  border-bottom: 1px solid var(--groups);
+  border-width: 1px;
+  border-style: solid;
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  border-image: linear-gradient(to left, transparent, var(--groups), transparent) 1;
+}
+
+.piralhead1 fecha txt{
+  display: block;
+  padding: 4px 0px;
+}
+
+.piralhead1 fecha i{
+  line-height: 100%;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  color: var(--groups);
+}
+
+
+
+.piralhead2{
+  position: relative;
+  margin: 15px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+.piralhead2 img{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%; 
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  z-index: 2;
+  filter: grayscale(1)brightness(60%)contrast(110%)drop-shadow(0px 0px 12px var(--groups));
+  transition: all 1.2s ease;
+}
+
+.piralhead:hover .piralhead2 img{
+  filter: grayscale(1)brightness(100%)contrast(98%)drop-shadow(0px 0px 12px var(--groups));
+  transition: all 1.2s ease;
+}
+
+.piralhead2 filtron1{
+  position: absolute;
+  z-index: 5;
+  top: 0px;
+  left: 0px; 
+  width: 150px;
+  height: 150px;
+  border-radius: 100%; 
+  background: var(--groups);
+  mix-blend-mode: color;
+  filter: grayscale(.3);
+}
+
+.piralhead2 luna1{
+  position: absolute;
+  z-index: 7;
+  transform: rotate(-25deg);
+  right: -16px;
+  bottom: -7px;
+  width: 158px;
+  height: 158px;
+  background: url(https://i.ibb.co/pvxf4kdP/purepng-com-moonmoonastronomical-bodyfifth-largest-natural-satellitenatural-satellitemoon-light-1411.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  filter: grayscale(1);
+  opacity: .9;
+  transition: all 1.2s ease;
+}
+
+
+.piralhead:hover .piralhead2 luna1{
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+
+
+.piralhead tit{
+  display: block;
+  width: 100%;
+  padding-top: 5px;
+  margin: 10px auto 0px auto;
+  text-align: center;
+  font-family: "ninevehfont1";
+  line-height: 100%;
+  font-size: 30px;
+  text-shadow: 3px 2px 0px color-mix(in srgb, var(--groups) 25%, #080808);
+  color: var(--noctum);
+}
+
+
+.piralhead palo1{
+  position: absolute;
+  left: 115px;
+  top: 30px;
+  height: 100px;
+  width: 1px;
+  background: var(--groups);
+  transform: rotate(-45deg);
+  opacity: .3;
+}
+.piralhead palo2{
+  position: absolute;
+  right: 145px;
+  top: 40px;
+  height: 50px;
+  width: 1px;
+  background: var(--groups);
+  transform: rotate(45deg);
+  opacity: .3;
+}
+.piralhead palo3 {
+    position: absolute;
+    left: 105px;
+    top: 140px;
+    height: 100px;
+    width: 1px;
+    background: var(--groups);
+    transform: rotate(65deg);
+    opacity: .3;
+}
+.piralhead palo3:before{
+  content:"✦";
+  position: absolute;
+  left: -9px;
+  bottom: -18px;
+  font-size: 22px;
+  color: var(--groups);
+  transform: rotate(-65deg);
+}
+
+.piralhead palo4{
+  position: absolute;
+  left: 240px;
+  top: 75px;
+  height: 372px;
+  width: 1px;
+  background: var(--groups);
+  transform: rotate(-77deg);
+  opacity: .3;
+}
+
+
+.piralhead sub{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 9px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 2px;
+}
+
+
+.piralhead3{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  text-align: right;
+  justify-content: flex-end;
+}
+.piralhead3 txt{
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 10px;
+  padding: 2px 10px;
+  display: block;
+  border-bottom: 1px solid var(--groups);
+  border-width: 1px;
+  border-style: solid;
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  border-image: linear-gradient(to left, transparent, var(--groups), transparent) 1;
+}
+
+.piralhead3 a{
+  color: var(--groups);
+}
+
+
+.piraltexto{
+  display: block;
+  width: 460px;
+  padding: 40px 10px 20px 10px;
+  margin: 0 auto;
+  font-size: 17.5px;
+  font-family: "Libertinus Serif Display", system-ui;
+  line-height: 140%;
+  margin: 0 auto;
+  color: #ababab;
+  text-align: justify;
+}
+
+.piraltexto::first-letter {
+  font-family: "ninevehfont1";
+  font-size: 44px;
+  float: left;
+  padding: 5px 10px 0px 0px;
+  color: var(--groups);
+  text-shadow: 0px 0px 18px color-mix(in srgb, var(--groups) 75%, transparent);
+  position: relative;
+  line-height: 100%;
+}
+
+
+.piralf{
+  width: 480px;
+  height: 110px;
+  position: relative;
+  margin: 15px auto 0px auto;
+  background: url(https://i.pinimg.com/736x/4a/34/0b/4a340b3028ecafea9c5cf0aa09deda9d.jpg);
+  background-size: cover;
+  background-position: 50% 12%;
+  display: flex;
+  border: 1px solid transparent;
+  border-image: radial-gradient(circle, #000 0%, var(--noctum) 50%, #000 100%) 1;
+}
+
+.piralf fil1{
+  position: absolute;
+  z-index: 5;
+  top: 0px;
+  left: 0px;
+  background: var(--groups);
+  backdrop-filter: grayscale(1)brightness(100%);
+  mix-blend-mode: overlay;
+  width: 100%;
+  height: 100%;
+}
+
+.piralf fil2{
+  position: absolute;
+  z-index: 6;
+  top: 0px;
+  left: 0px;
+  background: url(https://i.pinimg.com/originals/06/d2/f0/06d2f0fb92cd9d6b0601acef2afef2d6.gif);
+  background-size: contain;
+  background-position: 50% 50%;
+  mix-blend-mode: screen;
+  opacity: .7;
+  filter: grayscale(1)brightness(40%);
+  width: 100%;
+  height: 100%;
+}
+
+
+.piralfdatos{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 7;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  font-size: 9px;
+  font-family: "Libertinus Serif Display", system-ui;
+  line-height: 100%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #ababab;
+}
+
+.piralfdatos:before{
+  content: "✦";
+  position: absolute;
+  right: -6px;
+  top: -3px;
+  font-size: 16px;
+  color: var(--groups);
+}
+
+.piralfdatos:after{
+  content: "✦";
+  position: absolute;
+  left: -6px;
+  bottom: -3px;
+  font-size: 16px;
+  color: var(--groups);
+}
+
+.piralfdatos dato{
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.piralfdatos c{
+  width: fit-content;
+  padding: 3px 6px;
+  background: color-mix(in srgb, var(--groups) 35%, transparent);
+  corner-shape: bevel;
+  border-radius: 5px;
+}
+
+.piralfdatos dato2{
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.piralfdatos txt{
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0px;
+  text-shadow: 1px 1px 0px #000;
+  color: #ababab;
+  font-weight: 500;
+  filter: drop-shadow(0px 0px 6px color-mix(in srgb, var(--groups) 65%, #929292));
+}
+
