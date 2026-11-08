@@ -326,8 +326,8 @@ font-display: swap;
 
 .marcolunas:before{
   content: "";
-  background: url(https://images2.imgbox.com/4e/97/92ZMm7KD_o.png);
-  background-size: repeat;
+  background: url(https://i.imgur.com/x9UucDI.png);
+  background-size: contain;
   background-position: 50% 50%;
   height: 20px;
   width: 425px;
