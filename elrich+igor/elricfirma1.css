@@ -12,7 +12,7 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #000, #000, #000, var(--alianza));
+  background: linear-gradient(135deg, #000, #000, #000, var(--groups));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +24,7 @@
   z-index: 1;
   content: "";
   opacity: 0;
-  background: linear-gradient(135deg, #000, var(--alianza), var(--alianza), var(--alianza));
+  background: linear-gradient(135deg, #000, var(--groups), var(--groups), var(--groups));
   inset: 0;
   transition: all 1.7s ease; 
 }
@@ -74,7 +74,7 @@
 
 
 .teeth t1{
-  background: var(--alianza);
+  background: var(--groups);
   height: 191px;
   width:112px;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -94,7 +94,7 @@
 
 
 .teeth t2{
-  background: var(--alianza);
+  background: var(--groups);
   height: 190px;
   width:112px;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -108,7 +108,7 @@
 
 
 .teeth t3{
-  background: var(--alianza);
+  background: var(--groups);
   height: 190px;
   width:112px;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -123,7 +123,7 @@
 
 
 .teeth t4{
-  background: var(--alianza);
+  background: var(--groups);
   height: 191px;
   width:113px;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -141,7 +141,7 @@
 }
 
 .teeth t5{
-  background: var(--alianza);
+  background: var(--groups);
   height: 191px;
   width:112px;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -153,7 +153,7 @@
 }
 
 .teeth t6{
-  background: var(--alianza);
+  background: var(--groups);
   height: 191px;
   width: 112px;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -166,7 +166,7 @@
 
 
 .teeth t7{
-  background: var(--alianza);
+  background: var(--groups);
   height: 191px;
   width:111px;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -194,7 +194,7 @@
   background: linear-gradient(to right, #000, #333, #000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 2px 1px 0px var(--alianza);
+  text-shadow: 2px 1px 0px var(--groups);
   filter: drop-shadow(0px 0px 4px #000)blur(0px);
   opacity: 1;
   transition-delay: .5s;
@@ -213,7 +213,7 @@
   position: absolute;
   z-index: 25;
   top: 164px;
-  background: linear-gradient(to right, rgba(0, 0, 0,.0), var(--alianza), rgba(0, 0, 0,.0));
+  background: linear-gradient(to right, rgba(0, 0, 0,.0), var(--groups), rgba(0, 0, 0,.0));
   padding: 5px 2px 2px 3px;
   margin: 0 auto;
   line-height: 100%;
@@ -338,7 +338,7 @@
   letter-spacing: 8.5px;
   transition: all .9s ease-in-out;
   font-weight: 400;
-  color: var(--alianza);
+  color: var(--groups);
   filter: drop-shadow(0px 0px 4px #000)blur(0px);
   animation: letterflickerel 2.8s linear infinite; 
 }
@@ -357,7 +357,7 @@
   bottom:64px;
   left: 25px;
   z-index: 30;
-  background: var(--alianza);
+  background: var(--groups);
   opacity: 0;
   transition: all .5s ease-in-out;
   transition-delay: 0s;
@@ -375,24 +375,24 @@
 
 
 @keyframes letterflickerel {
-  0% {opacity:0.1;text-shadow: 0px 0px 10px var(--alianza);
+  0% {opacity:0.1;text-shadow: 0px 0px 10px var(--groups);
   }
-  2% {opacity:0.1;text-shadow: 0px 0px 20px var(--alianza);
+  2% {opacity:0.1;text-shadow: 0px 0px 20px var(--groups);
   }
-  4% {opacity:1;text-shadow: 0px 0px 20px var(--alianza);
+  4% {opacity:1;text-shadow: 0px 0px 20px var(--groups);
   }   
-  5% {opacity:0.1;text-shadow: 0px 0px 20px var(--alianza);
+  5% {opacity:0.1;text-shadow: 0px 0px 20px var(--groups);
   } 
-  19% {opacity:1;text-shadow: 0px 0px 20px var(--alianza);
+  19% {opacity:1;text-shadow: 0px 0px 20px var(--groups);
   }
-  21% {opacity:0.1;text-shadow: 0px 0px 20px var(--alianza);
+  21% {opacity:0.1;text-shadow: 0px 0px 20px var(--groups);
   }
-  23% {opacity:1;text-shadow: 0px 0px 10px var(--alianza);
+  23% {opacity:1;text-shadow: 0px 0px 10px var(--groups);
   } 
-  80% {opacity:1;text-shadow: 0px 0px 20px var(--alianza);
+  80% {opacity:1;text-shadow: 0px 0px 20px var(--groups);
   }
-  83% {opacity:0.4;text-shadow: 0px 0px 10px var(--alianza);
+  83% {opacity:0.4;text-shadow: 0px 0px 10px var(--groups);
   }
-  87% {opacity:1;text-shadow: 0px 0px 20px var(--alianza);
+  87% {opacity:1;text-shadow: 0px 0px 20px var(--groups);
   }
 }
