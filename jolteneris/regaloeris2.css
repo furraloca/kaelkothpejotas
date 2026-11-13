@@ -1,0 +1,286 @@
+@font-face {font-family: "erisfont1"; src: url('https://dl.dropbox.com/scl/fi/6w68wwkvg1dcndxresfr1/Offenbacher-Reform-CAT.ttf?rlkey=a293dduxr2fr6bjo1okkcueds&st=kw9m7kdy');}
+
+@font-face {font-family: "joltenfont1"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/jolteneris/holyrose-bonbongothique.woff');}
+
+
+
+.regalo2{
+  width: 855px;
+  margin: 0 auto;
+  padding: 20px 5px;
+  position: relative;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.regalo2mb{
+  width: 490px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 8px 8px;
+}
+
+
+.regalo2mb-foto{
+  width: 150px;
+  height: 150px;
+  outline: 1px solid #121212;
+  outline-offset: 1px;
+  border: 2px solid #181818;
+  position: relative;
+  overflow: hidden;
+  transition: all 1.2s;
+}
+
+.regalo2mb-foto:hover{
+  outline: 1px solid #333;
+  transition: all 1.2s;
+}
+
+.regalo2mb-foto img{
+  object-fit: cover;
+  object-position: center;
+  width: 150px;
+  height: 150px;
+}
+
+.regalo2mb-foto fil1{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: var(--bruma);
+  mix-blend-mode: overlay;
+  backdrop-filter: grayscale(1)brightness(90%);
+  transition: all 1.2s;
+  transition-delay: .2s;
+}
+
+.regalo2mb-foto:hover.regalo2mb-foto fil1{
+  opacity: 0;
+  transition: all 1.2s;
+  transition-delay: .3s;
+}
+
+.regalo2mb-foto fil2{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0px;
+  left: 0px;  
+  backdrop-filter: grayscale(1)brightness(90%);
+  transition: all 1.2s;
+  transition-delay: .2s;
+}
+
+.regalo2mb-foto:hover.regalo2mb-foto fil2{
+  opacity: 0;
+  transition: all 1.2s;
+  transition-delay: .3s;
+}
+
+.regalo2mb-foto:before {
+  content: "";
+  position: absolute;
+  top: -25%;
+  left: -130%;
+  width: 70%;
+  height: 150%;
+  background: linear-gradient(280deg,transparent,color-mix(in srgb, #bbb 22%, transparent),transparent);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  transform: rotate(25deg);
+  transition: all .8s;
+}
+
+.regalo2mb-foto:hover:before {
+  left: 130%;
+}
+
+
+.regalo2eris{
+  width: 175px;
+  height: 478px;
+  background: #333;
+  position: relative;
+  border: 2px solid #121212;
+  overflow: hidden;
+}
+
+
+.regalo2eris-waves{
+  width: 175px;
+  height: 480px;
+  position: relative;
+  background:url(https://i.pinimg.com/originals/09/aa/a0/09aaa07f295e106061548144a2760d70.gif);
+  background-size: cover;
+  background-position: 50% 50%;
+  filter:grayscale(1)brightness(100%)contrast(110%);
+  mix-blend-mode: overlay;
+}
+
+
+.regalo2eris-storm{
+  width: 175px;
+  height: 480px;
+  position: relative;
+  background:url(https://i.imgur.com/6plYeNo.gif);
+  background-size: cover;
+  background-position: 50% 50%;
+  filter:grayscale(1)brightness(70%)contrast(110%);
+  mix-blend-mode: overlay;
+}
+
+
+.regalo2eris-fot{
+  width: 175px;
+  height: 480px;
+  position: absolute;
+  bottom: 0px;
+  background:url(https://i.imgur.com/UYYmXH3.png);
+  filter:drop-shadow(0px 0px 5px var(--groups));
+}
+
+
+
+
+.regalo2cita{
+  margin: 15px auto;
+  width: 850px;
+  height: auto;
+  min-height: 150px;
+  position: relative;
+}
+
+
+.regalo2citafoto{
+  position: relative;
+  width: 130px;
+  height: 130px;
+  padding: 2px;
+  border: 2px solid #121212;
+  outline: 1px solid #181818;
+  display: flex;
+  border-radius: 100%;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+
+.regalo2citafoto-d{
+  width: 130px;
+  height: 130px;
+  background: url(https://64.media.tumblr.com/351154c4a32850e2d5e88010afbac7bb/3bd7d79f3cd0eafd-32/s540x810/1342e50607fe1cc529ae91596b322de35c36eaa3.gif);
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 100%;
+  position: relative; 
+  z-index:10;
+  filter: grayscale(1);
+  transition: all .8s;
+}
+
+.regalo2citafoto:hover .regalo2citafoto-d{
+  filter: grayscale(0);
+  transition: all .8s;
+}
+
+
+.regalo2citafoto:before{
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  z-index: 3;
+  content: "";
+  width: 200px;
+  height: 200px;
+  background: #121212;
+  mask: radial-gradient(#0000 71%, #000 72%) 10000% 10000%/99.5% 99.5%;
+  transform: rotate(0deg);
+  transition: all .8s;
+}
+
+.regalo2citafoto:after{
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  z-index: 3;
+  content: "";
+  width: 200px;
+  height: 200px;
+  background: #060606;
+  mask: radial-gradient(#0000 71%, #000 72%) 10000% 10000%/99.5% 99.5%;
+  transform: rotate(45deg);
+  transition: all .8s;
+}
+
+
+.regalo2citafoto:hover::before{
+  transform: rotate(45deg);
+  transition: all .8s;
+}
+
+.regalo2citafoto:hover::after{
+  transform: rotate(0deg);
+  transition: all .8s;
+}
+
+
+
+
+.regalo2citaq{
+  width: 653px;
+  margin-left: 87px;
+  margin-top: 35px;
+  height: auto;
+  min-height: 50px;
+  padding: 10px;
+  position: relative;
+  border-left: 2px solid transparent;
+  border-image: linear-gradient(to bottom, #060606, transparent) 2; 
+}
+
+
+.regalo2citaq txt{
+  display: block;
+  font-size: 9px;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  color: #D1D0D0;
+  letter-spacing: 2px;
+  line-height: 180%;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+
+
+.regalo2citafo{
+  display: flex; 
+  width: 100%;
+  margin-top: 15px;
+  margin-left: 10px;
+  position: relative;
+  top: 10px;
+}
+
+
+.regalo2citafo t{
+  width: fit-content;
+  padding: 4px 6px;
+  background: linear-gradient(to right, transparent, var(--bruma));
+  color: #ababab;
+  font-size: 9px;
+  text-shadow: 1px 1px 0px #000;
+  letter-spacing: .5px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+
