@@ -1,0 +1,456 @@
+@font-face {font-family: "joltenfont1"; src: url('https://FURRALOCA.github.io/kaelkothpejotas/jolteneris/holyrose-bonbongothique.woff');}
+
+
+.joltenrelas {
+    width: 800px;
+    height: auto;
+    position: relative;
+    margin: 0px auto;
+    border-width: 8px;
+    border-style: solid;
+    border-image: none;
+    background: #101010;
+    border-color: rgb(18, 18, 18);
+    padding: 20px 0px;
+}
+
+.jolten-encab {
+    width: 790px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(209, 208, 208);
+    font-family: Bellefair, serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 8px;
+    line-height: 100%;
+    position: absolute;
+    top: 0px;
+    margin: 5px;
+    background: rgb(18, 18, 18);
+    overflow: hidden;
+}
+
+.jolten-encab t {
+    font-size: 15px;
+    color: var(--bruma);
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+    margin-right: 15px;
+    padding: 10px;
+    background: rgb(24, 24, 24);
+}
+
+.jolten-encab n {
+    text-align: right;
+    color: var(--bruma);
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+    letter-spacing: 1px;
+    padding: 10px;
+    background: rgb(24, 24, 24);
+}
+
+
+.jrelaboxf{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 0px;
+  width: 790px;
+  height: auto;
+  margin: 40px auto 0px auto;
+}
+
+
+/* 1. Definimos el color por defecto en la caja principal */
+.jrelabox {
+  --color-tema: var(--bruma); /* Color base por defecto */
+  position: relative; 
+  width: 388px; 
+  height: 210px; 
+  background: #000;
+  border: 2px solid #181818;
+}
+
+.jrelaboxbg{
+  position: relative; 
+  width: 388px; 
+  height: 210px; 
+  background: url(https://i.pinimg.com/736x/33/27/f8/3327f8288e5c30e6e1d2489f22e48bbc.jpg);
+  background-size: contain;
+  background-position: 100% 0%;
+  display: flex;
+}
+
+.jrelaboxbg fil{
+  position: absolute; 
+  width: 388px; 
+  height: 210px; 
+  top: 0px;
+  left: 0px;
+  background: url(https://www.transparenttextures.com/patterns/black-orchid.png);
+  background-size: contain;
+  backdrop-filter: brightness(20%)grayscale(1)contrast(118%);
+}
+
+
+.jrelaboxfotob{
+  width: 186px;
+  height: 202px;
+  margin: 4px 4px;
+  background: url(https://i.pinimg.com/736x/07/fa/21/07fa21a74ff320f368ae940b64cf6413.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+}
+
+.jrelaboxfotobfil{
+  position: absolute; 
+  width: 186px;
+  height: 202px;
+  top: 0px;
+  left: 0px;
+  background: url(https://www.transparenttextures.com/patterns/debut-light.png);
+  background-size: contain;
+  backdrop-filter: brightness(40%);
+  mix-blend-mode: screen;
+  opacity: .5;
+}
+
+.jrelaboxfotoden{
+  position: relative; 
+  width: 186px;
+  height: 202px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 15px 0px;
+  backdrop-filter: grayscale(1)brightness(40%)contrast(95%);
+}
+
+.jrelaboxfotoicon{
+  width: 70px;
+  height: 70px;
+  transform: rotate(45deg);
+  border: 1px solid #181818;
+  background: linear-gradient(140deg,color-mix(in srgb, var(--color-tema) 42%, transparent),color-mix(in srgb, var(--color-tema) 42%, transparent),color-mix(in srgb, var(--color-tema) 42%, transparent));
+}
+
+.jrelaboxfotoicon img{
+  object-fit: cover;
+  object-position: center;
+  width: 75px;
+  height: 75px;
+  transform: rotate(-45deg);
+  border: 1px solid #181818;
+  position: relative;
+  top: -4px;
+  left: -3px;
+  filter: grayscale(1);
+  overflow: hidden;
+}
+
+.jrelaboxfotoicon fil2{
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  top: -3px;
+  left: -2px;
+  background: var(--color-tema);
+  mix-blend-mode: overlay;
+  transform: rotate(-45deg);
+  border: 1px solid #181818;
+}
+
+.jrelaboxfotoden tit,.jrelaboxfotoden tit2{
+  width: 100%;
+  text-align: center;
+  font-family: "joltenfont1";
+  line-height: 100%;
+  font-size: 34px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 0px #000;
+  color: #ababab;
+  position: relative;
+  top: 10px;
+  filter: drop-shadow(0px 0px 5px #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jrelaboxfotoden tit:after{
+  content: "";
+  position: absolute;
+  right: 5px;
+  height: 1px;
+  width: 30px;
+  background: linear-gradient(to left, transparent, var(--color-tema));
+}
+
+.jrelaboxfotoden tit:before{
+  content: "";
+  position: absolute;
+  left: 5px;
+  height: 1px;
+  width: 30px;
+  background: linear-gradient(to right, transparent, var(--color-tema));
+}
+
+.jrelaboxfotoden sub{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 100%;
+  font-size: 11px;
+  letter-spacing: 0px;
+  text-shadow: 1px 1px 0px #000;
+  color: #ababab;
+  text-transform: uppercase;
+  font-family: Bellefair, serif;
+  filter: drop-shadow(0px 0px 5px #000);
+}
+
+.jrelaboxfotoden sub i{
+  color: var(--color-tema);
+  font-size: 9px;
+  position: relative;
+}
+
+.jrelaboxfotoden txt{
+  display: block;
+  padding-bottom: 8px;
+}
+
+
+.jrelaboxffic{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: fit-content;
+  font-size: 8.5px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 0px #000;
+  color: #ababab;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: Bellefair, serif;
+  text-align: right;
+  padding: 4px 6px 3px 12px;
+  background: linear-gradient(to right, transparent, color-mix(in srgb, var(--color-tema) 52%, transparent));
+}
+
+.jrelaboxffic i{
+  font-size: 8px;
+}
+
+.jrelaboxfban{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 5px;
+  height: 30px;
+  width: 20px;
+  background: color-mix(in srgb, var(--color-tema) 42%, transparent);
+  font-size: 15px;
+  text-shadow: 1px 1px 0px #000;
+  color: #ababab;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.jrelaboxfban i{
+  filter: drop-shadow(0px 0px 5px #000);
+}
+
+.jrelaboxfban:after{
+  content: "";
+  width: 30px;
+  height: 15px;
+  clip-path: polygon(50% 100%,100% 0,0 0);
+  background: color-mix(in srgb, var(--color-tema) 42%, transparent);
+  position: absolute;
+  bottom: -15px;
+  left: 0px;
+}
+
+.jrelabox.noctum{ --color-tema: var(--noctum); }
+.jrelabox.alianza{ --color-tema: var(--alianza); }
+.jrelabox.imperio{ --color-tema: var(--imperio); }
+.jrelabox.northel{ --color-tema: var(--northel); }
+.jrelabox.bruma{ --color-tema: var(--bruma); }
+.jrelabox.vardarien{ --color-tema: var(--vardarien); }
+.jrelabox.daelarien{ --color-tema: var(--daelarien); }
+.jrelabox.sakkrad{ --color-tema: var(--sakkrad); }
+.jrelabox.sombrias{ --color-tema: var(--sombrias); }
+.jrelabox.shinzen{ --color-tema: var(--shinzen); }
+.jrelabox.dragones{ --color-tema: var(--dragones); }
+
+
+
+.jrelaboxiconitos{
+  width: 26px;
+  height: 202px;
+  margin: 4px 0px;
+  position: relative;
+  background: color-mix(in srgb, #181818 72%, transparent);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.jrelaboxiconitos i{
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 13px;
+  color: #ababab;
+  text-shadow: 1px 1px 0px #000;
+  filter: drop-shadow(0px 0px 5px color-mix(in srgb, var(--color-tema) 52%, transparent));
+  transform:scale(1);
+  transition: all 0.6s ease-out;
+}
+
+
+.jrelaboxiconitos i:hover{
+  transform:scale(1.3);
+  color: var(--color-tema);
+  transition: all 0.6s ease-out;
+}
+
+
+.jrelaboxdesc{
+  width: 160px;
+  height: 202px;
+  margin: 4px 4px;
+  position: relative;
+}
+
+
+.jrelaboxdesc cita{
+  position: relative;
+  width: 140px;
+  margin: 4px 5px;
+  padding: 4px 6px;
+  height: auto;
+  display: block;
+  text-align: center;
+  font-size: 8.5px;
+  letter-spacing: 0px;
+  text-shadow: 1px 1px 0px #000;
+  color: #ababab;
+  line-height: 120%;
+  font-style: italic;
+  text-transform: uppercase;
+  font-family: Bellefair, serif;
+}
+
+.jrelaboxdesc cita:after{
+  position: absolute;
+  top: 0px;
+  left: 4px;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--color-tema), transparent);
+}
+
+
+.jrelaboxdesc-info{
+  width: 160px;
+  height: auto;
+  margin: 0px 0px;
+  position: relative;
+  display: block;
+  padding: 5px 0px;
+}
+
+.jrelaboxdesc-info txt{
+  width: 150px;
+  height: 105px;
+  padding: 10px 5px 10px 5px;
+  overflow: auto;
+  text-align: justify;
+  display: block;
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: #101010 #000;
+  font-family: "Bellefair", serif;
+  color: #abaaaa;
+  line-height: 135%;
+  letter-spacing: .5px;
+  font-size: 14px;
+
+  /* --- LÍNEAS AÑADIDAS PARA EVITAR EL TEMBLOR --- */
+  overscroll-behavior: contain; /* Evita que el scroll salte al contenedor padre al llegar al final */
+  -webkit-overflow-scrolling: touch; /* Suaviza el scroll en dispositivos táctiles */
+  transform: translateZ(0); /* Fuerza aceleración por hardware de la GPU */
+  will-change: scroll-position; /* Optimiza el rendimiento del renderizado de desplazamiento */
+}
+
+
+
+
+
+
+.reprodlinea2 {
+    width: 160px;
+    margin: 2px 0px 0px 0px;
+    height: auto;
+    min-height: 30px;
+    padding: 0px 0px;
+    position: relative;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gideon Roman', serif;
+    line-height: 100%;
+    font-size: 9px;
+    text-align: justify;
+    color: #abaaaa;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, transparent 0%, color-mix(in srgb, var(--color-tema) 52%, transparent) 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: barridoFondo 8s ease infinite;
+    text-shadow: 0px 0px 1px #000;
+    pointer-events: auto !important;
+}
+
+/* Animación del fondo */
+@keyframes barridoFondo {
+  0% {
+    background-position: 200% 0%;
+  }
+  50% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -200% 0%;
+  }
+}
+
+
+
+
+
+
