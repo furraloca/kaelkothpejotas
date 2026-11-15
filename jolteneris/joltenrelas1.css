@@ -256,9 +256,9 @@
   background: linear-gradient(to right, transparent, color-mix(in srgb, var(--color-tema) 52%, transparent));
 }
 
-.jrelaboxffic i{
-  font-size: 8px;
-}
+.jrelaboxffic i{font-size: 8px;}
+
+.jrelaboxffic a{color: #ababab;}
 
 .jrelaboxfban{
   position: absolute;
